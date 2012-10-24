@@ -1,0 +1,21 @@
+;----------// Theme Information
+  name        = By i Bevægelse
+  description = Theme for By i Bevægelse website
+  core        = 7.x
+  release     = 7.x-1.x
+  screenshot  = screenshot.png
+  base theme  = latto
+
+  ; Import stylesheets.
+  stylesheets[all][] = css/byib.reset.css
+  stylesheets[all][] = css/byib.bootstrap.css
+  stylesheets[all][] = css/byib.styles.css
+
+  ; Import javascripts.
+  ; scripts[] = scripts/script.js
+
+;----------// Regions
+  regions[header]          = Header
+  regions[content_top]     = Content top
+  regions[content]         = Main Content
+  regions[footer]          = Footer
