@@ -19,7 +19,7 @@ body {
 header {
   position: relative;
   
-  margin-bottom: $default-spacing * 1.5;
+  margin-bottom: $default-spacing;
   overflow: hidden;
   
   background: $theme-header-pattern;
@@ -49,7 +49,7 @@ img {
 }
 
 p {
-  margin-bottom: $default-spacing / 3;
+  margin-bottom: $default-spacing;
 }
 
 // By i bevægelse specific styling
@@ -103,6 +103,48 @@ p {
 
     }
   }
+}
+
+.sub-menu {
+  @extend .v-menu;   
+}
+
+
+// Breadcrumb
+.breadcrumb {
+  @include rem('font-size', $theme-font-size * .85);
+ 
+  margin: 0 0 $half-spacing * 1.25;
+  padding: 0;
+
+  background-color: transparent;
+  color: $white;
+  
+  a {
+    @include opacity(0.75);
+    
+    color: $white;
+  }
+  
+  i {
+    margin-left: $half-spacing / 2;
+    margin-right: $half-spacing / 2;
+  }
+}
+
+
+// Page image
+.page-image {
+  @extend p;
+}
+
+// Lead text used on pages, news articles etc.
+.lead {
+  @extend p;
+  @include rem('font-size', $theme-font-size * 1);
+  @include rem('line-height', $theme-line-height * 1);
+
+  font-weight: bold;
 }
 
 // Blocks and spotboxes
@@ -194,13 +236,6 @@ hr {
 
 .image {
   margin-bottom: $default-spacing / 2;
-}
-
-.lead {
-  @include rem('font-size', $theme-font-size * 1.1);
-  @include rem('line-height', $theme-line-height * 1.1);
-
-  margin-bottom: 0;
 }
 
 .pull-right {
