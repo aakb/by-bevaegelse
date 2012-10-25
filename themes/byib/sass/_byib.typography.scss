@@ -1,0 +1,155 @@
+// Default typography for the theme.
+
+html{
+  @include rem('font-size',$base-font-size);
+}
+
+body {
+  @include rem('font-size', $theme-font-size);
+  @include rem('line-height', $theme-line-height);
+
+  color: $text-primary-color;
+  font-family: $theme-font-family;
+}
+
+// The default colors for ::selection.
+// (latto.mixins.scss)
+//
+// No styleguide reference
+@include selection($text-selection-color, $text-selection-background);
+
+// The default Latto styling for headers and links inside headers.
+//
+// :link              - Style for a link nested in a header.
+// :visited           - Style for a visited link nested in a header.
+// :hover             - Effect when scrolling over a link nested inside a header.
+// :focus             - Style for a link in focus nested inside a header.
+// :active            - Style for an active link inside a header.
+//
+// No styleguide reference
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-primary-color;
+  font-weight: normal;
+  a {
+    &:link {
+      color: $text-primary-color;
+      text-decoration: none;
+    }
+    &:visited {
+      color: $text-primary-color;
+    }
+    &:hover {
+      color: darken($text-primary-color, 25%);
+    }
+    &:focus {
+      color: $link-color-hover;
+    }
+    &:active {
+      background-color: $text-selection-background;
+      color: $text-selection-color;
+    }
+  }
+}
+
+h1 {
+  @include rem('font-size', $theme-font-size * 2);
+
+  color: $text-primary-color;
+}
+
+h2 {
+  @include rem('font-size', $theme-font-size * 1.7);
+}
+
+h3 {
+  @include rem('font-size', $theme-font-size * 1.5);
+  @include rem('line-height', $theme-line-height * 1.25);
+}
+
+h4 {
+  @include rem('font-size', $theme-font-size * 1.3);
+}
+
+h5 {
+  @include rem('font-size', $theme-font-size * 1);
+}
+
+h6 {
+  @include rem('font-size', $theme-font-size * .8);
+}
+
+// Classes for use on headlines.
+//
+// .page-title        - used on large headlines e.g. page title.
+// .block-title       - used on block headlines.
+
+.page-title {
+  @include rem('margin-bottom', $default-spacing / 2);
+
+}
+
+.block-title {
+  @include rem('margin-bottom', $default-spacing * .5);
+}
+
+a {
+  &:link {
+    color: $link-color;
+    text-decoration: none;
+  }
+  &:visited {
+    color: darken($link-color, 15%);
+  }
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: $link-color-hover;
+  }
+}
+
+b,
+strong,
+.strong {
+  font-weight: bold;
+}
+
+em {
+  // Custom styling for emphasized text goes here.
+}
+
+// Classes to apply elements for different font sizes.
+//
+// .small             - Half the predefined font size.
+// .medium            - 3/4 the predefined font size.
+// .big               - 25% bigger than the predefined font size.
+// .bigger               - 37,5% bigger than the predefined font size.
+// .biggest               - 50% bigger than the predefined font size.
+//
+// No styleguide reference
+.small {
+  @include rem('font-size', $theme-font-size * .5);
+}
+
+.medium {
+  @include rem('font-size', $theme-font-size * .75);
+}
+
+.big {
+  @include rem('font-size', $theme-font-size * 1.25);
+}
+
+.bigger {
+  @include rem('font-size', $theme-font-size * 1.375);
+}
+
+.biggest {
+  @include rem('font-size', $theme-font-size * 1.5);
+}

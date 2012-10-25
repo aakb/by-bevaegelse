@@ -1,0 +1,208 @@
+// The default stylesheet for the Latto theme.
+//
+// Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
+// Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
+//
+//
+// Compass version 0.12.2 (Alnilam)
+// Zen Grids version 1.2
+
+@import 'compass/css3/box-sizing';
+@import 'compass/css3/box-shadow';
+
+body {
+  background: $theme-background-pattern $theme-background-color 0 123px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  
+  margin-bottom: $default-spacing * 1.5;
+  overflow: hidden;
+  
+  background: $theme-header-pattern;
+
+  .header-inner {
+    margin-left: $half-spacing;
+    margin-right: $half-spacing;
+    overflow: hidden;
+    padding-top: $half-spacing;
+    padding-bottom: $half-spacing;
+
+    background-color: $theme-header-background;
+   }
+
+  .logo {
+    float: right;
+  }
+  
+}
+
+img {
+  display: block; // Removes "margin" below images
+  height: auto;
+  max-width: 100%;
+  
+  vertical-align: baseline;    
+}
+
+p {
+  margin-bottom: $default-spacing / 3;
+}
+
+// By i bevægelse specific styling
+
+.main-content {
+  background-color: $theme-content-background;
+  padding: $default-spacing $half-spacing;
+  
+  .grid-row {
+    margin: 0;
+  }
+  
+}
+
+
+// Navigation
+.nav-wrapper {
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  
+  bottom: 0;
+  position: absolute;
+  
+  .nav-inline {
+    margin: 0;
+
+    li {
+
+      display: table-cell;
+      text-align: center;
+
+      a {
+        color: $navbar-text-color;
+        display: block;
+        height: 100%;
+        min-width: 100px;
+        padding: $navbar-item-spacing;
+        text-decoration: none;
+
+        &:hover {
+          background-color: lighten($navbar-bg-active-color, 25%);          
+        }
+        
+        &.active {
+          background-color: $navbar-bg-active-color;
+          color: $navbar-text-color-active;
+        }
+        
+      }
+
+    }
+  }
+}
+
+// Blocks and spotboxes
+.block {
+  .block-content {
+    @include rem('font-size', $theme-font-size * .9);
+    
+    margin-top: $half-spacing;
+    margin-bottom: $half-spacing;
+  }
+}
+
+// Styling of read more links
+// We don't want underline because there is an icon before the text
+.read-more {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.footer-wrapper {
+  padding-left: $default-spacing;
+  padding-right: $default-spacing;
+  padding-bottom: $default-spacing;
+
+  background-color: $theme-content-background;
+  
+  .footer-content {
+    @include rem('font-size', $theme-font-size * .85);
+    
+    padding-top: $default-spacing;
+    
+    border-top: 1px solid $gray-light;
+    text-align: center;
+  }
+}
+
+
+// The next section reset some standard Drupal CSS classes.
+// This makes twitter bootstrap look as intended.
+//
+// Form action is a standard class for all button wrappers in Drupal.
+//
+// No styleguide reference
+.form-actions {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: inherit;
+  display: inline-block;
+}
+
+// Stylinf horizontal ruler. Used a mixin colruler(), which enables an easy way
+// to change color of the ruler.
+// (latto.mixins.scss)
+//
+hr {
+  @include colruler();
+}
+
+// Overwrites the default bootstrap label-info styling.
+// A label suitable for attraction user attention.
+//
+// No styleguide reference
+.label-info,
+.label-info[href],
+.badge-info,
+.badge-info[href] {
+  color: $theme-primary-color;
+  background-color: $theme-secondary-color;
+}
+
+
+// Make sure links inside labels get the correct color.
+.label {
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Styling for layout elements.
+// .image             - Adds spacing below
+// .lead              - Overwrite styling from bootstrap
+
+.image {
+  margin-bottom: $default-spacing / 2;
+}
+
+.lead {
+  @include rem('font-size', $theme-font-size * 1.1);
+  @include rem('line-height', $theme-line-height * 1.1);
+
+  margin-bottom: 0;
+}
+
+.pull-right {
+  float: right;
+}

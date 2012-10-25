@@ -31,7 +31,7 @@
   @import url("/modules/toolbar/toolbar.css?mcdzmn");</style>
   <style type="text/css" media="all">@import url("/sites/www.by-bevaegelse.dk/themes/latto/css/latto.reset.css?mcdzmn");
   @import url("/sites/www.by-bevaegelse.dk/themes/latto/css/latto.bootstrap.css?mcdzmn");
-  @import url("/sites/www.by-bevaegelse.dk/themes/latto/css/latto.styles.css?mcdzmn");</style>
+  @import url("/sites/www.by-bevaegelse.dk/themes/byib/css/byib.styles.css");</style>
   <script type="text/javascript" src="/misc/jquery.js?v=1.4.4"></script>
   <script type="text/javascript" src="/misc/jquery.once.js?v=1.2"></script>
   <script type="text/javascript" src="/misc/drupal.js?mcdzmn"></script>
@@ -47,29 +47,69 @@
 <body>
 <header class="grid-wrapper">
   <div class="grid-inner">
-    <div class="header-inner">
-      <div class="site-name">
-        <a href="/" title="Home" rel="home">By i Bevægelse</a>
-      </div>
+    <div class="grid-3-right">
+      <div class="header-inner">
+        <a id="logo" rel="home" title="Home" href="/" class="logo"><img alt="Home" src="http://byib.local/sites/www.by-bevaegelse.dk/themes/byib/logo.png"></a>
+      </div>      
+    </div>
+    <div class="nav-wrapper">
+      <ul class="nav-inline">
+        <li class="first"><span><a class="active" href="/">Home</a></span></li>
+        <li><span><a title="" href="/">Aktiviteter</a></span></li>
+        <li><span><a title="" href="/">Kontakt</a></span></li>
+        <li><span><a title="" href="/">Priser</a></span></li>
+        <li class="last"><span><a title="" href="/">Tilmelding</a></span></li>
+      </ul>      
     </div>
   </div>
 </header>
 <article class="grid-wrapper">
   <div class="grid-inner">
     <div class="carousel">
-      Carousel      
+      <img src="http://lorempixel.com/1000/300/city/" />
     </div>
-    <div class="grid-row grid-content">
-      <aside class="grid-5-left">Left </aside>
-      <div class="grid-6-center">Center right</div>
-      <aside class="grid-5-right">Right</aside>
+    <div class="main-content">
+      <div class="grid-row grid-content" style="background-color: #fff;">
+        <aside class="grid-4-left">
+          <div class="block">
+            <h3 class="block-title"><a href="#">Babysvømning</a></h3>
+            <img src="http://lorempixel.com/1000/500/city/" />
+            <div class="block-content">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
+            </div>
+            <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
+          </div>          
+        </aside>
+        <div class="grid-4-center">
+          <div class="block">
+            <h3 class="block-title"><a href="#">Babysvømning</a></h3>
+            <img src="http://lorempixel.com/1000/500/city/" />
+            <div class="block-content">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
+            </div>
+            <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
+          </div>
+        </div>
+        <aside class="grid-4-right">
+          <div class="block">
+            <h3 class="block-title"><a href="#">Babysvømning</a></h3>
+            <img src="http://lorempixel.com/1000/500/city/" />
+            <div class="block-content">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
+            </div>
+            <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
+          </div>          
+        </aside>
+      </div>      
     </div>
   </div>
 </article>
 <footer class="grid-wrapper">
   <div class="grid-inner">
-    <div class="grid-full">
-      Footer
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <strong>For information kontakt:</strong> Projektleder og sygeplejerske Stine Seneca - <a href="mailto:ssth@aarhus.dk">ssth@aarhus.dk</a> - Telefon: +45 29 20 90 12
+      </div>
     </div>
   </div>
 </footer>

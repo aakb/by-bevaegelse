@@ -7,8 +7,6 @@
   base theme  = latto
 
   ; Import stylesheets.
-  stylesheets[all][] = css/byib.reset.css
-  stylesheets[all][] = css/byib.bootstrap.css
   stylesheets[all][] = css/byib.styles.css
 
   ; Import javascripts.
