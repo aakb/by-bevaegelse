@@ -25,8 +25,7 @@ header {
   background: $theme-header-pattern;
 
   .header-inner {
-    margin-left: $half-spacing;
-    margin-right: $half-spacing;
+    margin-right: -$half-spacing;
     overflow: hidden;
     padding-top: $half-spacing;
     padding-bottom: $half-spacing;
