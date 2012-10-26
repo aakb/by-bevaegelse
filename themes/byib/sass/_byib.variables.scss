@@ -5,7 +5,13 @@
 @import "compass/css3";
 
 // The default font
-@include font-face("Armata Regular", font-files("armata/Armata-Regular-webfont.woff", "armata/Armata-Regular-webfont.ttf", "armata/Armata-Regular-webfont.svg"), "armata/Armata-Regular-webfont.eot", 'normal', 'normal');
+@include font-face("Source Sans Light", font-files("source-sans/SourceSansPro-Light-webfont.woff",
+                   "source-sans/SourceSansPro-Light-webfont.ttf", "source-sans/SourceSansPro-Light-webfont.svg"),
+                   "source-sans/SourceSansPro-Light-webfont.eot", 'normal', 'normal');
+
+@include font-face("Source Sans Regular", font-files("source-sans/SourceSansPro-Regular-webfont.woff",
+                   "source-sans/SourceSansPro-Regular-webfont.ttf", "source-sans/SourceSansPro-Regular-webfont.svg"),
+                   "source-sans/SourceSansPro-Regular-webfont.eot", 'normal', 'normal');
 
 // Basic settings
 // Grid, spacing etc.
@@ -36,9 +42,9 @@ $theme-content-background:      #fff !default;
 
 // Font variables
 $base-font-size:      16px !default; /* equivalent to font-size: 100% */
-$theme-font-size:     13px !default;
-$theme-line-height:   18px !default;
-$theme-font-family:   "Armata Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$theme-font-size:     16px !default;
+$theme-line-height:   24px !default;
+$theme-font-family:   "Source Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Baseline for rem() mixin, measured in pixels
 // The value should be the same as the base-font-size value for the html element
@@ -49,7 +55,7 @@ $baseline-px: $base-font-size;
 // Text colors
 $text-primary-color:         #000 !default;
 $text-selection-color:       $text-primary-color !default;
-$text-selection-background:  $gray-light !default;
+$text-selection-background:  #f4e6c4 !default;
 
 
 // Links
@@ -71,7 +77,7 @@ $form-border-radius: 5px !default;
 $navbar-bg-color:           #fff !default;
 $navbar-bg-active-color:    #31b4d3 !default;
 $navbar-font-size:          15px !default;
-$navbar-text-color:         #2a373b !default;
+$navbar-text-color:         #000 !default;
 $navbar-text-color-active:  #fff !default;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
 

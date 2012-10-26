@@ -10,6 +10,14 @@
 @import 'compass/css3/box-sizing';
 @import 'compass/css3/box-shadow';
 
+// @extend classes
+//
+
+%bold {
+  font-family: "Source Sans Regular";  
+}
+
+
 body {
   background: $theme-background-pattern $theme-background-color 0 123px;
   margin: 0;
@@ -104,15 +112,23 @@ p {
   }
 }
 
+.main-menu {
+  @extend .nav-inline;   
+}
+
 .sub-menu {
-  @extend .v-menu;   
+  @extend .v-menu;
+
+  margin-left: 0;
+  
+  > li {
+    border-bottom: 1px solid $gray-light;   
+  }
 }
 
 
 // Breadcrumb
 .breadcrumb {
-  @include rem('font-size', $theme-font-size * .85);
- 
   margin: 0 0 $half-spacing * 1.25;
   padding: 0;
 
@@ -140,17 +156,12 @@ p {
 // Lead text used on pages, news articles etc.
 .lead {
   @extend p;
-  @include rem('font-size', $theme-font-size * 1);
-  @include rem('line-height', $theme-line-height * 1);
-
-  font-weight: bold;
+  @extend %bold;
 }
 
 // Blocks and spotboxes
 .block {
-  .block-content {
-    @include rem('font-size', $theme-font-size * .9);
-    
+  .block-content {   
     margin-top: $half-spacing;
     margin-bottom: $half-spacing;
   }
@@ -171,14 +182,18 @@ p {
 
   background-color: $theme-content-background;
   
-  .footer-content {
-    @include rem('font-size', $theme-font-size * .85);
-    
+  .footer-content {   
     padding-top: $default-spacing;
     
     border-top: 1px solid $gray-light;
     text-align: center;
   }
+}
+
+// Add margin after icons
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  margin-right: 3px;
 }
 
 
