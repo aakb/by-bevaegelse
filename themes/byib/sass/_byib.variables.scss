@@ -1,10 +1,15 @@
-// This file holds all the variables for the theme.
-//
-// Compass version 0.12.2 (Alnilam)
+// =============================================================================
+// This file holds all the variables for the theme
+// =============================================================================
+
 
 @import "compass/css3";
 
+
+// -----------------------------------------------------------------------------
 // The default font
+// -----------------------------------------------------------------------------
+//
 @include font-face("Source Sans Light", font-files("source-sans/SourceSansPro-Light-webfont.woff",
                    "source-sans/SourceSansPro-Light-webfont.ttf", "source-sans/SourceSansPro-Light-webfont.svg"),
                    "source-sans/SourceSansPro-Light-webfont.eot", 'normal', 'normal');
@@ -13,84 +18,113 @@
                    "source-sans/SourceSansPro-Regular-webfont.ttf", "source-sans/SourceSansPro-Regular-webfont.svg"),
                    "source-sans/SourceSansPro-Regular-webfont.eot", 'normal', 'normal');
 
-// Basic settings
-// Grid, spacing etc.
-$grid-max-width:  1000px;
-$grid-column-count: 12;
 
-$default-spacing: 20px !default;
-$half-spacing: $default-spacing / 2 !default;
+// -----------------------------------------------------------------------------
+// Basic settings: Grid, spacing etc.
+// -----------------------------------------------------------------------------
+//
+$grid-max-width:                  1000px;
+$grid-column-count:               12;
+$default-spacing:                 20px;
+$half-spacing:                    $default-spacing / 2;
+
+// -----------------------------------------------------------------------------
+// Standard color definitions
+// -----------------------------------------------------------------------------
+//
+$white:                           #fff;
+$black:                           #000;
+$gray:                            #d5d5d5;
+$gray-light:                      lighten($gray, 5%);
+$gray-lighter:                    lighten($gray, 10%);
+$gray-dark:                       darken($gray, 10%);
+$gray-darker:                     darken($gray, 25%);
 
 
-// Standard color definitions.
-$black:                 #000    !default;
-$gray-dark:             #bdbdbd !default;
-$gray:                  #d5d5d5 !default;
-$gray-light:            #e7e7e7 !default;
-$white:                 #fff    !default;
-$green:                 #2BE01B !default;
-
+// -----------------------------------------------------------------------------
 // Theme color definitions
-$theme-primary-color:           #fff !default;
-$theme-secondary-color:         #00b7e7 !default;
-$theme-background-color:        #e0f1f6 !default;
-$theme-background-pattern:      url('../images/body-bg.png') repeat-x !default;
-$theme-header-background:       #fff !default;
-$theme-header-pattern:          #fff !default; //url('../images/primary-pattern.png') !default;
-$theme-content-background:      #fff !default;
+// -----------------------------------------------------------------------------
+//
+$theme-primary-color:             #fff;
+$theme-secondary-color:           #00b7e7;
+$theme-background-color:          #e0f1f6;
+$theme-background-pattern:        url('../images/body-bg.png') repeat-x;
+$theme-header-background:         #fff;
+$theme-content-background:        #fff;
 
 
+// -----------------------------------------------------------------------------
 // Font variables
-$base-font-size:      16px !default; /* equivalent to font-size: 100% */
-$theme-font-size:     16px !default;
-$theme-line-height:   24px !default;
-$theme-font-family:   "Source Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+// -----------------------------------------------------------------------------
+//
+$theme-font-size:                 16px;
+$theme-line-height:               24px;
+$theme-font-family:               "Source Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Baseline for rem() mixin, measured in pixels
-// The value should be the same as the base-font-size value for the html element
-// If the html element's font-size is set to 62.5% (of the browser's default font-size of 16px),
-// then the variable below would be 10px.
-$baseline-px: $base-font-size;
 
+// -----------------------------------------------------------------------------
+// Base font size for rem() mixin, measured in pixels
+// -----------------------------------------------------------------------------
+//
+$base-font-size:                  16px;
+
+
+// -----------------------------------------------------------------------------
 // Text colors
-$text-primary-color:         #000 !default;
-$text-selection-color:       $text-primary-color !default;
-$text-selection-background:  #f4e6c4 !default;
+// -----------------------------------------------------------------------------
+//
+$text-primary-color:              #000;
+$text-selection-color:            $text-primary-color;
+$text-selection-background:       #f4e6c4;
 
 
+// -----------------------------------------------------------------------------
 // Links
-$link-color:              #ab4c00 !default;
-$link-color-hover:        darken($link-color, 20%) !default;
+// -----------------------------------------------------------------------------
+//
+$link-color:                      #ab4c00;
+$link-color-hover:                darken($link-color, 50%);
 
 
+// -----------------------------------------------------------------------------
 // Blocks
-$theme-block-color:               lighten($text-primary-color, 25%) !default;
-$theme-block-background:          $theme-primary-color !default;
-$theme-block-inverse-color:       $theme-primary-color !default;
-$theme-block-inverse-background:  $theme-secondary-color !default;
+// -----------------------------------------------------------------------------
+//
+$theme-block-color:               lighten($text-primary-color, 25%);
+$theme-block-background:          $theme-primary-color;
+$theme-block-inverse-color:       $theme-primary-color;
+$theme-block-inverse-background:  $theme-secondary-color;
 
 
-// Forms
-$form-border-radius: 5px !default;
-
+// -----------------------------------------------------------------------------
 // Navigation
-$navbar-bg-color:           #fff !default;
-$navbar-bg-active-color:    #31b4d3 !default;
-$navbar-font-size:          15px !default;
-$navbar-text-color:         #000 !default;
-$navbar-text-color-active:  #fff !default;
-$navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
+// -----------------------------------------------------------------------------
+//
+$navbar-bg-color:                 #fff;
+$navbar-bg-active-color:          #31b4d3;
+$navbar-text-color:               #2a373b;
+$navbar-text-color-active:        #fff;
+$navbar-item-spacing:             $default-spacing / 2 $default-spacing;
 
 
 // Sidebar
-$sidebar-background-color:  White !default;
-$sidebar-text-color:        Black !default;
-$sidebar-item-spacing:      $default-spacing / 2;
+$sidebar-background-color:        White;
+$sidebar-text-color:              Black;
+$sidebar-item-spacing:            $default-spacing / 2;
+
+
 
 // Lists
-$list-item-spacing:         10px !default;
-$list-picture-width:        25% !default;
+$list-item-spacing:               10px;
+$list-picture-width:              25%;
 
 // Search field
-$search-font-size:          20px !default;
-$search-field-height:       50px !default;
+$search-font-size:                20px;
+$search-field-height:             50px;
+
+
+// -----------------------------------------------------------------------------
+// Custom variables
+// -----------------------------------------------------------------------------
+//
+$navbar-font-size:                17px;
