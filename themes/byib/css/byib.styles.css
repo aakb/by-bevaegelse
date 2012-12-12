@@ -2670,56 +2670,71 @@ p, .page-image, .lead {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 10px 20px;
   background-color: white;
 }
 
 /* line 146, ../sass/_byib.base.scss */
 .content-inner,
 .attachments-wrapper {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+/* line 150, ../sass/_byib.base.scss */
+.content-inner:before,
+.attachments-wrapper:before {
+  border-top: 1px solid #e2e2e2;
+  content: "";
+  display: block;
   overflow: hidden;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-/* line 163, ../sass/_byib.base.scss */
-.primary-content,
-.secondary-content,
-.tertiary-content,
-.attachment-first,
-.attachment-second,
-.attachment-third,
-.attachment-fourth {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+/* line 171, ../sass/_byib.base.scss */
+.primary-content .grid-wrapper, .primary-content .carousel,
+.secondary-content .grid-wrapper,
+.secondary-content .carousel,
+.tertiary-content .grid-wrapper,
+.tertiary-content .carousel,
+.attachment-first .grid-wrapper,
+.attachment-first .carousel,
+.attachment-second .grid-wrapper,
+.attachment-second .carousel,
+.attachment-third .grid-wrapper,
+.attachment-third .carousel,
+.attachment-fourth .grid-wrapper,
+.attachment-fourth .carousel {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/* line 173, ../sass/_byib.base.scss */
+/* line 181, ../sass/_byib.base.scss */
 .block .block-content {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 200, ../sass/_byib.base.scss */
+/* line 208, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 210, ../sass/_byib.base.scss */
+/* line 218, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 217, ../sass/_byib.base.scss */
+/* line 225, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
 
-/* line 227, ../sass/_byib.base.scss */
+/* line 235, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;

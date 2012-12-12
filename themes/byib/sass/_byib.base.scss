@@ -113,14 +113,14 @@ p {
 // -----------------------------------------------------------------------------
 //
 .main-content {
-  @include zen-grid-container;  
+  @include zen-grid-container;
 }
 
 .content-wrapper {
   @include box-sizing(border-box);
   @extend .grid-inner;
 
-  padding: $half-spacing 0;
+  padding: $half-spacing $default-spacing;
 
   background-color: $theme-content-background;
 }
@@ -144,11 +144,18 @@ p {
 
 .content-inner,
 .attachments-wrapper {
-  overflow: hidden;
-  padding-right: $default-spacing;
-  padding-left: $default-spacing;
-}
+  margin-right: -$half-spacing;
+  margin-left: -$half-spacing;
 
+  &:before {
+    border-top: 1px solid $gray-light;
+    content: "";
+    display: block;
+    overflow: hidden;
+    margin-right: $half-spacing;
+    margin-left: $half-spacing;
+  }
+}
 
 .layout-frontpage {
   @extend %custom-grid-overwrite;
@@ -161,15 +168,16 @@ p {
 .attachment-second,
 .attachment-third,
 .attachment-fourth {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  
   .grid-wrapper {
+    margin-top: $default-spacing;
+    margin-bottom: $default-spacing;
   }
 }
 
 
 .block {
+
+
   .block-content {
     margin-top: $half-spacing;
     margin-bottom: $half-spacing;
