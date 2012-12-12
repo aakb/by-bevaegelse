@@ -11,4 +11,6 @@ dependencies[] = panels
 dependencies[] = pathauto
 dependencies[] = strongarm
 dependencies[] = views
+features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
+features[variable][] = theme_default
