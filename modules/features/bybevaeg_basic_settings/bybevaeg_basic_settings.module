@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the By i Bevægelse Basic settings feature.
+ */
+
+include_once('bybevaeg_basic_settings.features.inc');
