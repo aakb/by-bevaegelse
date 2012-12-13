@@ -71,11 +71,21 @@
 
 <div id="page">
 
-  <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
-  <?php endif; ?>  
+  <header class="grid-wrapper">
+  <div class="grid-inner">
+      <div class="grid-3-right">
+        <div class="header-inner">
+          <?php if ($logo): ?>
+            <div class="header-inner">
+              <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+              </a>-->
+            </div>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </header>  
   
   <?php if (!empty($page['branding'])): ?>
     <div class="grid-full branding">
