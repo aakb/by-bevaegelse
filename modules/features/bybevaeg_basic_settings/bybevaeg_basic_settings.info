@@ -10,6 +10,7 @@ dependencies[] = context_filter
 dependencies[] = context_inline_editor
 dependencies[] = context_ui
 dependencies[] = contextual
+dependencies[] = features_override
 dependencies[] = itkore_spotbox
 dependencies[] = module_filter
 dependencies[] = nodespotbox
