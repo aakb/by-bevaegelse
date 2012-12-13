@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Spotbox overrides feature.
+ */
+
+include_once 'bybevaeg_spotbox_overrides.features.inc';
