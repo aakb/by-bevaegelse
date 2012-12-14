@@ -1,40 +1,17 @@
-// =============================================================================
-// This file imports all of the stylesheets
-// =============================================================================
+// This file imports all of the stylesheets and is the only included in the theme.
 //
-
-
-// -----------------------------------------------------------------------------
-// First we need to import latto variables and mixins
-// -----------------------------------------------------------------------------
+// Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
+// Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
 //
-@import "../../latto/sass/_latto.variables.scss";
-@import '../../latto/sass/_latto.mixins.scss';
-
-
-// -----------------------------------------------------------------------------
-// Then we need to import the theme variables
-// -----------------------------------------------------------------------------
-//
+// Compass version 0.12.2 (Alnilam)
+// Zen Grids version 1.2
 @import '_byib.variables.scss';
-
-
-// -----------------------------------------------------------------------------
-// Overwrite latto styles with theme variables
-// -----------------------------------------------------------------------------
-//
-@import "../../latto/sass/_latto.grid.scss";
-@import '../../latto/sass/_latto.mediaqueries.scss';
-@import '../../latto/sass/_latto.tables.scss';
+@import '../../latto/sass/_latto.mixins.scss';
+@import '_byib.typography.scss';
+@import '../../latto/sass/_latto.grid.scss';
+@import '../../latto/sass/_latto.font-awesome.scss';
+@import '../../latto/sass/_latto.ting.scss';
 @import '../../latto/sass/_latto.nav.scss';
 @import '../../latto/sass/_latto.lists.scss';
-@import '../../latto/sass/_latto.font-awesome.scss';
-
-
-// -----------------------------------------------------------------------------
-// Finally our theme specific styles
-// -----------------------------------------------------------------------------
-//
-@import '_byib.mediaqueries.scss';
-@import '_byib.typography.scss';
+@import '../../latto/sass/_latto.forms.scss';
 @import '_byib.base.scss';
