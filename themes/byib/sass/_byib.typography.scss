@@ -63,6 +63,7 @@ h6 {
 
 h1 {
   @include rem('font-size', $theme-font-size * 2);
+  @include rem('line-height', $theme-line-height * 2);
 }
 
 h2 {
@@ -92,14 +93,23 @@ h6 {
 // -----------------------------------------------------------------------------
 //
 .page-title {
-  @include rem('margin-bottom', $default-spacing / 2);
+  @include zen-grid-item($grid-75, $grid-25 + 1);
+  @include rem('margin-bottom', $default-spacing / 1.5);
 
+  float: none;
 }
 
 .block-title {
-  @include rem('margin-bottom', $default-spacing / 1.5);
-  
+  @include rem('font-size', $theme-font-size * 1.4);
+  @include rem('padding-bottom', $half-spacing);
+
+  border-bottom: 1px solid $gray-light;
   line-height: 100%;
+}
+
+.block-title-alt {
+  @extend .block-title;
+
 }
 
 

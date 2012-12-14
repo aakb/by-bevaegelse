@@ -22,6 +22,83 @@
 }
 
 
+// -------------------------------
+// | Sec. |    Primary    | Ter. |
+// -------------------------------
+//
+@mixin display-33-66-inline {
+  .primary-content {
+    @include zen-grid-item($grid-75, $grid-25 + 1);
+
+    .page-content {
+      @include zen-grid-item(7, 1);
+
+      padding-left: 0;
+    }
+  }
+
+  .secondary-content {
+    @include zen-grid-item($grid-25, 1);
+  }
+
+  .tertiary-content {
+    @include zen-grid-item(5, 1, right);
+
+    background: url('../images/pattern.png');
+    border-left: 1px solid $gray-light;
+    padding-right: $default-spacing;
+    padding-left: $default-spacing;
+
+    .block {
+      margin-top: $default-spacing;
+      padding-bottom: $half-spacing;
+    }
+
+    .block-title {
+      border-bottom: 0;
+    }
+  }
+}
+
+
+// -------------------------------
+// |       Primary        | Sec. |
+// -------------------------------
+// -------------------------------
+// |           Tertiary          |
+// -------------------------------
+//
+@mixin display-66-33-stacked {
+  .page-title {
+    @include zen-grid-item($grid-column-count, 1);
+
+    float: none;
+  }
+
+  .primary-content {
+    @include zen-grid-item($grid-column-count, 1);
+
+    .page-content {
+      @include zen-grid-item($grid-column-count, 1);
+
+      padding-left: 0;
+    }
+  }
+
+  .secondary-content {
+    display: none;
+  }
+
+  .tertiary-content {
+    @include zen-clear(both);
+    @include zen-grid-item($grid-column-count, 1);
+
+    margin-top: $default-spacing;
+    padding-left: 0;
+  }
+}
+
+
 // -----------------------------------------------------------------------------
 // Displays
 // -----------------------------------------------------------------------------
@@ -36,6 +113,20 @@
   }
 }
 
+%byib-display-two {
+  @include small() {
+    @include display-66-33-stacked;
+  }  
+  
+  @include medium() {
+    @include display-66-33-stacked;
+  }
+
+  @include large() {
+    @include display-33-66-inline;
+  }
+}
+
 
 // -----------------------------------------------------------------------------
 // Layouts
@@ -44,4 +135,9 @@
 .frontpage-layout {
   @extend %byib-display-one;
   @extend %attachments-display-two;
+}
+
+.default-layout {
+  @extend %byib-display-two;
+  @extend %attachments-display-three;
 }

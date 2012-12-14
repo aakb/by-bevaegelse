@@ -43,38 +43,37 @@
   <script type="text/javascript" src="/sites/www.by-bevaegelse.dk/themes/latto/scripts/equalize.min.js?mcdzmn"></script>
   <script type="text/javascript" src="/modules/toolbar/toolbar.js?mcdzmn"></script>
 </head>
-<body>
-<header class="grid-wrapper">
+<body class="default-layout">
+
+<header>
   <div class="grid-inner">
-    <div class="grid-3-right">
-      <div class="header-inner">
-        <a id="logo" rel="home" title="Home" href="/" class="logo"><img alt="Home" src="http://byib.local/sites/www.by-bevaegelse.dk/themes/byib/logo.png"></a>
-      </div>      
+    <div class="header-inner">
+      <a id="logo" rel="home" title="Home" href="/" class="logo"><img alt="Home" src="http://byib.local/sites/www.by-bevaegelse.dk/themes/byib/logo.png"></a>
     </div>
     <div class="nav-wrapper">
       <ul class="main-menu">
-        <li class="first"><span><a href="frontpage.html">Home</a></span></li>
-        <li><span><a title="" class="active" href="babysvoemning.html">Aktiviteter</a></span></li>
+        <li class="first"><span><a class="active" href="frontpage.html">Home</a></span></li>
+        <li><span><a title="" href="babysvoemning.html">Aktiviteter</a></span></li>
         <li><span><a title="" href="babysvoemning.html">Kontakt</a></span></li>
         <li><span><a title="" href="babysvoemning.html">Priser</a></span></li>
         <li class="last"><span><a title="" href="babysvoemning.html">Tilmelding</a></span></li>
-      </ul>      
+      </ul>
     </div>
   </div>
 </header>
-<article class="grid-wrapper">
-  <div class="grid-inner">
-    <div class="breadcrumb">
-      <a href="frontpage.html">Forsiden</a> <i class="icon-chevron-right"></i> <a href="aktiviteter.html">Aktiviteter</a> <i class="icon-chevron-right"></i> Babysvømning
-    </div>    
-    <div class="main-content">
-      <div class="grid-row">
-        <div class="grid-9-right">
-          <h1 class="page-title">Babysvømning</h1>          
-        </div>
-      </div>
-      <div class="grid-row">
-        <div class="grid-9-right">
+
+<div class="breadcrumb-wrapper">
+  <div class="breadcrumb">
+    <a href="frontpage.html">Forsiden</a> <i class="icon-chevron-right"></i> <a href="aktiviteter.html">Aktiviteter</a> <i class="icon-chevron-right"></i> Babysvømning
+  </div>
+</div>
+
+<article class="main-content">
+  <div class="content-wrapper">
+    <div class="content-inner">
+      <h1 class="page-title">Babysvømning</h1>
+      <div class="primary-content">
+        <div class="grid-wrapper">
           <img src="http://lorempixel.com/1000/300/city/" class="page-image" />
           <div class="lead">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -82,56 +81,84 @@
           <div class="page-content">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
             <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>              
-          </div>          
-        </div>
-        <div class="grid-3-left">
-          <h3 class="block-title-alt"><a href="aktiviteter.html">Aktiviteter</a></h3>
-          <ul class="sub-menu">
-            <li><a href="/om-spanien/hygiejneregler">Hygiejneregler</a></li>
-            <li><a href="/om-spanien/forholdsregler-ved-brug">Forholdsregler ved brug</a></li>
-            <li><a href="/om-spanien/en-gentaenkt-badeanstalt">En gentænkt badeanstalt</a></li>
-            <li><a href="/om-spanien/historier-om-badeanstalten">Historier om Badeanstalten</a></li>
-            <li><a href="/om-spanien/organisation">Organisation</a></li>
-            <li><a href="/om-spanien/kontakt">Kontakt</a></li>
-          </ul>          
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+          </div>
+          <div class="tertiary-content">
+            <div class="block">
+              <h3 class="block-title"><a href="#">Spørgsmål?</a></h3>
+              <div class="block-content">
+                <p>Har du spørgsmål til vores aktiviteter, eller er du i tvivl om holdstart eller lignende så tøv ikke med at kontakte mig.</p>
+                <p>Send en mail til: <a href="mailto:ssth@aarhus.dk">ssth@aarhus.dk</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="grid-row grid-content" style="background-color: #fff;">
-        <aside class="grid-4-left">
+
+      <div class="secondary-content">
+        <div class="grid-wrapper">
+          <h3 class="block-title"><a href="aktiviteter.html">Aktiviteter</a></h3>
+          <ul class="sub-menu">
+            <li><a href="/om-spanien/hygiejneregler"><i class="icon-chevron-right"></i>Hygiejneregler</a></li>
+            <li><a href="/om-spanien/forholdsregler-ved-brug"><i class="icon-chevron-right"></i>Forholdsregler ved brug</a></li>
+            <li><a href="/om-spanien/en-gentaenkt-badeanstalt"><i class="icon-chevron-right"></i>En gentænkt badeanstalt</a></li>
+            <li><a href="/om-spanien/historier-om-badeanstalten"><i class="icon-chevron-right"></i>Historier om Badeanstalten</a></li>
+            <li><a href="/om-spanien/organisation"><i class="icon-chevron-right"></i>Organisation</a></li>
+            <li><a href="/om-spanien/kontakt"><i class="icon-chevron-right"></i>Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="attachments-wrapper">
+
+      <div class="attachment-first">
+        <div class="grid-wrapper">
           <div class="block">
             <h3 class="block-title"><a href="#">Babysvømning</a></h3>
-            <img src="http://lorempixel.com/1000/500/city/" />
-            <div class="block-content">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
-            </div>
-            <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
-          </div>          
-        </aside>
-        <div class="grid-4-center">
-          <div class="block">
-            <h3 class="block-title"><a href="#">Babysvømning</a></h3>
-            <img src="http://lorempixel.com/1000/500/city/" />
+            <a href="#"><img src="http://lorempixel.com/1000/500/city/" /></a>
             <div class="block-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
             </div>
             <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
           </div>
         </div>
-        <aside class="grid-4-right">
+      </div>
+
+      <div class="attachment-second">
+        <div class="grid-wrapper">
           <div class="block">
             <h3 class="block-title"><a href="#">Babysvømning</a></h3>
-            <img src="http://lorempixel.com/1000/500/city/" />
+            <a href="#"><img src="http://lorempixel.com/1000/500/city/" /></a>
             <div class="block-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
             </div>
             <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
-          </div>          
-        </aside>
-      </div>      
+          </div>
+
+        </div>
+      </div>
+
+      <div class="attachment-third">
+        <div class="grid-wrapper">
+          <div class="block">
+            <h3 class="block-title"><a href="#">Babysvømning</a></h3>
+            <a href="#"><img src="http://lorempixel.com/1000/500/city/" /></a>
+            <div class="block-content">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam.
+            </div>
+            <a href="#" class="read-more"><i class="icon-chevron-right"></i> Lyseng svømmehal</a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
   </div>
 </article>
+
 <footer class="grid-wrapper">
   <div class="grid-inner">
     <div class="footer-wrapper">
