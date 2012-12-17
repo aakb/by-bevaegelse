@@ -135,5 +135,12 @@ function bybevaeg_activity_strongarm() {
   $strongarm->value = 1;
   $export['node_submitted_activity'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_activity_pattern';
+  $strongarm->value = 'aktivitet/[node:title]';
+  $export['pathauto_node_activity_pattern'] = $strongarm;
+
   return $export;
 }
