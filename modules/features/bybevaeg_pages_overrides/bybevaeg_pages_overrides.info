@@ -1,7 +1,7 @@
 name = Pages overrides
 description = Overrides for pages feature
 core = 7.x
-package = Features
+package = By i Bevægelse
 version = 7.x-0.1
 project = bybevaeg_pages_overrides
 dependencies[] = itkore_pages
