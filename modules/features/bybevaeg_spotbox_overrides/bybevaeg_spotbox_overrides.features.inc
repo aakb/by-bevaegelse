@@ -9,6 +9,8 @@
  */
 function bybevaeg_spotbox_overrides_views_default_views_alter(&$data) {
   if (isset($data['spotbox'])) {
+    $data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['strip_tags'] = TRUE; /* WAS: 0 */
+    $data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['trim_whitespace'] = TRUE; /* WAS: 0 */
     $data['spotbox']->display['default']->display_options['fields']['field_content']['element_default_classes'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['default']->display_options['fields']['field_content']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['default']->display_options['fields']['field_manchet']['element_default_classes'] = FALSE; /* WAS: 0 */
@@ -49,6 +51,8 @@ function bybevaeg_spotbox_overrides_views_default_views_alter(&$data) {
     $data['spotbox']->display['default']->display_options['row_options']['hide_empty'] = TRUE; /* WAS: 1 */
     $data['spotbox']->display['default']->display_options['use_more_always'] = FALSE; /* WAS: '' */
     $data['spotbox']->display['spotbox_image']->display_options['defaults']['hide_admin_links'] = FALSE; /* WAS: '' */
+    $data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['strip_tags'] = TRUE; /* WAS: 0 */
+    $data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['trim_whitespace'] = TRUE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['element_default_classes'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_manchet']['element_default_classes'] = FALSE; /* WAS: 0 */
@@ -80,7 +84,16 @@ function bybevaeg_spotbox_overrides_views_default_views_alter(&$data) {
     unset($data['spotbox']->display['default']->display_options['arguments']['nid']['break_phrase']);
     unset($data['spotbox']->display['default']->display_options['arguments']['nid']['default_argument_skip_url']);
     unset($data['spotbox']->display['default']->display_options['arguments']['nid']['not']);
-    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['absolute']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['alter_text']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['ellipsis']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['external']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['html']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['make_link']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['nl2br']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['replace_spaces']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['trim']);
+    unset($data['spotbox']->display['default']->display_options['fields']['field_content']['alter']['word_boundary']);
     unset($data['spotbox']->display['default']->display_options['fields']['field_content']['empty_zero']);
     unset($data['spotbox']->display['default']->display_options['fields']['field_content']['field_api_classes']);
     unset($data['spotbox']->display['default']->display_options['fields']['field_content']['hide_empty']);
@@ -117,7 +130,16 @@ function bybevaeg_spotbox_overrides_views_default_views_alter(&$data) {
     unset($data['spotbox']->display['default']->display_options['fields']['title']['empty_zero']);
     unset($data['spotbox']->display['default']->display_options['fields']['title']['hide_empty']);
     unset($data['spotbox']->display['default']->display_options['fields']['title']['link_to_node']);
-    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['absolute']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['alter_text']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['ellipsis']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['external']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['html']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['make_link']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['nl2br']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['replace_spaces']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['trim']);
+    unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['alter']['word_boundary']);
     unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['empty_zero']);
     unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['field_api_classes']);
     unset($data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['hide_empty']);
