@@ -93,6 +93,11 @@
   <?php print render($page['content_top']); ?>
 <?php endif; ?>
 
+<?php if ($messages): ?>
+  <div class="messages">
+    <?php print $messages; ?>
+  </div>
+<?php endif; ?>
 
 <?php if (!empty($page['content']) ||
   !empty($page['secondary_content']) ||
@@ -100,6 +105,18 @@
 
   <article class="main-content">
     <div class="content-wrapper">
+
+      <?php if ($tabs): ?>
+        <div class="tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
 
       <?php if (!empty($page['content'])): ?>
         <?php print render($page['content']); ?>
@@ -137,7 +154,7 @@
         <?php endif; ?>
 
       </div>
-      
+
     <?php endif; ?>
 
     </div>
