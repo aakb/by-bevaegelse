@@ -1,6 +1,6 @@
 ;----------// Theme Information
   name        = By i Bevægelse
-  description = Theme for By i Bevægelse website
+  description = Theme for the By i Bevægelse website
   core        = 7.x
   release     = 7.x-1.x
   screenshot  = screenshot.png
@@ -14,6 +14,7 @@
 
 ;----------// Regions
   regions[header]          = Header
+  regions[navigation]      = Navigation
   regions[content_top]     = Content top
   regions[content]         = Main Content
   regions[footer]          = Footer

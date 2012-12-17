@@ -49,7 +49,7 @@
   <?php print $scripts; ?>
   <?php print $polyfills; ?>
 </head>
-<body <?php print $attributes;?>>  
+<body <?php print $attributes;?> class="frontpage-layout">  
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>

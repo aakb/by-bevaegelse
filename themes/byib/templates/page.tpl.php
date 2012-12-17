@@ -69,40 +69,42 @@
  */
 ?>
 
-<div id="page">
+<header>
 
-  <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
-  <?php endif; ?>  
-  
-  <?php if (!empty($page['branding'])): ?>
-    <div class="grid-full branding">
-      <?php print render($page['branding']); ?>
-    </div>
-  <?php endif; ?>
+  <div class="grid-inner">
 
-  <?php if (!empty($page['header'])): ?>
-    <header class="grid-full">
+    <div class="header-inner">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      <?php endif; ?>
+
       <?php print render($page['header']); ?>
-    </header>
-  <?php endif; ?>
-
-  <article class="grid-full">
-    <?php print render($page['content']); ?>
-  </article>
-
-  <?php if (!empty($content['footer'])): ?>
-    <footer class="grid-full">
-      <?php print render($page['footer']); ?>
-    </footer>
-  <?php endif; ?>
-  
-  <?php if (!empty($page['bottom'])): ?>
-    <div class="grid-full bottom">
-      <?php print render($page['bottom']); ?>
     </div>
-  <?php endif; ?>
 
-</div>
+    <?php print render($page['navigation']); ?>
+
+  </div>
+
+</header>
+
+<?php if (!empty($page['content_top'])): ?>
+  <?php print render($page['content_top']); ?>
+<?php endif; ?>
+
+<article class="grid-full">
+  <?php print render($page['content']); ?>
+</article>
+
+<?php if (!empty($content['footer'])): ?>
+  <footer class="grid-full">
+    <?php print render($page['footer']); ?>
+  </footer>
+<?php endif; ?>
+
+<?php if (!empty($page['bottom'])): ?>
+  <div class="grid-full bottom">
+    <?php print render($page['bottom']); ?>
+  </div>
+<?php endif; ?>
