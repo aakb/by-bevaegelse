@@ -90,9 +90,10 @@
 </header>
 
 <?php if (!empty($page['content_top'])): ?>
-  <?php print render($page['content_top']); ?>
+  <div class="grid-full">
+    <?php print render($page['content_top']); ?>
+  </div>
 <?php endif; ?>
-
 
 <?php if (!empty($page['content']) ||
   !empty($page['secondary_content']) ||
