@@ -12,8 +12,10 @@ function bybevaeg_spotbox_overrides_views_default_views_alter(&$data) {
     $data['spotbox']->display['default']->display_options['fields']['field_content']['element_default_classes'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['default']->display_options['fields']['field_content']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['default']->display_options['fields']['field_manchet']['element_default_classes'] = FALSE; /* WAS: 0 */
+    $data['spotbox']->display['default']->display_options['fields']['field_manchet']['exclude'] = TRUE; /* WAS: '' */
     $data['spotbox']->display['default']->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['default']->display_options['fields']['field_manchet']['hide_empty'] = TRUE; /* WAS: 1 */
+    $data['spotbox']->display['default']->display_options['fields']['field_manchet']['ui_name'] = 'Content: Manchet (Excluded)'; /* WAS: '' */
     $data['spotbox']->display['default']->display_options['fields']['field_news_title_image'] = array(
       'id' => 'field_news_title_image',
       'table' => 'field_data_field_news_title_image',
@@ -50,8 +52,10 @@ function bybevaeg_spotbox_overrides_views_default_views_alter(&$data) {
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['element_default_classes'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_content']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_manchet']['element_default_classes'] = FALSE; /* WAS: 0 */
+    $data['spotbox']->display['spotbox_image']->display_options['fields']['field_manchet']['exclude'] = TRUE; /* WAS: '' */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_manchet']['hide_empty'] = TRUE; /* WAS: 1 */
+    $data['spotbox']->display['spotbox_image']->display_options['fields']['field_manchet']['ui_name'] = 'Content: Manchet (Excluded)'; /* WAS: '' */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_title_image']['element_default_classes'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_title_image']['hide_alter_empty'] = FALSE; /* WAS: 0 */
     $data['spotbox']->display['spotbox_image']->display_options['fields']['field_title_image']['hide_empty'] = TRUE; /* WAS: 1 */

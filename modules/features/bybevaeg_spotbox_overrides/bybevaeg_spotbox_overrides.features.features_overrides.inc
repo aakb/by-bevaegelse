@@ -35,9 +35,11 @@ function bybevaeg_spotbox_overrides_features_override_default_overrides() {
   $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|alter|word_boundary"]["DELETED"] = TRUE;
   $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|element_default_classes"] = FALSE;
   $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|empty_zero"]["DELETED"] = TRUE;
+  $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|exclude"] = TRUE;
   $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|field_api_classes"]["DELETED"] = TRUE;
   $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|hide_alter_empty"] = FALSE;
   $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|hide_empty"] = TRUE;
+  $overrides["views_view.spotbox.display|default|display_options|fields|field_manchet|ui_name"] = 'Content: Manchet (Excluded)';
   $overrides["views_view.spotbox.display|default|display_options|fields|field_news_title_image"] = array(
     'id' => 'field_news_title_image',
     'table' => 'field_data_field_news_title_image',
@@ -110,9 +112,11 @@ function bybevaeg_spotbox_overrides_features_override_default_overrides() {
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|alter|word_boundary"]["DELETED"] = TRUE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|element_default_classes"] = FALSE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|empty_zero"]["DELETED"] = TRUE;
+  $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|exclude"] = TRUE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|field_api_classes"]["DELETED"] = TRUE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|hide_alter_empty"] = FALSE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|hide_empty"] = TRUE;
+  $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_manchet|ui_name"] = 'Content: Manchet (Excluded)';
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_title_image|alter"]["DELETED"] = TRUE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_title_image|element_default_classes"] = FALSE;
   $overrides["views_view.spotbox.display|spotbox_image|display_options|fields|field_title_image|empty_zero"]["DELETED"] = TRUE;
