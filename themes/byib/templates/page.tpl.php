@@ -90,9 +90,9 @@
 </header>
 
 <?php if (!empty($page['content_top'])): ?>
-  <div class="grid-full">
+  <section class="content-top">
     <?php print render($page['content_top']); ?>
-  </div>
+  </section>
 <?php endif; ?>
 
 <?php if ($messages): ?>
