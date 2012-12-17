@@ -69,40 +69,81 @@
  */
 ?>
 
-<div id="page">
+<header>
 
-  <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
-  <?php endif; ?>  
-  
-  <?php if (!empty($page['branding'])): ?>
-    <div class="grid-full branding">
-      <?php print render($page['branding']); ?>
-    </div>
-  <?php endif; ?>
+  <div class="grid-inner">
 
-  <?php if (!empty($page['header'])): ?>
-    <header class="grid-full">
+    <div class="header-inner">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      <?php endif; ?>
+
       <?php print render($page['header']); ?>
-    </header>
-  <?php endif; ?>
+    </div>
 
-  <article class="grid-full">
-    <?php print render($page['content']); ?>
+    <?php print render($page['navigation']); ?>
+
+  </div>
+
+</header>
+
+<?php if (!empty($page['content_top'])): ?>
+  <?php print render($page['content_top']); ?>
+<?php endif; ?>
+
+<?php if (!empty($content['primary_content']) ||
+          !empty($content['secondary_content']) || 
+          !empty($content['tertiary_content']) ||
+          !empty($content['attachment_first']) ||
+          !empty($content['attachment_second']) ||
+          !empty($content['attachment_third']) ||
+          !empty($content['attachment_fourth'])): ?>
+
+  <article class="main-content">
+    <div class="content-wrapper">
+      <?php if (!empty($content['primary_content'])): ?>
+        <?php print render($page['primary_content']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['secondary_content'])): ?>
+        <?php print render($page['secondary_content']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['tertiary_content'])): ?>  
+        <?php print render($page['tertiary_content']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_first'])): ?>  
+        <?php print render($page['attachment_first']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_second'])): ?>
+        <?php print render($page['attachment_second']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_third'])): ?>
+        <?php print render($page['attachment_third']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_fourth'])): ?>
+        <?php print render($page['attachment_fourth']); ?>
+      <?php endif; ?>
+      
+    </div>    
   </article>
 
-  <?php if (!empty($content['footer'])): ?>
-    <footer class="grid-full">
-      <?php print render($page['footer']); ?>
-    </footer>
-  <?php endif; ?>
-  
-  <?php if (!empty($page['bottom'])): ?>
-    <div class="grid-full bottom">
-      <?php print render($page['bottom']); ?>
-    </div>
-  <?php endif; ?>
+<?php endif; ?>
 
-</div>
+<?php if (!empty($content['footer'])): ?>
+  <footer class="grid-full">
+    <?php print render($page['footer']); ?>
+  </footer>
+<?php endif; ?>
+
+<?php if (!empty($page['bottom'])): ?>
+  <div class="grid-full bottom">
+    <?php print render($page['bottom']); ?>
+  </div>
+<?php endif; ?>
