@@ -93,9 +93,48 @@
   <?php print render($page['content_top']); ?>
 <?php endif; ?>
 
-<article class="grid-full">
-  <?php print render($page['content']); ?>
-</article>
+<?php if (!empty($content['primary_content']) ||
+          !empty($content['secondary_content']) || 
+          !empty($content['tertiary_content']) ||
+          !empty($content['attachment_first']) ||
+          !empty($content['attachment_second']) ||
+          !empty($content['attachment_third']) ||
+          !empty($content['attachment_fourth'])): ?>
+
+  <article class="main-content">
+    <div class="content-wrapper">
+      <?php if (!empty($content['primary_content'])): ?>
+        <?php print render($page['primary_content']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['secondary_content'])): ?>
+        <?php print render($page['secondary_content']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['tertiary_content'])): ?>  
+        <?php print render($page['tertiary_content']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_first'])): ?>  
+        <?php print render($page['attachment_first']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_second'])): ?>
+        <?php print render($page['attachment_second']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_third'])): ?>
+        <?php print render($page['attachment_third']); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($content['attachment_fourth'])): ?>
+        <?php print render($page['attachment_fourth']); ?>
+      <?php endif; ?>
+      
+    </div>    
+  </article>
+
+<?php endif; ?>
 
 <?php if (!empty($content['footer'])): ?>
   <footer class="grid-full">
