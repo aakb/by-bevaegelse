@@ -81,9 +81,9 @@
 <?php
   /*
    * This site is using a basic node as frontpage to display spotboxes.
-   * Need to hide node content when on frontpage to avoid the empty DIV's.
+   * Need to hide node content output if nothing have been entred to avoid the empty DIV's.
    */
-  if (!$is_front):
+  if (render($content)):
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
