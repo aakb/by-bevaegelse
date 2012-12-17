@@ -16,7 +16,7 @@
   regions[header]            = Header
   regions[navigation]        = Navigation
   regions[content_top]       = Content top
-  regions[primary_content]   = Primary content
+  regions[content]           = Primary content
   regions[secondary_content] = Secondary content
   regions[tertiary_content]  = Tertiary content
   regions[attachment_first]  = Attachment first
