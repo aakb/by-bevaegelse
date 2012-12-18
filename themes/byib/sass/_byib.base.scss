@@ -215,19 +215,109 @@ p {
 }
 
 
-
 // -----------------------------------------------------------------------------
-// carousel
+// Flexslider
 // -----------------------------------------------------------------------------
 //
-.carousel {
+.flexslider-wrapper {
   @extend .grid-wrapper;
+  
+  color: $white;
 
-  .carousel-inner {
+  .flexslider {
     @extend .grid-inner;
+
+    position: relative;
+  }
+
+  .coverlayer {
+    @include opacity(.75);
+    
+    background-color: $black;
+    
+    padding-right: $default-spacing * 4;
+    padding-left: $default-spacing * 4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    h2 {
+      border-bottom: 0;
+      color: $white;
+    }
   }
 }
 
+.flex-direction-nav {
+
+  .flex-prev,
+  .flex-next {
+    @include opacity(.75);
+    @include rem('font-size', $theme-font-size * 3.5);
+    @include rem('line-height', $theme-font-size * 3.5);
+
+    bottom: $default-spacing;
+    color: $white;
+    display: block;
+    font-family: FontAwesome;
+    height: 44px;
+    overflow: hidden;
+    position: absolute;
+    width: 43px;
+    
+    &:hover {
+      @include opacity(1);
+    }
+  }
+  
+  .flex-prev {
+    @extend .icon-circle-arrow-left;
+    
+    left: $default-spacing;
+    padding-left: 1px;
+  }
+  
+  .flex-next {
+    @extend .icon-circle-arrow-right;
+    
+    right: $default-spacing;
+    padding-left: 2px;
+  }
+  
+}
+
+.flex-control-nav {
+  position: absolute;
+  top: $default-spacing;
+  right: $default-spacing;
+
+  > li {
+
+    display: inline-block;
+    margin-left: $half-spacing;
+    overflow: hidden;
+
+    a {
+      @include border-radius($half-spacing);
+      @include opacity(.5);
+
+      background-color: $white;
+      cursor: pointer;
+      display: block;
+      height: $default-spacing;
+      text-indent: -$default-spacing * 5;
+      width: $default-spacing;
+
+      &:hover,
+      &.flex-active {
+        @include opacity(1);
+      }
+    }
+  }
+
+
+}
 
 
 // -----------------------------------------------------------------------------
