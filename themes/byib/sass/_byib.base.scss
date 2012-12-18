@@ -81,6 +81,12 @@ p {
 
 .main-menu {
   @include rem('font-size', $navbar-font-size);
+  
+  li {
+    a {
+      margin-right: 0;
+    }
+  }
 }
 
 .sub-menu {
