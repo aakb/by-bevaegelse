@@ -103,7 +103,7 @@
 
 <?php if ($tabs): ?>
   <div class="tabs">
-    <div class="tabs-wrapper">
+    <div class="tabs-inner">
       <?php print render($tabs); ?>
     </div>
   </div>
