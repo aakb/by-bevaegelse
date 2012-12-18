@@ -29,7 +29,7 @@ body {
 header {
   @extend .grid-wrapper;
 
-  margin-bottom: $default-spacing;
+  margin-bottom: $default-spacing * 1.5;
   position: relative;
   overflow: hidden;
 
@@ -81,6 +81,12 @@ p {
 
 .main-menu {
   @include rem('font-size', $navbar-font-size);
+  
+  li {
+    a {
+      margin-right: 0;
+    }
+  }
 }
 
 .sub-menu {
