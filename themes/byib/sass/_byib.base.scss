@@ -317,3 +317,15 @@ footer {
     text-align: center;
   }
 }
+
+// -----------------------------------------------------------------------------
+// Drupal admin elements
+// -----------------------------------------------------------------------------
+//
+.tabs {
+  @include zen-grid-container;
+}
+.tabs-wrapper {
+  @include box-sizing(border-box);
+  @extend .grid-inner;
+}

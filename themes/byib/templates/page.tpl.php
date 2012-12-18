@@ -101,18 +101,20 @@
   </div>
 <?php endif; ?>
 
+<?php if ($tabs): ?>
+  <div class="tabs">
+    <div class="tabs-wrapper">
+      <?php print render($tabs); ?>
+    </div>
+  </div>
+<?php endif; ?>
+
 <?php if (!empty($page['content']) ||
   !empty($page['secondary_content']) ||
   !empty($page['tertiary_content'])): ?>
 
   <article class="main-content">
     <div class="content-wrapper">
-
-      <?php if ($tabs): ?>
-        <div class="tabs">
-          <?php print render($tabs); ?>
-        </div>
-      <?php endif; ?>
 
       <?php if ($action_links): ?>
         <ul class="action-links">
