@@ -280,7 +280,7 @@ p {
     height: 44px;
     overflow: hidden;
     position: absolute;
-    width: 43px;
+    width: 44px;
 
     &:hover {
       @include opacity(1);
@@ -290,15 +290,21 @@ p {
   .flex-prev {
     @extend .icon-circle-arrow-left;
 
+    &:before {
+      padding-left: 1px;
+    }
+    
     left: $default-spacing;
-    padding-left: 1px;
   }
 
   .flex-next {
     @extend .icon-circle-arrow-right;
-
+    
+    &:before {
+      padding-right: 1px;
+    }
+    
     right: $default-spacing;
-    padding-left: 2px;
   }
 
 }
