@@ -8,6 +8,9 @@
 
   ; Import stylesheets.
   stylesheets[all][] = css/byib.styles.css
+  
+  ; Override stylesheets
+  stylesheets[all][] = css/flexslider.css
 
   ; Import javascripts.
   ; scripts[] = scripts/script.js

@@ -31,7 +31,7 @@
 }
 
 /* line 27, ../../latto/sass/_latto.grid.scss */
-.grid-wrapper, header, .carousel, footer {
+.grid-wrapper, header, .flexslider-wrapper, footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -39,7 +39,7 @@
 }
 
 /* line 34, ../../latto/sass/_latto.grid.scss */
-.grid-inner, .breadcrumb, .content-wrapper, .carousel .carousel-inner {
+.grid-inner, .breadcrumb, .content-wrapper, .flexslider-wrapper .flexslider {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
@@ -1962,12 +1962,12 @@ ul.icons li .icon-large:before {
 }
 
 /* line 273, ../../latto/sass/_latto.font-awesome.scss */
-.icon-circle-arrow-left:before {
+.icon-circle-arrow-left:before, .flex-direction-nav .flex-prev:before {
   content: "\f0a8";
 }
 
 /* line 274, ../../latto/sass/_latto.font-awesome.scss */
-.icon-circle-arrow-right:before {
+.icon-circle-arrow-right:before, .flex-direction-nav .flex-next:before {
   content: "\f0a9";
 }
 
@@ -2987,30 +2987,30 @@ p, .page-image, .lead {
 }
 
 /* line 188, ../sass/_byib.base.scss */
-.primary-content .grid-wrapper, .primary-content header, .primary-content .carousel, .primary-content footer,
+.primary-content .grid-wrapper, .primary-content header, .primary-content .flexslider-wrapper, .primary-content footer,
 .secondary-content .grid-wrapper,
 .secondary-content header,
-.secondary-content .carousel,
+.secondary-content .flexslider-wrapper,
 .secondary-content footer,
 .tertiary-content .grid-wrapper,
 .tertiary-content header,
-.tertiary-content .carousel,
+.tertiary-content .flexslider-wrapper,
 .tertiary-content footer,
 .attachment-first .grid-wrapper,
 .attachment-first header,
-.attachment-first .carousel,
+.attachment-first .flexslider-wrapper,
 .attachment-first footer,
 .attachment-second .grid-wrapper,
 .attachment-second header,
-.attachment-second .carousel,
+.attachment-second .flexslider-wrapper,
 .attachment-second footer,
 .attachment-third .grid-wrapper,
 .attachment-third header,
-.attachment-third .carousel,
+.attachment-third .flexslider-wrapper,
 .attachment-third footer,
 .attachment-fourth .grid-wrapper,
 .attachment-fourth header,
-.attachment-fourth .carousel,
+.attachment-fourth .flexslider-wrapper,
 .attachment-fourth footer {
   margin-bottom: 30px;
 }
@@ -3021,12 +3021,107 @@ p, .page-image, .lead {
   margin-bottom: 10px;
 }
 
-/* line 238, ../sass/_byib.base.scss */
+/* line 222, ../sass/_byib.base.scss */
+.flexslider-wrapper {
+  color: white;
+}
+/* line 227, ../sass/_byib.base.scss */
+.flexslider-wrapper .flexslider {
+  position: relative;
+}
+/* line 233, ../sass/_byib.base.scss */
+.flexslider-wrapper .coverlayer {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  background-color: black;
+  padding-right: 80px;
+  padding-left: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* line 245, ../sass/_byib.base.scss */
+.flexslider-wrapper .coverlayer h2 {
+  border-bottom: 0;
+  color: white;
+}
+
+/* line 255, ../sass/_byib.base.scss */
+.flex-direction-nav .flex-prev,
+.flex-direction-nav .flex-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 56px;
+  line-height: 3.5rem;
+  bottom: 20px;
+  color: white;
+  display: block;
+  font-family: FontAwesome;
+  height: 44px;
+  overflow: hidden;
+  position: absolute;
+  width: 43px;
+}
+/* line 269, ../sass/_byib.base.scss */
+.flex-direction-nav .flex-prev:hover,
+.flex-direction-nav .flex-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 274, ../sass/_byib.base.scss */
+.flex-direction-nav .flex-prev {
+  left: 20px;
+  padding-left: 1px;
+}
+/* line 281, ../sass/_byib.base.scss */
+.flex-direction-nav .flex-next {
+  right: 20px;
+  padding-left: 2px;
+}
+
+/* line 290, ../sass/_byib.base.scss */
+.flex-control-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* line 295, ../sass/_byib.base.scss */
+.flex-control-nav > li {
+  display: inline-block;
+  margin-left: 10px;
+  overflow: hidden;
+}
+/* line 301, ../sass/_byib.base.scss */
+.flex-control-nav > li a {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  background-color: white;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  text-indent: -100px;
+  width: 20px;
+}
+/* line 313, ../sass/_byib.base.scss */
+.flex-control-nav > li a:hover, .flex-control-nav > li a.flex-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 328, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 248, ../sass/_byib.base.scss */
+/* line 338, ../sass/_byib.base.scss */
 .button, .button-right {
   background-color: #00b7e7;
   display: inline-block;
@@ -3036,45 +3131,45 @@ p, .page-image, .lead {
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 259, ../sass/_byib.base.scss */
+/* line 349, ../sass/_byib.base.scss */
 .button:link, .button-right:link {
   color: white;
 }
-/* line 263, ../sass/_byib.base.scss */
+/* line 353, ../sass/_byib.base.scss */
 .button:visited, .button-right:visited {
   color: white;
 }
-/* line 267, ../sass/_byib.base.scss */
+/* line 357, ../sass/_byib.base.scss */
 .button:hover, .button-right:hover {
   background-color: #008fb4;
   color: white;
   text-decoration: none;
 }
-/* line 273, ../sass/_byib.base.scss */
+/* line 363, ../sass/_byib.base.scss */
 .button:focus, .button-right:focus {
   text-decoration: underline;
 }
 
-/* line 282, ../sass/_byib.base.scss */
+/* line 372, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 293, ../sass/_byib.base.scss */
+/* line 383, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 306, ../sass/_byib.base.scss */
+/* line 396, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 313, ../sass/_byib.base.scss */
+/* line 403, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
