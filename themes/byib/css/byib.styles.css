@@ -3221,7 +3221,12 @@ p, .page-image, .lead {
   text-align: center;
 }
 
-/* line 437, ../sass/_byib.base.scss */
+/* line 438, ../sass/_byib.base.scss */
+.frontpage-layout .tabs {
+  margin-top: 20px;
+}
+
+/* line 442, ../sass/_byib.base.scss */
 .tabs {
   clear: right;
 }

@@ -434,6 +434,11 @@ footer {
 // Drupal admin elements
 // -----------------------------------------------------------------------------
 //
+.frontpage-layout {
+  .tabs {
+    margin-top: $default-spacing;
+  }
+}
 .tabs {
    @extend .grid-wrapper;
    @include zen-clear(right);
