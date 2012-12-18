@@ -2630,7 +2630,7 @@ body {
   background: #f4e6c4;
 }
 
-/* line 40, ../sass/_byib.typography.scss */
+/* line 34, ../sass/_byib.typography.scss */
 h1,
 h2,
 h3,
@@ -2640,7 +2640,7 @@ h6 {
   color: black;
   font-weight: normal;
 }
-/* line 44, ../sass/_byib.typography.scss */
+/* line 38, ../sass/_byib.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -2650,7 +2650,7 @@ h6 a:link {
   color: black;
   text-decoration: none;
 }
-/* line 48, ../sass/_byib.typography.scss */
+/* line 42, ../sass/_byib.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -2659,7 +2659,7 @@ h5 a:visited,
 h6 a:visited {
   color: black;
 }
-/* line 51, ../sass/_byib.typography.scss */
+/* line 45, ../sass/_byib.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -2668,7 +2668,7 @@ h5 a:hover,
 h6 a:hover {
   color: black;
 }
-/* line 54, ../sass/_byib.typography.scss */
+/* line 48, ../sass/_byib.typography.scss */
 h1 a:focus,
 h2 a:focus,
 h3 a:focus,
@@ -2677,7 +2677,7 @@ h5 a:focus,
 h6 a:focus {
   color: #2b1300;
 }
-/* line 57, ../sass/_byib.typography.scss */
+/* line 51, ../sass/_byib.typography.scss */
 h1 a:active,
 h2 a:active,
 h3 a:active,
@@ -2688,7 +2688,7 @@ h6 a:active {
   color: black;
 }
 
-/* line 64, ../sass/_byib.typography.scss */
+/* line 58, ../sass/_byib.typography.scss */
 h1 {
   font-size: 32px;
   font-size: 2rem;
@@ -2696,13 +2696,13 @@ h1 {
   line-height: 3rem;
 }
 
-/* line 69, ../sass/_byib.typography.scss */
+/* line 63, ../sass/_byib.typography.scss */
 h2 {
   font-size: 28.8px;
   font-size: 1.8rem;
 }
 
-/* line 73, ../sass/_byib.typography.scss */
+/* line 67, ../sass/_byib.typography.scss */
 h3 {
   font-size: 25.6px;
   font-size: 1.6rem;
@@ -2710,25 +2710,25 @@ h3 {
   line-height: 1.875rem;
 }
 
-/* line 78, ../sass/_byib.typography.scss */
+/* line 72, ../sass/_byib.typography.scss */
 h4 {
   font-size: 22.4px;
   font-size: 1.4rem;
 }
 
-/* line 82, ../sass/_byib.typography.scss */
+/* line 76, ../sass/_byib.typography.scss */
 h5 {
   font-size: 17.6px;
   font-size: 1.1rem;
 }
 
-/* line 86, ../sass/_byib.typography.scss */
+/* line 80, ../sass/_byib.typography.scss */
 h6 {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 95, ../sass/_byib.typography.scss */
+/* line 89, ../sass/_byib.typography.scss */
 .page-title {
   float: left;
   width: 75%;
@@ -2750,7 +2750,7 @@ h6 {
   float: none;
 }
 
-/* line 102, ../sass/_byib.typography.scss */
+/* line 96, ../sass/_byib.typography.scss */
 .block-title, .block-title-alt {
   font-size: 22.4px;
   font-size: 1.4rem;
@@ -2760,26 +2760,26 @@ h6 {
   line-height: 100%;
 }
 
-/* line 121, ../sass/_byib.typography.scss */
+/* line 115, ../sass/_byib.typography.scss */
 a:link {
   color: #ab4c00;
   text-decoration: none;
 }
-/* line 125, ../sass/_byib.typography.scss */
+/* line 119, ../sass/_byib.typography.scss */
 a:visited {
   color: #5e2a00;
 }
-/* line 128, ../sass/_byib.typography.scss */
+/* line 122, ../sass/_byib.typography.scss */
 a:hover {
   color: #2b1300;
   text-decoration: underline;
 }
-/* line 132, ../sass/_byib.typography.scss */
+/* line 126, ../sass/_byib.typography.scss */
 a:focus {
   color: #2b1300;
 }
 
-/* line 144, ../sass/_byib.typography.scss */
+/* line 138, ../sass/_byib.typography.scss */
 b,
 strong,
 dl > dt,
@@ -2790,54 +2790,54 @@ dl > dt,
   font-weight: bold;
 }
 
-/* line 152, ../sass/_byib.typography.scss */
+/* line 146, ../sass/_byib.typography.scss */
 blockquote {
   border-left: 5px solid #e2e2e2;
   margin: 0;
   margin-bottom: 20px;
   padding-left: 13.33333px;
 }
-/* line 158, ../sass/_byib.typography.scss */
+/* line 152, ../sass/_byib.typography.scss */
 blockquote.pull-right {
   border-left: 0;
   border-right: 5px solid #e2e2e2;
   padding-right: 13.33333px;
 }
-/* line 163, ../sass/_byib.typography.scss */
+/* line 157, ../sass/_byib.typography.scss */
 blockquote.pull-right .blockquote-source {
   display: block;
   text-align: right;
 }
-/* line 172, ../sass/_byib.typography.scss */
+/* line 166, ../sass/_byib.typography.scss */
 blockquote .blockquote-source:before {
   content: '\2014 \00A0';
 }
 
-/* line 183, ../sass/_byib.typography.scss */
+/* line 177, ../sass/_byib.typography.scss */
 .text-largest {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 187, ../sass/_byib.typography.scss */
+/* line 181, ../sass/_byib.typography.scss */
 .text-larger {
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 191, ../sass/_byib.typography.scss */
+/* line 185, ../sass/_byib.typography.scss */
 .text-large {
   font-size: 17.6px;
   font-size: 1.1rem;
 }
 
-/* line 195, ../sass/_byib.typography.scss */
+/* line 189, ../sass/_byib.typography.scss */
 .text-small, blockquote .blockquote-source {
   font-size: 14.4px;
   font-size: 0.9rem;
 }
 
-/* line 199, ../sass/_byib.typography.scss */
+/* line 193, ../sass/_byib.typography.scss */
 .text-smallest {
   font-size: 12.8px;
   font-size: 0.8rem;
@@ -3099,7 +3099,7 @@ p, .page-image, .lead {
 }
 /* line 303, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next:before {
-  padding-right: 1px;
+  padding-left: 1px;
 }
 
 /* line 312, ../sass/_byib.base.scss */

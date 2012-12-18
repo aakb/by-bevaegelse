@@ -301,7 +301,7 @@ p {
     @extend .icon-circle-arrow-right;
     
     &:before {
-      padding-right: 1px;
+      padding-left: 1px;
     }
     
     right: $default-spacing;
