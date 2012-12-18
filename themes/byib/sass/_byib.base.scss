@@ -413,9 +413,9 @@ footer {
 // -----------------------------------------------------------------------------
 //
 .tabs {
-  @include zen-grid-container;
+   @extend .grid-wrapper;
+   @include zen-clear(right);
 }
-.tabs-wrapper {
-  @include box-sizing(border-box);
+.tabs-inner {
   @extend .grid-inner;
 }
