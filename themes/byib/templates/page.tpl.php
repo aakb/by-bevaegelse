@@ -101,7 +101,7 @@
   </div>
 <?php endif; ?>
 
-<?php if ($tabs): ?>
+<?php if (!empty($tabs['#primary'])): ?>
   <div class="tabs">
     <div class="tabs-inner">
       <?php print render($tabs); ?>
