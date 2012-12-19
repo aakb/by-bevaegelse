@@ -3307,37 +3307,38 @@ p, .page-image, .lead {
 .flex-direction-nav .flex-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+  text-decoration: none;
 }
-/* line 342, ../sass/_byib.base.scss */
+/* line 344, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev {
   left: 20px;
 }
-/* line 345, ../sass/_byib.base.scss */
+/* line 347, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev:before {
   padding-left: 2px;
 }
-/* line 352, ../sass/_byib.base.scss */
+/* line 354, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next {
   right: 20px;
 }
-/* line 355, ../sass/_byib.base.scss */
+/* line 357, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next:before {
   padding-left: 2px;
 }
 
-/* line 364, ../sass/_byib.base.scss */
+/* line 366, ../sass/_byib.base.scss */
 .flex-control-nav {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 369, ../sass/_byib.base.scss */
+/* line 371, ../sass/_byib.base.scss */
 .flex-control-nav > li {
   display: inline-block;
   margin-left: 10px;
   overflow: hidden;
 }
-/* line 375, ../sass/_byib.base.scss */
+/* line 377, ../sass/_byib.base.scss */
 .flex-control-nav > li a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -3353,18 +3354,18 @@ p, .page-image, .lead {
   text-indent: -100px;
   width: 20px;
 }
-/* line 387, ../sass/_byib.base.scss */
+/* line 389, ../sass/_byib.base.scss */
 .flex-control-nav > li a:hover, .flex-control-nav > li a.flex-active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 402, ../sass/_byib.base.scss */
+/* line 404, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 414, ../sass/_byib.base.scss */
+/* line 416, ../sass/_byib.base.scss */
 .button, .button-right,
 input[type="submit"],
 button {
@@ -3378,19 +3379,19 @@ button {
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 427, ../sass/_byib.base.scss */
+/* line 429, ../sass/_byib.base.scss */
 .button:link, .button-right:link,
 input[type="submit"]:link,
 button:link {
   color: white;
 }
-/* line 431, ../sass/_byib.base.scss */
+/* line 433, ../sass/_byib.base.scss */
 .button:visited, .button-right:visited,
 input[type="submit"]:visited,
 button:visited {
   color: white;
 }
-/* line 435, ../sass/_byib.base.scss */
+/* line 437, ../sass/_byib.base.scss */
 .button:hover, .button-right:hover,
 input[type="submit"]:hover,
 button:hover {
@@ -3398,14 +3399,14 @@ button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 441, ../sass/_byib.base.scss */
+/* line 443, ../sass/_byib.base.scss */
 .button:focus, .button-right:focus,
 input[type="submit"]:focus,
 button:focus {
   text-decoration: underline;
 }
 
-/* line 448, ../sass/_byib.base.scss */
+/* line 450, ../sass/_byib.base.scss */
 input[type="submit"],
 button {
   border: 0;
@@ -3414,42 +3415,42 @@ button {
   padding-left: 20px;
 }
 
-/* line 456, ../sass/_byib.base.scss */
+/* line 458, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 469, ../sass/_byib.base.scss */
+/* line 471, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 482, ../sass/_byib.base.scss */
+/* line 484, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 489, ../sass/_byib.base.scss */
+/* line 491, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
-/* line 495, ../sass/_byib.base.scss */
+/* line 497, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content p, .footer-wrapper .footer-content .page-image, .footer-wrapper .footer-content .lead {
   margin: 0;
 }
 
-/* line 507, ../sass/_byib.base.scss */
+/* line 509, ../sass/_byib.base.scss */
 .front .tabs {
   margin-top: 20px;
 }
 
-/* line 512, ../sass/_byib.base.scss */
+/* line 514, ../sass/_byib.base.scss */
 .tabs,
 .action-links-wrapper {
   clear: right;
