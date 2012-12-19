@@ -2828,32 +2828,34 @@ h6 {
 .block-title, .block-title-alt {
   font-size: 22.4px;
   font-size: 1.4rem;
-  padding-bottom: 10px;
-  padding-bottom: 0.625rem;
-  border-bottom: 1px solid #e2e2e2;
   line-height: 100%;
 }
 
-/* line 115, ../sass/_byib.typography.scss */
+/* line 102, ../sass/_byib.typography.scss */
+.block-title-alt {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* line 114, ../sass/_byib.typography.scss */
 a:link {
   color: #ab4c00;
   text-decoration: none;
 }
-/* line 119, ../sass/_byib.typography.scss */
+/* line 118, ../sass/_byib.typography.scss */
 a:visited {
   color: #5e2a00;
 }
-/* line 122, ../sass/_byib.typography.scss */
+/* line 121, ../sass/_byib.typography.scss */
 a:hover {
   color: #2b1300;
   text-decoration: underline;
 }
-/* line 126, ../sass/_byib.typography.scss */
+/* line 125, ../sass/_byib.typography.scss */
 a:focus {
   color: #2b1300;
 }
 
-/* line 138, ../sass/_byib.typography.scss */
+/* line 137, ../sass/_byib.typography.scss */
 b,
 strong,
 dl > dt,
@@ -2864,54 +2866,54 @@ dl > dt,
   font-weight: bold;
 }
 
-/* line 146, ../sass/_byib.typography.scss */
+/* line 145, ../sass/_byib.typography.scss */
 blockquote {
   border-left: 5px solid #e2e2e2;
   margin: 0;
   margin-bottom: 20px;
   padding-left: 13.33333px;
 }
-/* line 152, ../sass/_byib.typography.scss */
+/* line 151, ../sass/_byib.typography.scss */
 blockquote.pull-right {
   border-left: 0;
   border-right: 5px solid #e2e2e2;
   padding-right: 13.33333px;
 }
-/* line 157, ../sass/_byib.typography.scss */
+/* line 156, ../sass/_byib.typography.scss */
 blockquote.pull-right .blockquote-source {
   display: block;
   text-align: right;
 }
-/* line 166, ../sass/_byib.typography.scss */
+/* line 165, ../sass/_byib.typography.scss */
 blockquote .blockquote-source:before {
   content: '\2014 \00A0';
 }
 
-/* line 177, ../sass/_byib.typography.scss */
+/* line 176, ../sass/_byib.typography.scss */
 .text-largest {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 181, ../sass/_byib.typography.scss */
+/* line 180, ../sass/_byib.typography.scss */
 .text-larger {
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 185, ../sass/_byib.typography.scss */
+/* line 184, ../sass/_byib.typography.scss */
 .text-large {
   font-size: 17.6px;
   font-size: 1.1rem;
 }
 
-/* line 189, ../sass/_byib.typography.scss */
+/* line 188, ../sass/_byib.typography.scss */
 .text-small, blockquote .blockquote-source {
   font-size: 14.4px;
   font-size: 0.9rem;
 }
 
-/* line 193, ../sass/_byib.typography.scss */
+/* line 192, ../sass/_byib.typography.scss */
 .text-smallest {
   font-size: 12.8px;
   font-size: 0.8rem;
