@@ -1090,15 +1090,25 @@ table {
 }
 /* line 178, ../../latto/sass/_latto.nav.scss */
 .action-links li {
-  font-family: FontAwesome;
   color: #ab4c00;
   display: inline-block;
   padding: 0 10px 20px 0 10px 20px;
 }
-/* line 186, ../../latto/sass/_latto.nav.scss */
+/* line 185, ../../latto/sass/_latto.nav.scss */
+.action-links li:before {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: #ab4c00;
+  float: left;
+  font-family: FontAwesome;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+/* line 195, ../../latto/sass/_latto.nav.scss */
 .action-links li a {
   font-family: "Source Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-left: 10px 20px/2;
+  margin-left: -20px;
+  padding-left: 25px;
 }
 
 /* line 10, ../../latto/sass/_latto.lists.scss */
