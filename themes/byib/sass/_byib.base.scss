@@ -367,6 +367,7 @@ p {
   @extend %bold;
 
   background-color: $theme-secondary-color;
+  color: $theme-primary-color;
   display: inline-block;
   padding-top: $half-spacing + 2;
   padding-right: $default-spacing / 1.5;
