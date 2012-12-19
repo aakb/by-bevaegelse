@@ -23,7 +23,6 @@
  * Implements hook_menu_tree_menu_block().
  */
 function byib_menu_tree__menu_block__2($vars) {
-
   // Add correct class to sub menu
   return '<ul class="sub-menu">'. $vars['tree'] .'</ul>';
 }
