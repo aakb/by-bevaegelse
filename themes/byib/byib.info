@@ -14,8 +14,11 @@
 
   ; Import javascripts.
   ; scripts[] = scripts/script.js
-  scripts[] = scripts/css3-mediaqueries.js
-
+  
+  ; Media Query support in older browser, this script require css aggregation to be enabled.
+  ; https://github.com/scottjehl/Respond
+  scripts[] = scripts/respond.min.js
+  
 ;----------// Regions
   regions[header]            = Header
   regions[navigation]        = Navigation
