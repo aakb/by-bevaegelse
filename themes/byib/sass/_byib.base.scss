@@ -457,10 +457,12 @@ footer {
     margin-top: $default-spacing;
   }
 }
-.tabs {
+.tabs,
+.action-links-wrapper {
    @extend .grid-wrapper;
    @include zen-clear(right);
 }
-.tabs-inner {
+.tabs-inner,
+.action-links-inner {
   @extend .grid-inner;
 }
