@@ -125,46 +125,48 @@
 
   <article class="main-content">
     <div class="content-wrapper">
+      <div class="content-inner">
 
-      <?php if (!empty($page['content'])): ?>
-        <?php print render($page['content']); ?>
-      <?php endif; ?>
-
-      <?php if (!empty($page['secondary_content'])): ?>
-        <?php print render($page['secondary_content']); ?>
-      <?php endif; ?>
-
-      <?php if (!empty($page['tertiary_content'])): ?>
-        <?php print render($page['tertiary_content']); ?>
-      <?php endif; ?>
-
-      <?php if (!empty($page['attachment_first']) ||
-        !empty($page['attachment_second']) ||
-        !empty($page['attachment_third']) ||
-        !empty($page['attachment_fourth'])): ?>
-
-      <div class="attachments-wrapper">
-
-        <?php if (!empty($page['attachment_first'])): ?>
-          <?php print render($page['attachment_first']); ?>
+        <?php if (!empty($page['content'])): ?>
+          <?php print render($page['content']); ?>
         <?php endif; ?>
 
-        <?php if (!empty($page['attachment_second'])): ?>
-          <?php print render($page['attachment_second']); ?>
+        <?php if (!empty($page['secondary_content'])): ?>
+          <?php print render($page['secondary_content']); ?>
         <?php endif; ?>
 
-        <?php if (!empty($page['attachment_third'])): ?>
-          <?php print render($page['attachment_third']); ?>
+        <?php if (!empty($page['tertiary_content'])): ?>
+          <?php print render($page['tertiary_content']); ?>
         <?php endif; ?>
 
-        <?php if (!empty($page['attachment_fourth'])): ?>
-          <?php print render($page['attachment_fourth']); ?>
+        <?php if (!empty($page['attachment_first']) ||
+          !empty($page['attachment_second']) ||
+          !empty($page['attachment_third']) ||
+          !empty($page['attachment_fourth'])): ?>
+
+        <div class="attachments-wrapper">
+
+          <?php if (!empty($page['attachment_first'])): ?>
+            <?php print render($page['attachment_first']); ?>
+          <?php endif; ?>
+
+          <?php if (!empty($page['attachment_second'])): ?>
+            <?php print render($page['attachment_second']); ?>
+          <?php endif; ?>
+
+          <?php if (!empty($page['attachment_third'])): ?>
+            <?php print render($page['attachment_third']); ?>
+          <?php endif; ?>
+
+          <?php if (!empty($page['attachment_fourth'])): ?>
+            <?php print render($page['attachment_fourth']); ?>
+          <?php endif; ?>
+
+        </div>
+
         <?php endif; ?>
 
       </div>
-
-    <?php endif; ?>
-
     </div>
   </article>
 

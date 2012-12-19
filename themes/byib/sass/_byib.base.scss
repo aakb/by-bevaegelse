@@ -164,16 +164,17 @@ p {
   @include zen-grid-container;
 }
 
-
 .content-wrapper {
   @include box-sizing(border-box);
   @extend .grid-inner;
 
-  padding-top: $default-spacing;
-  padding-right: $default-spacing;
-  padding-left: $default-spacing;
-
   background-color: $theme-content-background;
+
+  .content-inner {
+    padding-top: $default-spacing;
+    padding-right: $default-spacing;
+    padding-left: $default-spacing;  
+  }
 }
 
 
