@@ -493,6 +493,10 @@ footer {
 
     border-top: 1px solid $gray-light;
     text-align: center;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
