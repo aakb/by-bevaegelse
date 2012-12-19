@@ -15,6 +15,7 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
     'name' => 'access ckeditor link',
     'roles' => array(
       0 => 'administrator',
+      1 => 'editor',
     ),
     'module' => 'ckeditor_link',
   );
@@ -31,7 +32,9 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   // Exported permission: use text format editor_html.
   $permissions['use text format editor_html'] = array(
     'name' => 'use text format editor_html',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'editor',
+    ),
     'module' => 'filter',
   );
 
@@ -58,7 +61,9 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   // Exported permission: use text format video.
   $permissions['use text format video'] = array(
     'name' => 'use text format video',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'editor',
+    ),
     'module' => 'filter',
   );
 
