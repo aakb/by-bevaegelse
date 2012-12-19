@@ -3438,13 +3438,17 @@ button {
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
+/* line 497, ../sass/_byib.base.scss */
+.footer-wrapper .footer-content p, .footer-wrapper .footer-content .page-image, .footer-wrapper .footer-content .lead {
+  margin: 0;
+}
 
-/* line 505, ../sass/_byib.base.scss */
+/* line 509, ../sass/_byib.base.scss */
 .front .tabs {
   margin-top: 20px;
 }
 
-/* line 510, ../sass/_byib.base.scss */
+/* line 514, ../sass/_byib.base.scss */
 .tabs,
 .action-links-wrapper {
   clear: right;
