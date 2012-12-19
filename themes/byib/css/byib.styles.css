@@ -2926,17 +2926,20 @@ textarea {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   border: 1px solid #e2e2e2;
   display: block;
-  font-family: inherit;
-  font-size: inherit;
-  height: 20px;
+  font-family: "Source Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  min-height: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  max-width: 100%;
+  max-width: 99%;
 }
-/* line 26, ../sass/_byib.forms.scss */
+/* line 27, ../sass/_byib.forms.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -2952,7 +2955,7 @@ textarea:focus {
   border-color: #b8dfeb;
   color: #2592ac;
 }
-/* line 32, ../sass/_byib.forms.scss */
+/* line 33, ../sass/_byib.forms.scss */
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="date"][disabled],
@@ -2964,19 +2967,17 @@ input[type="tel"][disabled],
 input[type="time"][disabled],
 input[type="url"][disabled],
 textarea[disabled] {
-  background-color: #bcbcbc;
-}
-
-/* line 38, ../sass/_byib.forms.scss */
-input[type="submit"],
-button {
-  border: 0;
-  cursor: pointer;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  background-color: #efefef;
+  border: 1px solid #e2e2e2;
 }
 
 /* line 14, ../sass/_byib.base.scss */
-.lead, .button, input[type="submit"],
-button, .button-right {
+.lead, .button, .button-right,
+input[type="submit"],
+button {
   font-family: "Source Sans Regular";
 }
 
@@ -3283,73 +3284,88 @@ p, .page-image, .lead {
   text-decoration: none;
 }
 
-/* line 366, ../sass/_byib.base.scss */
-.button, input[type="submit"],
-button, .button-right {
+/* line 368, ../sass/_byib.base.scss */
+.button, .button-right,
+input[type="submit"],
+button {
   background-color: #00b7e7;
   color: white;
   display: inline-block;
+  font-size: 16px;
   padding-top: 12px;
   padding-right: 13.33333px;
   padding-bottom: 10px;
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 378, ../sass/_byib.base.scss */
-.button:link, input[type="submit"]:link,
-button:link, .button-right:link {
+/* line 381, ../sass/_byib.base.scss */
+.button:link, .button-right:link,
+input[type="submit"]:link,
+button:link {
   color: white;
 }
-/* line 382, ../sass/_byib.base.scss */
-.button:visited, input[type="submit"]:visited,
-button:visited, .button-right:visited {
+/* line 385, ../sass/_byib.base.scss */
+.button:visited, .button-right:visited,
+input[type="submit"]:visited,
+button:visited {
   color: white;
 }
-/* line 386, ../sass/_byib.base.scss */
-.button:hover, input[type="submit"]:hover,
-button:hover, .button-right:hover {
+/* line 389, ../sass/_byib.base.scss */
+.button:hover, .button-right:hover,
+input[type="submit"]:hover,
+button:hover {
   background-color: #008fb4;
   color: white;
   text-decoration: none;
 }
-/* line 392, ../sass/_byib.base.scss */
-.button:focus, input[type="submit"]:focus,
-button:focus, .button-right:focus {
+/* line 395, ../sass/_byib.base.scss */
+.button:focus, .button-right:focus,
+input[type="submit"]:focus,
+button:focus {
   text-decoration: underline;
 }
 
-/* line 401, ../sass/_byib.base.scss */
+/* line 402, ../sass/_byib.base.scss */
+input[type="submit"],
+button {
+  border: 0;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 410, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 412, ../sass/_byib.base.scss */
+/* line 423, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 425, ../sass/_byib.base.scss */
+/* line 436, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 432, ../sass/_byib.base.scss */
+/* line 443, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
 
-/* line 445, ../sass/_byib.base.scss */
+/* line 456, ../sass/_byib.base.scss */
 .frontpage-layout .tabs {
   margin-top: 20px;
 }
 
-/* line 449, ../sass/_byib.base.scss */
+/* line 460, ../sass/_byib.base.scss */
 .tabs {
   clear: right;
 }
