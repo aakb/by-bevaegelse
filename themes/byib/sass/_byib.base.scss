@@ -363,18 +363,21 @@ p {
 // Buttons
 // -----------------------------------------------------------------------------
 //
-.button {
+.button,
+input[type="submit"],
+button {
   @extend %bold;
 
   background-color: $theme-secondary-color;
   color: $theme-primary-color;
   display: inline-block;
+  font-size: $theme-font-size;
   padding-top: $half-spacing + 2;
   padding-right: $default-spacing / 1.5;
   padding-bottom: $half-spacing;
   padding-left: $default-spacing / 1.5;
   text-align: center;
-
+  
   &:link {
     color: $theme-primary-color;
   }
@@ -394,11 +397,19 @@ p {
   }
 }
 
-.button-right {
-  @extend .button;
+
+input[type="submit"],
+button {
+  border: 0;
+  cursor: pointer;
+  padding-right: $default-spacing;
+  padding-left: $default-spacing;
 }
 
+
 .button-right {
+  @extend .button;
+  
   float: right;
   margin-left: $default-spacing / 4;
 }
