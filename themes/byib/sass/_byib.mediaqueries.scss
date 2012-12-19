@@ -132,12 +132,12 @@
 // Layouts
 // -----------------------------------------------------------------------------
 //
-.frontpage-layout {
+.front {
   @extend %byib-display-one;
   @extend %attachments-display-two;
 }
 
-.default-layout {
+.not-front {
   @extend %byib-display-two;
   @extend %attachments-display-three;
 }
