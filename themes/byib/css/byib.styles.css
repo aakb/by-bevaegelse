@@ -20,12 +20,12 @@
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -1002,88 +1002,48 @@ table {
   margin: 0;
   padding: 0;
 }
-/* line 100, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary,
-.tabs ul.secondary {
+/* line 99, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary {
   margin: 0;
   border: none;
 }
-/* line 104, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li,
-.tabs ul.secondary li {
+/* line 103, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li {
   display: inline-block;
   background-color: #e2e2e2;
 }
-/* line 107, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li:hover,
-.tabs ul.secondary li:hover {
+/* line 106, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li:hover {
   background-color: #bcbcbc;
 }
-/* line 109, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li:hover a,
-.tabs ul.secondary li:hover a {
+/* line 108, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li:hover a {
   color: black;
 }
-/* line 113, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li a,
-.tabs ul.secondary li a {
+/* line 112, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li a {
   background-color: transparent;
   margin: 0;
   line-height: 24px;
   border: none;
 }
-/* line 121, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li.active,
-.tabs ul.secondary li.active {
+/* line 120, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li.active {
   background-color: white;
 }
-/* line 123, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li.active:hover,
-.tabs ul.secondary li.active:hover {
+/* line 122, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li.active:hover {
   background-color: #efefef;
 }
-/* line 125, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li.active:hover a,
-.tabs ul.secondary li.active:hover a {
+/* line 124, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li.active:hover a {
   color: #959595;
   text-decoration: none;
 }
-/* line 130, ../../latto/sass/_latto.nav.scss */
-.tabs ul.primary li.active a,
-.tabs ul.secondary li.active a {
+/* line 129, ../../latto/sass/_latto.nav.scss */
+.tabs ul.primary li.active a {
   background-color: transparent;
-  color: #959595;
-}
-/* line 137, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary {
-  background-color: white;
-}
-/* line 139, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary li {
-  display: table-cell;
-  background-color: white;
-}
-/* line 142, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary li:hover {
-  background-color: transparent;
-}
-/* line 145, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary li a {
-  padding: 3.33333px 5px 3.33333px 5px;
-}
-/* line 148, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary li a:hover {
-  color: #959595;
-  background-color: #e2e2e2;
-}
-/* line 155, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary li.active:hover {
-  background-color: transparent;
-}
-/* line 158, ../../latto/sass/_latto.nav.scss */
-.tabs ul.secondary li.active a {
-  color: #959595;
-  background-color: #e2e2e2;
+  color: #bcbcbc;
 }
 
 /* line 10, ../../latto/sass/_latto.lists.scss */
@@ -2813,32 +2773,34 @@ h6 {
 .block-title, .block-title-alt {
   font-size: 22.4px;
   font-size: 1.4rem;
-  padding-bottom: 10px;
-  padding-bottom: 0.625rem;
-  border-bottom: 1px solid #e2e2e2;
   line-height: 100%;
 }
 
-/* line 115, ../sass/_byib.typography.scss */
+/* line 102, ../sass/_byib.typography.scss */
+.block-title-alt {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* line 114, ../sass/_byib.typography.scss */
 a:link {
   color: #ab4c00;
   text-decoration: none;
 }
-/* line 119, ../sass/_byib.typography.scss */
+/* line 118, ../sass/_byib.typography.scss */
 a:visited {
   color: #5e2a00;
 }
-/* line 122, ../sass/_byib.typography.scss */
+/* line 121, ../sass/_byib.typography.scss */
 a:hover {
   color: #2b1300;
   text-decoration: underline;
 }
-/* line 126, ../sass/_byib.typography.scss */
+/* line 125, ../sass/_byib.typography.scss */
 a:focus {
   color: #2b1300;
 }
 
-/* line 138, ../sass/_byib.typography.scss */
+/* line 137, ../sass/_byib.typography.scss */
 b,
 strong,
 dl > dt,
@@ -2849,54 +2811,54 @@ dl > dt,
   font-weight: bold;
 }
 
-/* line 146, ../sass/_byib.typography.scss */
+/* line 145, ../sass/_byib.typography.scss */
 blockquote {
   border-left: 5px solid #e2e2e2;
   margin: 0;
   margin-bottom: 20px;
   padding-left: 13.33333px;
 }
-/* line 152, ../sass/_byib.typography.scss */
+/* line 151, ../sass/_byib.typography.scss */
 blockquote.pull-right {
   border-left: 0;
   border-right: 5px solid #e2e2e2;
   padding-right: 13.33333px;
 }
-/* line 157, ../sass/_byib.typography.scss */
+/* line 156, ../sass/_byib.typography.scss */
 blockquote.pull-right .blockquote-source {
   display: block;
   text-align: right;
 }
-/* line 166, ../sass/_byib.typography.scss */
+/* line 165, ../sass/_byib.typography.scss */
 blockquote .blockquote-source:before {
   content: '\2014 \00A0';
 }
 
-/* line 177, ../sass/_byib.typography.scss */
+/* line 176, ../sass/_byib.typography.scss */
 .text-largest {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 181, ../sass/_byib.typography.scss */
+/* line 180, ../sass/_byib.typography.scss */
 .text-larger {
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 185, ../sass/_byib.typography.scss */
+/* line 184, ../sass/_byib.typography.scss */
 .text-large {
   font-size: 17.6px;
   font-size: 1.1rem;
 }
 
-/* line 189, ../sass/_byib.typography.scss */
+/* line 188, ../sass/_byib.typography.scss */
 .text-small, blockquote .blockquote-source {
   font-size: 14.4px;
   font-size: 0.9rem;
 }
 
-/* line 193, ../sass/_byib.typography.scss */
+/* line 192, ../sass/_byib.typography.scss */
 .text-smallest {
   font-size: 12.8px;
   font-size: 0.8rem;
@@ -3080,12 +3042,12 @@ p, .page-image, .lead {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:before, .main-content:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:after {
   clear: both;
 }

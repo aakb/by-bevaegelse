@@ -95,15 +95,14 @@ h6 {
 
 .block-title {
   @include rem('font-size', $theme-font-size * 1.4);
-  @include rem('padding-bottom', $half-spacing);
 
-  border-bottom: 1px solid $gray-light;
   line-height: 100%;
 }
 
 .block-title-alt {
   @extend .block-title;
 
+  border-bottom: 1px solid $gray-light;
 }
 
 
