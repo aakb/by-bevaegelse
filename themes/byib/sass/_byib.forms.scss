@@ -25,14 +25,15 @@ textarea {
   max-width: 99%;
 
   &:focus {
-    @include box-sizing(border-box);
-
     background-color: $theme-background-color;
     border-color: darken($theme-background-color, 10%);
     color: darken(#31b4d3, 10%);
   }
 
   &[disabled] {
-    background-color: $gray-dark;
+    @include box-shadow(0 0 0);
+    
+    background-color: lighten($gray-light, 5%);
+    border: 1px solid $gray-light;
   }
 }
