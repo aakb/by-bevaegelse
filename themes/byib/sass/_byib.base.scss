@@ -226,16 +226,9 @@ p {
 
 
 // -----------------------------------------------------------------------------
-// Blocks and spotboxes
+// Spotboxes
 // -----------------------------------------------------------------------------
 //
-.block {
-  .block-content {
-    margin-top: $half-spacing;
-    margin-bottom: $half-spacing;
-  }
-}
-
 .spotbox-title {
   @extend .block-title;
 }
@@ -261,6 +254,10 @@ p {
   a {
     margin-left: -$default-spacing;
     padding-left: $default-spacing * 1.25;
+    
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
