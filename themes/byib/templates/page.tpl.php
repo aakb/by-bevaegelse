@@ -109,18 +109,22 @@
   </div>
 <?php endif; ?>
 
+<?php if ($action_links): ?>
+  <div class="action-links-wrapper">
+    <div class="action-links-inner">
+      <ul class="action-links">
+        <?php print render($action_links); ?>
+      </ul>
+    </div>
+  </div>
+<?php endif; ?>
+
 <?php if (!empty($page['content']) ||
   !empty($page['secondary_content']) ||
   !empty($page['tertiary_content'])): ?>
 
   <article class="main-content">
     <div class="content-wrapper">
-
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
-      <?php endif; ?>
 
       <?php if (!empty($page['content'])): ?>
         <?php print render($page['content']); ?>
