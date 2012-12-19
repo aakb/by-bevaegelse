@@ -528,7 +528,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 52, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-first, .latto-example-template-two .attachment-first, .frontpage-layout .attachment-first {
+  .layout-template-two .attachment-first, .latto-example-template-two .attachment-first, .front .attachment-first {
     float: left;
     width: 50%;
     margin-left: 0%;
@@ -546,7 +546,7 @@
     _overflow-y: visible;
   }
   /* line 56, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-third, .latto-example-template-two .attachment-third, .frontpage-layout .attachment-third {
+  .layout-template-two .attachment-third, .latto-example-template-two .attachment-third, .front .attachment-third {
     clear: both;
     float: left;
     width: 50%;
@@ -565,10 +565,10 @@
     _overflow-y: visible;
   }
   /* line 62, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-second, .latto-example-template-two .attachment-second, .frontpage-layout .attachment-second,
+  .layout-template-two .attachment-second, .latto-example-template-two .attachment-second, .front .attachment-second,
   .layout-template-two .attachment-fourth,
   .latto-example-template-two .attachment-fourth,
-  .frontpage-layout .attachment-fourth {
+  .front .attachment-fourth {
     float: right;
     width: 50%;
     margin-right: 0%;
@@ -588,7 +588,7 @@
 }
 @media only screen and (min-width: 769px) {
   /* line 143, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-first, .latto-example-template-two .attachment-first, .frontpage-layout .attachment-first {
+  .layout-template-two .attachment-first, .latto-example-template-two .attachment-first, .front .attachment-first {
     float: left;
     width: 25%;
     margin-left: 0%;
@@ -606,7 +606,7 @@
     _overflow-y: visible;
   }
   /* line 147, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-second, .latto-example-template-two .attachment-second, .frontpage-layout .attachment-second {
+  .layout-template-two .attachment-second, .latto-example-template-two .attachment-second, .front .attachment-second {
     float: left;
     width: 25%;
     margin-left: 25%;
@@ -624,7 +624,7 @@
     _overflow-y: visible;
   }
   /* line 151, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-third, .latto-example-template-two .attachment-third, .frontpage-layout .attachment-third {
+  .layout-template-two .attachment-third, .latto-example-template-two .attachment-third, .front .attachment-third {
     float: right;
     width: 25%;
     margin-right: 25%;
@@ -642,7 +642,7 @@
     _overflow-y: visible;
   }
   /* line 155, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-two .attachment-fourth, .latto-example-template-two .attachment-fourth, .frontpage-layout .attachment-fourth {
+  .layout-template-two .attachment-fourth, .latto-example-template-two .attachment-fourth, .front .attachment-fourth {
     float: right;
     width: 25%;
     margin-right: 0%;
@@ -663,7 +663,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 83, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-first, .latto-example-template-one .attachment-first, .default-layout .attachment-first {
+  .layout-template-three .attachment-first, .latto-example-template-one .attachment-first, .not-front .attachment-first {
     float: left;
     width: 50%;
     margin-left: 0%;
@@ -681,7 +681,7 @@
     _overflow-y: visible;
   }
   /* line 87, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-second, .latto-example-template-one .attachment-second, .default-layout .attachment-second {
+  .layout-template-three .attachment-second, .latto-example-template-one .attachment-second, .not-front .attachment-second {
     float: right;
     width: 50%;
     margin-right: 0%;
@@ -699,7 +699,7 @@
     _overflow-y: visible;
   }
   /* line 91, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-third, .latto-example-template-one .attachment-third, .default-layout .attachment-third {
+  .layout-template-three .attachment-third, .latto-example-template-one .attachment-third, .not-front .attachment-third {
     clear: both;
     float: left;
     width: 100%;
@@ -718,7 +718,7 @@
     _overflow-y: visible;
   }
   /* line 96, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-fourth, .latto-example-template-one .attachment-fourth, .default-layout .attachment-fourth {
+  .layout-template-three .attachment-fourth, .latto-example-template-one .attachment-fourth, .not-front .attachment-fourth {
     clear: both;
     float: left;
     width: 100%;
@@ -739,7 +739,7 @@
 }
 @media only screen and (min-width: 769px) {
   /* line 115, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-first, .latto-example-template-one .attachment-first, .default-layout .attachment-first {
+  .layout-template-three .attachment-first, .latto-example-template-one .attachment-first, .not-front .attachment-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
@@ -757,7 +757,7 @@
     _overflow-y: visible;
   }
   /* line 119, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-second, .latto-example-template-one .attachment-second, .default-layout .attachment-second {
+  .layout-template-three .attachment-second, .latto-example-template-one .attachment-second, .not-front .attachment-second {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
@@ -775,7 +775,7 @@
     _overflow-y: visible;
   }
   /* line 123, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-third, .latto-example-template-one .attachment-third, .default-layout .attachment-third {
+  .layout-template-three .attachment-third, .latto-example-template-one .attachment-third, .not-front .attachment-third {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -793,7 +793,7 @@
     _overflow-y: visible;
   }
   /* line 127, ../../latto/sass/_latto.mq.attachments.scss */
-  .layout-template-three .attachment-fourth, .latto-example-template-one .attachment-fourth, .default-layout .attachment-fourth {
+  .layout-template-three .attachment-fourth, .latto-example-template-one .attachment-fourth, .not-front .attachment-fourth {
     clear: both;
     float: left;
     width: 100%;
@@ -2307,7 +2307,7 @@ ul.icons li .icon-large:before {
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 18, ../../latto/sass/_latto.mq.displays.scss */
-  .frontpage-layout .primary-content {
+  .front .primary-content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2325,7 +2325,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 22, ../../latto/sass/_latto.mq.displays.scss */
-  .frontpage-layout .secondary-content {
+  .front .secondary-content {
     clear: both;
     float: left;
     width: 50%;
@@ -2344,7 +2344,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 27, ../../latto/sass/_latto.mq.displays.scss */
-  .frontpage-layout .tertiary-content {
+  .front .tertiary-content {
     float: right;
     width: 50%;
     margin-right: 0%;
@@ -2364,7 +2364,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 11, ../sass/_byib.mediaqueries.scss */
-  .frontpage-layout .primary-content {
+  .front .primary-content {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
@@ -2382,7 +2382,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 15, ../sass/_byib.mediaqueries.scss */
-  .frontpage-layout .secondary-content {
+  .front .secondary-content {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
@@ -2400,7 +2400,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 19, ../sass/_byib.mediaqueries.scss */
-  .frontpage-layout .tertiary-content {
+  .front .tertiary-content {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -2421,7 +2421,7 @@ ul.icons li .icon-large:before {
 
 @media only screen and (max-width: 480px) {
   /* line 72, ../sass/_byib.mediaqueries.scss */
-  .default-layout .page-title {
+  .not-front .page-title {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2440,7 +2440,7 @@ ul.icons li .icon-large:before {
     float: none;
   }
   /* line 78, ../sass/_byib.mediaqueries.scss */
-  .default-layout .primary-content {
+  .not-front .primary-content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2458,7 +2458,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 81, ../sass/_byib.mediaqueries.scss */
-  .default-layout .primary-content .page-content {
+  .not-front .primary-content .page-content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2477,11 +2477,11 @@ ul.icons li .icon-large:before {
     padding-left: 0;
   }
   /* line 88, ../sass/_byib.mediaqueries.scss */
-  .default-layout .secondary-content {
+  .not-front .secondary-content {
     display: none;
   }
   /* line 92, ../sass/_byib.mediaqueries.scss */
-  .default-layout .tertiary-content {
+  .not-front .tertiary-content {
     clear: both;
     float: left;
     width: 100%;
@@ -2504,7 +2504,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 72, ../sass/_byib.mediaqueries.scss */
-  .default-layout .page-title {
+  .not-front .page-title {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2523,7 +2523,7 @@ ul.icons li .icon-large:before {
     float: none;
   }
   /* line 78, ../sass/_byib.mediaqueries.scss */
-  .default-layout .primary-content {
+  .not-front .primary-content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2541,7 +2541,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 81, ../sass/_byib.mediaqueries.scss */
-  .default-layout .primary-content .page-content {
+  .not-front .primary-content .page-content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -2560,11 +2560,11 @@ ul.icons li .icon-large:before {
     padding-left: 0;
   }
   /* line 88, ../sass/_byib.mediaqueries.scss */
-  .default-layout .secondary-content {
+  .not-front .secondary-content {
     display: none;
   }
   /* line 92, ../sass/_byib.mediaqueries.scss */
-  .default-layout .tertiary-content {
+  .not-front .tertiary-content {
     clear: both;
     float: left;
     width: 100%;
@@ -2587,7 +2587,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 30, ../sass/_byib.mediaqueries.scss */
-  .default-layout .primary-content {
+  .not-front .primary-content {
     float: left;
     width: 75%;
     margin-left: 25%;
@@ -2605,7 +2605,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 33, ../sass/_byib.mediaqueries.scss */
-  .default-layout .primary-content .page-content {
+  .not-front .primary-content .page-content {
     float: left;
     width: 58.33333%;
     margin-left: 0%;
@@ -2624,7 +2624,7 @@ ul.icons li .icon-large:before {
     padding-left: 0;
   }
   /* line 40, ../sass/_byib.mediaqueries.scss */
-  .default-layout .secondary-content {
+  .not-front .secondary-content {
     float: left;
     width: 25%;
     margin-left: 0%;
@@ -2642,7 +2642,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
   }
   /* line 44, ../sass/_byib.mediaqueries.scss */
-  .default-layout .tertiary-content {
+  .not-front .tertiary-content {
     float: right;
     width: 41.66667%;
     margin-right: 0%;
@@ -2664,12 +2664,12 @@ ul.icons li .icon-large:before {
     padding-left: 20px;
   }
   /* line 52, ../sass/_byib.mediaqueries.scss */
-  .default-layout .tertiary-content .block {
+  .not-front .tertiary-content .block {
     margin-top: 20px;
     padding-bottom: 10px;
   }
   /* line 57, ../sass/_byib.mediaqueries.scss */
-  .default-layout .tertiary-content .block-title, .default-layout .tertiary-content .block-title-alt, .default-layout .tertiary-content .spotbox-title {
+  .not-front .tertiary-content .block-title, .not-front .tertiary-content .block-title-alt, .not-front .tertiary-content .spotbox-title {
     border-bottom: 0;
   }
 }
@@ -3424,7 +3424,7 @@ button {
 }
 
 /* line 485, ../sass/_byib.base.scss */
-.frontpage-layout .tabs {
+.front .tabs {
   margin-top: 20px;
 }
 
