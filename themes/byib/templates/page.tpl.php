@@ -171,8 +171,14 @@
 <?php endif; ?>
 
 <?php if (!empty($page['footer'])): ?>
-  <footer class="grid-full">
-    <?php print render($page['footer']); ?>
+  <footer>
+    <div class="grid-inner">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <?php print render($page['footer']); ?>
+        </div>
+      </div>
+    </div>
   </footer>
 <?php endif; ?>
 
