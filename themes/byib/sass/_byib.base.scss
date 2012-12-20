@@ -40,11 +40,12 @@ header {
     overflow: hidden;
     padding-top: $half-spacing;
     padding-bottom: $half-spacing;
-
+    min-height: 125px;
    }
 
   .logo {
     float: right;
+    min-width: 150px;
   }
 }
 

@@ -20,12 +20,12 @@
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -3317,13 +3317,15 @@ header .header-inner {
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 10px;
+  min-height: 125px;
 }
 /* line 46, ../sass/_byib.base.scss */
 header .logo {
   float: right;
+  min-width: 150px;
 }
 
-/* line 56, ../sass/_byib.base.scss */
+/* line 57, ../sass/_byib.base.scss */
 img {
   display: block;
   height: auto;
@@ -3331,12 +3333,12 @@ img {
   vertical-align: baseline;
 }
 
-/* line 63, ../sass/_byib.base.scss */
+/* line 64, ../sass/_byib.base.scss */
 p, .page-image, .lead {
   margin-bottom: 10px;
 }
 
-/* line 72, ../sass/_byib.base.scss */
+/* line 73, ../sass/_byib.base.scss */
 .nav-wrapper {
   margin-top: 0;
   padding-left: 0;
@@ -3345,21 +3347,21 @@ p, .page-image, .lead {
   position: absolute;
 }
 
-/* line 82, ../sass/_byib.base.scss */
+/* line 83, ../sass/_byib.base.scss */
 .main-menu {
   font-size: 17px;
   font-size: 1.0625rem;
 }
-/* line 86, ../sass/_byib.base.scss */
+/* line 87, ../sass/_byib.base.scss */
 .main-menu li a {
   margin-right: 0;
 }
 
-/* line 93, ../sass/_byib.base.scss */
+/* line 94, ../sass/_byib.base.scss */
 .sub-menu > li {
   border-bottom: 1px solid #e2e2e2;
 }
-/* line 99, ../sass/_byib.base.scss */
+/* line 100, ../sass/_byib.base.scss */
 .sub-menu > li span:before {
   font-size: 20px;
   font-size: 1.25rem;
@@ -3369,7 +3371,7 @@ p, .page-image, .lead {
   margin-top: 12px;
   margin-left: 1px;
 }
-/* line 110, ../sass/_byib.base.scss */
+/* line 111, ../sass/_byib.base.scss */
 .sub-menu > li a {
   color: #ab4c00;
   margin-left: -20px;
@@ -3377,48 +3379,48 @@ p, .page-image, .lead {
   padding-bottom: 8px;
   padding-left: 45px;
 }
-/* line 117, ../sass/_byib.base.scss */
+/* line 118, ../sass/_byib.base.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #2b1300;
 }
 
-/* line 130, ../sass/_byib.base.scss */
+/* line 131, ../sass/_byib.base.scss */
 .breadcrumb {
   margin-bottom: 12.5px;
   padding: 0;
   background-color: transparent;
   color: white;
 }
-/* line 139, ../sass/_byib.base.scss */
+/* line 140, ../sass/_byib.base.scss */
 .breadcrumb a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
   color: white;
   text-decoration: underline;
 }
-/* line 146, ../sass/_byib.base.scss */
+/* line 147, ../sass/_byib.base.scss */
 .breadcrumb i {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 157, ../sass/_byib.base.scss */
+/* line 158, ../sass/_byib.base.scss */
 .main-content {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:before, .main-content:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:after {
   clear: both;
 }
 
-/* line 161, ../sass/_byib.base.scss */
+/* line 162, ../sass/_byib.base.scss */
 .content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3426,20 +3428,20 @@ p, .page-image, .lead {
   background-color: white;
   padding-top: 20px;
 }
-/* line 169, ../sass/_byib.base.scss */
+/* line 170, ../sass/_byib.base.scss */
 .content-wrapper .content-inner,
 .content-wrapper .attachments-wrapper {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-/* line 177, ../sass/_byib.base.scss */
+/* line 178, ../sass/_byib.base.scss */
 .content-inner,
 .attachments-wrapper {
   margin-right: -10px;
   margin-left: -10px;
 }
-/* line 181, ../sass/_byib.base.scss */
+/* line 182, ../sass/_byib.base.scss */
 .content-inner:before,
 .attachments-wrapper:before {
   content: "";
@@ -3453,13 +3455,13 @@ p, .page-image, .lead {
   margin-right: $half-spacing;
   margin-left: $half-spacing;
 }*/
-/* line 197, ../sass/_byib.base.scss */
+/* line 198, ../sass/_byib.base.scss */
 .attachments-wrapper:before {
   border-top: 1px solid #e2e2e2;
   margin-bottom: 30px;
 }
 
-/* line 211, ../sass/_byib.base.scss */
+/* line 212, ../sass/_byib.base.scss */
 .primary-content .grid-wrapper, .primary-content header, .primary-content .flexslider-wrapper, .primary-content footer, .primary-content .tabs,
 .primary-content .action-links-wrapper,
 .primary-content .messages-wrapper,
@@ -3508,18 +3510,18 @@ p, .page-image, .lead {
   margin-bottom: 30px;
 }
 
-/* line 237, ../sass/_byib.base.scss */
+/* line 238, ../sass/_byib.base.scss */
 .spotbox-image {
   margin-bottom: 13.33333px;
   margin-bottom: 0.83333rem;
 }
 
-/* line 241, ../sass/_byib.base.scss */
+/* line 242, ../sass/_byib.base.scss */
 .spotbox-link {
   margin-top: 10px;
   margin-top: 0.625rem;
 }
-/* line 245, ../sass/_byib.base.scss */
+/* line 246, ../sass/_byib.base.scss */
 .spotbox-link:before {
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -3529,34 +3531,34 @@ p, .page-image, .lead {
   margin-top: 2px;
   margin-left: 1px;
 }
-/* line 255, ../sass/_byib.base.scss */
+/* line 256, ../sass/_byib.base.scss */
 .spotbox-link a {
   margin-left: -20px;
   padding-left: 25px;
 }
-/* line 259, ../sass/_byib.base.scss */
+/* line 260, ../sass/_byib.base.scss */
 .spotbox-link a:hover {
   text-decoration: none;
 }
 
-/* line 270, ../sass/_byib.base.scss */
+/* line 271, ../sass/_byib.base.scss */
 .flexslider-wrapper {
   color: white;
 }
-/* line 275, ../sass/_byib.base.scss */
+/* line 276, ../sass/_byib.base.scss */
 .flexslider-wrapper .flexslider {
   background-color: white;
   position: relative;
 }
-/* line 283, ../sass/_byib.base.scss */
+/* line 284, ../sass/_byib.base.scss */
 .flexslider-wrapper .slides > li {
   display: none;
 }
-/* line 286, ../sass/_byib.base.scss */
+/* line 287, ../sass/_byib.base.scss */
 .flexslider-wrapper .slides > li.flex-active-slide {
   display: block;
 }
-/* line 292, ../sass/_byib.base.scss */
+/* line 293, ../sass/_byib.base.scss */
 .flexslider-wrapper .coverlayer {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
@@ -3567,19 +3569,19 @@ p, .page-image, .lead {
   right: 0;
   left: 0;
 }
-/* line 303, ../sass/_byib.base.scss */
+/* line 304, ../sass/_byib.base.scss */
 .flexslider-wrapper .coverlayer .block-title, .flexslider-wrapper .coverlayer .block-title-alt, .flexslider-wrapper .coverlayer .spotbox-title {
   border-bottom: 0;
   color: white;
   margin-bottom: 10px;
   padding-bottom: 0;
 }
-/* line 310, ../sass/_byib.base.scss */
+/* line 311, ../sass/_byib.base.scss */
 .flexslider-wrapper .coverlayer p, .flexslider-wrapper .coverlayer .page-image, .flexslider-wrapper .coverlayer .lead {
   margin-bottom: 0;
 }
 
-/* line 319, ../sass/_byib.base.scss */
+/* line 320, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev,
 .flex-direction-nav .flex-next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -3592,7 +3594,7 @@ p, .page-image, .lead {
   position: absolute;
   width: 46px;
 }
-/* line 330, ../sass/_byib.base.scss */
+/* line 331, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev:before,
 .flex-direction-nav .flex-next:before {
   font-size: 56px;
@@ -3601,43 +3603,43 @@ p, .page-image, .lead {
   line-height: 3.5rem;
   font-family: FontAwesome;
 }
-/* line 337, ../sass/_byib.base.scss */
+/* line 338, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev:hover,
 .flex-direction-nav .flex-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   text-decoration: none;
 }
-/* line 344, ../sass/_byib.base.scss */
+/* line 345, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev {
   left: 20px;
 }
-/* line 347, ../sass/_byib.base.scss */
+/* line 348, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev:before {
   padding-left: 2px;
 }
-/* line 354, ../sass/_byib.base.scss */
+/* line 355, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next {
   right: 20px;
 }
-/* line 357, ../sass/_byib.base.scss */
+/* line 358, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next:before {
   padding-left: 2px;
 }
 
-/* line 366, ../sass/_byib.base.scss */
+/* line 367, ../sass/_byib.base.scss */
 .flex-control-nav {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 371, ../sass/_byib.base.scss */
+/* line 372, ../sass/_byib.base.scss */
 .flex-control-nav > li {
   display: inline-block;
   margin-left: 10px;
   overflow: hidden;
 }
-/* line 377, ../sass/_byib.base.scss */
+/* line 378, ../sass/_byib.base.scss */
 .flex-control-nav > li a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -3653,18 +3655,18 @@ p, .page-image, .lead {
   text-indent: -100px;
   width: 20px;
 }
-/* line 389, ../sass/_byib.base.scss */
+/* line 390, ../sass/_byib.base.scss */
 .flex-control-nav > li a:hover, .flex-control-nav > li a.flex-active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 404, ../sass/_byib.base.scss */
+/* line 405, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 416, ../sass/_byib.base.scss */
+/* line 417, ../sass/_byib.base.scss */
 .button, .button-right,
 input[type="submit"],
 button {
@@ -3678,19 +3680,19 @@ button {
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 429, ../sass/_byib.base.scss */
+/* line 430, ../sass/_byib.base.scss */
 .button:link, .button-right:link,
 input[type="submit"]:link,
 button:link {
   color: white;
 }
-/* line 433, ../sass/_byib.base.scss */
+/* line 434, ../sass/_byib.base.scss */
 .button:visited, .button-right:visited,
 input[type="submit"]:visited,
 button:visited {
   color: white;
 }
-/* line 437, ../sass/_byib.base.scss */
+/* line 438, ../sass/_byib.base.scss */
 .button:hover, .button-right:hover,
 input[type="submit"]:hover,
 button:hover {
@@ -3698,14 +3700,14 @@ button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 443, ../sass/_byib.base.scss */
+/* line 444, ../sass/_byib.base.scss */
 .button:focus, .button-right:focus,
 input[type="submit"]:focus,
 button:focus {
   text-decoration: underline;
 }
 
-/* line 450, ../sass/_byib.base.scss */
+/* line 451, ../sass/_byib.base.scss */
 input[type="submit"],
 button {
   border: 0;
@@ -3714,61 +3716,61 @@ button {
   padding-left: 20px;
 }
 
-/* line 458, ../sass/_byib.base.scss */
+/* line 459, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 471, ../sass/_byib.base.scss */
+/* line 472, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 484, ../sass/_byib.base.scss */
+/* line 485, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 491, ../sass/_byib.base.scss */
+/* line 492, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
-/* line 497, ../sass/_byib.base.scss */
+/* line 498, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content p, .footer-wrapper .footer-content .page-image, .footer-wrapper .footer-content .lead {
   margin: 0;
 }
 
-/* line 509, ../sass/_byib.base.scss */
+/* line 510, ../sass/_byib.base.scss */
 .front .tabs {
   margin-top: 20px;
 }
 
-/* line 515, ../sass/_byib.base.scss */
+/* line 516, ../sass/_byib.base.scss */
 .tabs,
 .action-links-wrapper,
 .messages-wrapper {
   clear: right;
 }
 
-/* line 527, ../sass/_byib.base.scss */
+/* line 528, ../sass/_byib.base.scss */
 .front div.messages {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-/* line 533, ../sass/_byib.base.scss */
+/* line 534, ../sass/_byib.base.scss */
 .not-front div.messages {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 539, ../sass/_byib.base.scss */
+/* line 540, ../sass/_byib.base.scss */
 .krumo-root img {
   width: auto;
   height: auto;
