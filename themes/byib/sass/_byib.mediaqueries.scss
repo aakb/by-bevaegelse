@@ -76,10 +76,6 @@
       margin-top: $default-spacing;
       padding-bottom: $half-spacing;
     }
-
-    .block-title {
-      border-bottom: 0;
-    }
   }
 }
 
@@ -119,6 +115,7 @@
     margin-top: $default-spacing;
     padding-left: 0;
   }
+
 }
 
 
@@ -127,8 +124,75 @@
 // -----------------------------------------------------------------------------
 //
 %byib-display-one {
+  @include small() {
+    .flexslider-wrapper {
+
+      .slides {
+        > li {
+          padding-bottom: 66px;
+        }
+
+        .coverlayer {
+          @include rem('font-size', $theme-font-size * 0.9);
+          @include opacity(1);
+
+          padding: $half-spacing $default-spacing * 3;
+
+          .block-title {
+            @include rem('font-size', $theme-font-size * 1.1);
+            
+            margin-top: $half-spacing / 2;
+            margin-bottom: $half-spacing / 2;
+          }
+        }
+      }
+    }
+
+    .flex-direction-nav {
+      .flex-prev,
+      .flex-next {
+
+        bottom: $default-spacing;
+        height: 33px;
+        width: 33px;
+
+        &:before {
+          @include rem('font-size', $theme-font-size * 2.5);
+          @include rem('line-height', $theme-font-size * 2.5);
+        }
+      }
+
+      .flex-prev {
+        left: $half-spacing;
+      }
+
+      .flex-next {
+        right: $half-spacing;
+      }
+    }
+  }
+
   @include medium() {
     @include display-100-50-50;
+
+    .flexslider-wrapper {
+
+      .slides {
+        > li {
+          padding-bottom: 93px;
+        }
+
+        .coverlayer {
+          @include opacity(1);
+
+          padding: $default-spacing $default-spacing * 4;
+
+          .block-title {
+            @include rem('font-size', $theme-font-size * 1.25);
+          }
+        }
+      }
+    }
   }
 
   @include large() {
@@ -139,8 +203,8 @@
 %byib-display-two {
   @include small() {
     @include display-66-33-stacked;
-  }  
-  
+  }
+
   @include medium() {
     @include display-66-33-stacked;
   }
