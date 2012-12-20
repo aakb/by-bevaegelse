@@ -26,3 +26,27 @@ function byib_menu_tree__menu_block__2($vars) {
   // Add correct class to sub menu
   return '<ul class="sub-menu">'. $vars['tree'] .'</ul>';
 }
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function byib_preprocess_field(&$vars) {
+  // Add custom class name to specified fields
+  switch ($vars['element']['#field_name']) {
+    case 'field_title_image':
+      $vars['classes_array'][] = 'page-image';
+      break;
+
+    case 'field_manchet':
+      $vars['classes_array'][] = 'lead';
+      break;
+
+    case 'field_content':
+      $vars['classes_array'][] = 'page-content';
+      break;
+    
+    default:
+      
+      break;
+  }
+}

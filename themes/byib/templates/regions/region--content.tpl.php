@@ -26,8 +26,4 @@
  * @see template_process()
  */
 ?>
-<div class="primary-content">
-  <div class="grid-wrapper">
-    <?php print $content; ?>
-  </div>
-</div>
+<?php print $content; ?>
