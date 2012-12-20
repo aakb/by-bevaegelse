@@ -126,6 +126,14 @@
 %byib-display-one {
   @include small() {
 
+    header {
+      margin-bottom: 0;
+      
+      .header-inner {
+        min-height: 200px;
+      }
+    }
+
     .main-menu {
       li {
         float: left;
