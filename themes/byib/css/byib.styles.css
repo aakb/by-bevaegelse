@@ -2307,6 +2307,50 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 108, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper .slides > li {
+    padding-bottom: 66px;
+  }
+  /* line 112, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper .slides .coverlayer {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    padding: 10px 60px;
+  }
+  /* line 118, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper .slides .coverlayer .block-title, .front .flexslider-wrapper .slides .coverlayer .block-title-alt, .front .flexslider-wrapper .slides .coverlayer .spotbox-title {
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /* line 130, ../sass/_byib.mediaqueries.scss */
+  .front .flex-direction-nav .flex-prev,
+  .front .flex-direction-nav .flex-next {
+    bottom: 20px;
+    height: 33px;
+    width: 33px;
+  }
+  /* line 136, ../sass/_byib.mediaqueries.scss */
+  .front .flex-direction-nav .flex-prev:before,
+  .front .flex-direction-nav .flex-next:before {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+  }
+  /* line 142, ../sass/_byib.mediaqueries.scss */
+  .front .flex-direction-nav .flex-prev {
+    left: 10px;
+  }
+  /* line 146, ../sass/_byib.mediaqueries.scss */
+  .front .flex-direction-nav .flex-next {
+    right: 10px;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 18, ../../latto/sass/_latto.mq.displays.scss */
   .front .primary-content {
@@ -2362,6 +2406,21 @@ ul.icons li .icon-large:before {
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
+  }
+  /* line 158, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper .slides > li {
+    padding-bottom: 93px;
+  }
+  /* line 162, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper .slides .coverlayer {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    padding: 20px 80px;
+  }
+  /* line 167, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper .slides .coverlayer .block-title, .front .flexslider-wrapper .slides .coverlayer .block-title-alt, .front .flexslider-wrapper .slides .coverlayer .spotbox-title {
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -2422,7 +2481,7 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 72, ../sass/_byib.mediaqueries.scss */
+  /* line 68, ../sass/_byib.mediaqueries.scss */
   .not-front .page-title {
     float: left;
     width: 100%;
@@ -2441,7 +2500,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
     float: none;
   }
-  /* line 78, ../sass/_byib.mediaqueries.scss */
+  /* line 74, ../sass/_byib.mediaqueries.scss */
   .not-front .primary-content {
     float: left;
     width: 100%;
@@ -2459,7 +2518,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 81, ../sass/_byib.mediaqueries.scss */
+  /* line 77, ../sass/_byib.mediaqueries.scss */
   .not-front .primary-content .page-content {
     float: left;
     width: 100%;
@@ -2478,11 +2537,11 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
     padding-left: 0;
   }
-  /* line 88, ../sass/_byib.mediaqueries.scss */
+  /* line 84, ../sass/_byib.mediaqueries.scss */
   .not-front .secondary-content {
     display: none;
   }
-  /* line 92, ../sass/_byib.mediaqueries.scss */
+  /* line 88, ../sass/_byib.mediaqueries.scss */
   .not-front .tertiary-content {
     clear: both;
     float: left;
@@ -2505,7 +2564,7 @@ ul.icons li .icon-large:before {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 72, ../sass/_byib.mediaqueries.scss */
+  /* line 68, ../sass/_byib.mediaqueries.scss */
   .not-front .page-title {
     float: left;
     width: 100%;
@@ -2524,7 +2583,7 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
     float: none;
   }
-  /* line 78, ../sass/_byib.mediaqueries.scss */
+  /* line 74, ../sass/_byib.mediaqueries.scss */
   .not-front .primary-content {
     float: left;
     width: 100%;
@@ -2542,7 +2601,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 81, ../sass/_byib.mediaqueries.scss */
+  /* line 77, ../sass/_byib.mediaqueries.scss */
   .not-front .primary-content .page-content {
     float: left;
     width: 100%;
@@ -2561,11 +2620,11 @@ ul.icons li .icon-large:before {
     _overflow-y: visible;
     padding-left: 0;
   }
-  /* line 88, ../sass/_byib.mediaqueries.scss */
+  /* line 84, ../sass/_byib.mediaqueries.scss */
   .not-front .secondary-content {
     display: none;
   }
-  /* line 92, ../sass/_byib.mediaqueries.scss */
+  /* line 88, ../sass/_byib.mediaqueries.scss */
   .not-front .tertiary-content {
     clear: both;
     float: left;
@@ -2669,10 +2728,6 @@ ul.icons li .icon-large:before {
   .not-front .tertiary-content .block {
     margin-top: 20px;
     padding-bottom: 10px;
-  }
-  /* line 57, ../sass/_byib.mediaqueries.scss */
-  .not-front .tertiary-content .block-title, .not-front .tertiary-content .block-title-alt, .not-front .tertiary-content .spotbox-title {
-    border-bottom: 0;
   }
 }
 
@@ -3278,7 +3333,7 @@ p, .page-image, .lead {
   left: 0;
 }
 /* line 303, ../sass/_byib.base.scss */
-.flexslider-wrapper .coverlayer h2 {
+.flexslider-wrapper .coverlayer .block-title, .flexslider-wrapper .coverlayer .block-title-alt, .flexslider-wrapper .coverlayer .spotbox-title {
   border-bottom: 0;
   color: white;
   margin-bottom: 10px;
