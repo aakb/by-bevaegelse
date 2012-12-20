@@ -511,11 +511,19 @@ footer {
   }
 }
 .tabs,
-.action-links-wrapper {
+.action-links-wrapper,
+.messages-wrapper {
    @extend .grid-wrapper;
    @include zen-clear(right);
 }
 .tabs-inner,
-.action-links-inner {
+.action-links-inner,
+.messages-inner {
   @extend .grid-inner;
+}
+
+// Has to be so specific to override Drupals default style
+div.messages {
+  margin-top :$default-spacing;
+  margin-bottom: $default-spacing;
 }
