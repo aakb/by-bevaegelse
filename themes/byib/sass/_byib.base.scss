@@ -154,8 +154,8 @@ p {
 // Content, layouts etc.
 // -----------------------------------------------------------------------------
 //
-.layout-frontpage,
-.default-frontpage {
+.front,
+.not-front {
   @extend %custom-grid-overwrite;
 }
 
@@ -191,6 +191,11 @@ p {
     margin-left: $half-spacing;
   }
 }
+
+/*.attachments-wrapper {
+  margin-right: $half-spacing;
+  margin-left: $half-spacing;
+}*/
 
 
 .attachments-wrapper {
