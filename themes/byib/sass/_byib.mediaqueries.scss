@@ -125,6 +125,23 @@
 //
 %byib-display-one {
   @include small() {
+
+    .main-menu {
+      li {
+        float: left;
+        width: 50%;
+
+        a {
+          background-color: lighten($navbar-bg-active-color, 25%);
+
+          &.active,
+          &:hover {
+            background-color: $navbar-bg-active-color;
+          }
+        }
+      }
+    }
+
     .flexslider-wrapper {
 
       .slides {
@@ -140,7 +157,7 @@
 
           .block-title {
             @include rem('font-size', $theme-font-size * 1.1);
-            
+
             margin-top: $half-spacing / 2;
             margin-bottom: $half-spacing / 2;
           }
