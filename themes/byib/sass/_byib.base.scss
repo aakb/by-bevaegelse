@@ -523,7 +523,15 @@ footer {
 }
 
 // Has to be so specific to override Drupals default style
-div.messages {
-  margin-top :$default-spacing;
-  margin-bottom: $default-spacing;
+.front {
+  div.messages {
+    margin-top :$default-spacing;
+    margin-bottom: 0;
+  }
+}
+.not-front {
+  div.messages {
+    margin-top :0;
+    margin-bottom: $default-spacing;
+  }
 }

@@ -3466,8 +3466,14 @@ button {
   clear: right;
 }
 
-/* line 526, ../sass/_byib.base.scss */
-div.messages {
+/* line 527, ../sass/_byib.base.scss */
+.front div.messages {
   margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* line 533, ../sass/_byib.base.scss */
+.not-front div.messages {
+  margin-top: 0;
   margin-bottom: 20px;
 }
