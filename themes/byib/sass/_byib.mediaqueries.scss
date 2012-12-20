@@ -4,6 +4,29 @@
 
 
 // -------------------------------
+// |           Primary           |
+// -------------------------------
+// -------------------------------
+// |          Secondary          |
+// -------------------------------
+//
+@mixin display-100-100 {
+  .page-title {
+    @include zen-grid-item($grid-column-count, 1);
+    float: none;
+  }
+
+  .primary-content {
+    @include zen-grid-item($grid-column-count, 1);
+  }
+
+  .secondary-content {
+    @include zen-grid-item($grid-column-count, 1);
+  }
+
+}
+
+// -------------------------------
 // |  Prim.  |   Sec.  |   Ter.  |
 // -------------------------------
 //
@@ -191,6 +214,17 @@
   }
 }
 
+%byib-display-no-secondary {
+  @include medium() {
+    @include display-100-100;
+  }
+
+  @include large() {
+    @include display-33-66-inline;
+    @include display-100-100;
+  }
+}
+
 
 // -----------------------------------------------------------------------------
 // Layouts
@@ -204,4 +238,17 @@
 .not-front {
   @extend %byib-display-two;
   @extend %attachments-display-three;
+}
+
+.no-secondary-content {
+  @extend %byib-display-no-secondary;
+}
+
+.no-secondary-content.no-tertiary-content {
+  @extend %byib-display-no-secondary;
+  .page-content {
+    @include zen-grid-item($grid-column-count, 1);
+
+    padding-left: 0;
+  }
 }

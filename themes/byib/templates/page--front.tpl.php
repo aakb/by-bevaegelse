@@ -145,7 +145,7 @@
         <?php endif; ?>
 
       </div>
-      
+
       <?php if (!empty($page['attachment_first']) ||
         !empty($page['attachment_second']) ||
         !empty($page['attachment_third']) ||
@@ -171,8 +171,8 @@
 
       </div>
 
-      <?php endif; ?>      
-      
+      <?php endif; ?>
+
     </div>
   </article>
 
