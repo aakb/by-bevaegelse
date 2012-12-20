@@ -154,12 +154,6 @@ p {
 // Content, layouts etc.
 // -----------------------------------------------------------------------------
 //
-.layout-frontpage,
-.default-frontpage {
-  @extend %custom-grid-overwrite;
-}
-
-
 .main-content {
   @include zen-grid-container;
 }
@@ -169,9 +163,10 @@ p {
   @extend .grid-inner;
 
   background-color: $theme-content-background;
+  padding-top: $default-spacing;
 
-  .content-inner {
-    padding-top: $default-spacing;
+  .content-inner,
+  .attachments-wrapper {
     padding-right: $default-spacing;
     padding-left: $default-spacing;  
   }
