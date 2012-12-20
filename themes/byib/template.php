@@ -5,19 +5,20 @@
  */
 
 /**
- * Implements hook_preprocess_block().
+ * Implements hook_process_html().
+ *
+ * Process variables for html.tpl.php
  */
-//function byib_preprocess_block(&$vars) {
-//  // Load region
-//  $current_region = $vars['elements']['#block']->region;
-//
-//  // Add classes based on module & region
-//  if ($current_region == 'secondary_content' && $vars['elements']['#block']->module == 'menu_block') {
-//
-//    $vars['attributes_array']['class'][] = 'sub-menu';
-//
-//  }
-//}
+function byib_preprocess_html(&$vars) {
+  // If tertiary content is not present add a class to body tag.
+  if (empty($vars['page']['tertiary_content'])) {
+    $vars['classes_array'][] = 'no-tertiary-content';
+  }
+  // If secondary content is not present add a class to body tag.
+  if (empty($vars['page']['secondary_content'])) {
+    $vars['classes_array'][] = 'no-secondary-content';
+  }
+}
 
 /**
  * Implements hook_menu_tree_menu_block().
