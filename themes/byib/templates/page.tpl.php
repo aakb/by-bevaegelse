@@ -96,8 +96,10 @@
 <?php endif; ?>
 
 <?php if ($messages): ?>
-  <div class="messages">
-    <?php print $messages; ?>
+  <div class="messages-wrapper">
+    <div class="messages-inner">
+      <?php print $messages; ?>
+    </div>
   </div>
 <?php endif; ?>
 
