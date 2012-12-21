@@ -20,12 +20,12 @@
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -2048,12 +2048,12 @@ ul.icons li .icon-large:before {
 }
 
 /* line 273, ../../latto/sass/_latto.font-awesome.scss */
-.icon-circle-arrow-left:before, .flex-direction-nav .flex-prev:before {
+.icon-circle-arrow-left:before {
   content: "\f0a8";
 }
 
 /* line 274, ../../latto/sass/_latto.font-awesome.scss */
-.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before, .flex-direction-nav .flex-next:before {
+.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before {
   content: "\f0a9";
 }
 
@@ -3418,12 +3418,12 @@ p, .page-image, .lead {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:before, .main-content:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:after {
   clear: both;
 }
@@ -3594,9 +3594,9 @@ p, .page-image, .lead {
 .flex-direction-nav .flex-next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
-  bottom: 26px;
+  bottom: 22px;
   color: white;
-  display: block;
+  display: block !important;
   height: 46px;
   overflow: hidden;
   position: absolute;
@@ -3620,34 +3620,38 @@ p, .page-image, .lead {
 }
 /* line 345, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev {
+  background: url("../images/arrow-left.png") no-repeat;
+  text-indent: -200px;
   left: 20px;
 }
-/* line 348, ../sass/_byib.base.scss */
+/* line 349, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-prev:before {
   padding-left: 2px;
 }
-/* line 355, ../sass/_byib.base.scss */
+/* line 356, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next {
+  background: url("../images/arrow-right.png") no-repeat;
+  text-indent: -200px;
   right: 20px;
 }
-/* line 358, ../sass/_byib.base.scss */
+/* line 360, ../sass/_byib.base.scss */
 .flex-direction-nav .flex-next:before {
   padding-left: 2px;
 }
 
-/* line 367, ../sass/_byib.base.scss */
+/* line 369, ../sass/_byib.base.scss */
 .flex-control-nav {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 372, ../sass/_byib.base.scss */
+/* line 374, ../sass/_byib.base.scss */
 .flex-control-nav > li {
   display: inline-block;
   margin-left: 10px;
   overflow: hidden;
 }
-/* line 378, ../sass/_byib.base.scss */
+/* line 380, ../sass/_byib.base.scss */
 .flex-control-nav > li a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -3663,18 +3667,18 @@ p, .page-image, .lead {
   text-indent: -100px;
   width: 20px;
 }
-/* line 390, ../sass/_byib.base.scss */
+/* line 392, ../sass/_byib.base.scss */
 .flex-control-nav > li a:hover, .flex-control-nav > li a.flex-active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 405, ../sass/_byib.base.scss */
+/* line 407, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 417, ../sass/_byib.base.scss */
+/* line 419, ../sass/_byib.base.scss */
 .button, .button-right,
 input[type="submit"],
 button {
@@ -3688,19 +3692,19 @@ button {
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 430, ../sass/_byib.base.scss */
+/* line 432, ../sass/_byib.base.scss */
 .button:link, .button-right:link,
 input[type="submit"]:link,
 button:link {
   color: white;
 }
-/* line 434, ../sass/_byib.base.scss */
+/* line 436, ../sass/_byib.base.scss */
 .button:visited, .button-right:visited,
 input[type="submit"]:visited,
 button:visited {
   color: white;
 }
-/* line 438, ../sass/_byib.base.scss */
+/* line 440, ../sass/_byib.base.scss */
 .button:hover, .button-right:hover,
 input[type="submit"]:hover,
 button:hover {
@@ -3708,14 +3712,14 @@ button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 444, ../sass/_byib.base.scss */
+/* line 446, ../sass/_byib.base.scss */
 .button:focus, .button-right:focus,
 input[type="submit"]:focus,
 button:focus {
   text-decoration: underline;
 }
 
-/* line 451, ../sass/_byib.base.scss */
+/* line 453, ../sass/_byib.base.scss */
 input[type="submit"],
 button {
   border: 0;
@@ -3724,61 +3728,61 @@ button {
   padding-left: 20px;
 }
 
-/* line 459, ../sass/_byib.base.scss */
+/* line 461, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 472, ../sass/_byib.base.scss */
+/* line 474, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 485, ../sass/_byib.base.scss */
+/* line 487, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 492, ../sass/_byib.base.scss */
+/* line 494, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
-/* line 498, ../sass/_byib.base.scss */
+/* line 500, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content p, .footer-wrapper .footer-content .page-image, .footer-wrapper .footer-content .lead {
   margin: 0;
 }
 
-/* line 510, ../sass/_byib.base.scss */
+/* line 512, ../sass/_byib.base.scss */
 .front .tabs {
   margin-top: 20px;
 }
 
-/* line 516, ../sass/_byib.base.scss */
+/* line 518, ../sass/_byib.base.scss */
 .tabs,
 .action-links-wrapper,
 .messages-wrapper {
   clear: right;
 }
 
-/* line 528, ../sass/_byib.base.scss */
+/* line 530, ../sass/_byib.base.scss */
 .front div.messages {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-/* line 534, ../sass/_byib.base.scss */
+/* line 536, ../sass/_byib.base.scss */
 .not-front div.messages {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 540, ../sass/_byib.base.scss */
+/* line 542, ../sass/_byib.base.scss */
 .krumo-root img {
   width: auto;
   height: auto;
