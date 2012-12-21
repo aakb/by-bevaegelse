@@ -322,7 +322,7 @@ p {
 
     bottom: $default-spacing * 1.1;
     color: $white;
-    display: block;
+    display: block !important;
     height: 46px;
     overflow: hidden;
     position: absolute;

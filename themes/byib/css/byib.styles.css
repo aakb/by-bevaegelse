@@ -3596,7 +3596,7 @@ p, .page-image, .lead {
   opacity: 0.5;
   bottom: 22px;
   color: white;
-  display: block;
+  display: block !important;
   height: 46px;
   overflow: hidden;
   position: absolute;
