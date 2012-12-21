@@ -2977,12 +2977,13 @@ ul.icons li .icon-large:before {
   /* line 281, ../sass/_byib.mediaqueries.scss */
   body header .logo {
     min-width: 125px;
+    margin-top: 20px;
     margin-right: 20px;
     max-width: 150px;
   }
 }
 
-/* line 306, ../sass/_byib.mediaqueries.scss */
+/* line 307, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
