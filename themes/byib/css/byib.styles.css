@@ -3675,7 +3675,7 @@ p, .page-image, .lead {
   width: 20px;
 }
 /* line 390, ../sass/_byib.base.scss */
-.flex-control-nav > li a:hover, .flex-control-nav > li a.flex-active {
+.flex-control-nav > li a:hover, .flex-control-nav > li a.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }

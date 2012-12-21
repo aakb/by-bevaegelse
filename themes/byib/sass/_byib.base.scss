@@ -387,7 +387,7 @@ p {
       width: $default-spacing;
 
       &:hover,
-      &.flex-active {
+      &.active {
         @include opacity(1);
       }
     }
