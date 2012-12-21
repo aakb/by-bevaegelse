@@ -2048,12 +2048,12 @@ ul.icons li .icon-large:before {
 }
 
 /* line 273, ../../latto/sass/_latto.font-awesome.scss */
-.icon-circle-arrow-left:before, .flex-direction-nav .flex-prev:before {
+.icon-circle-arrow-left:before, .flex-direction-nav .prev:before {
   content: "\f0a8";
 }
 
 /* line 274, ../../latto/sass/_latto.font-awesome.scss */
-.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before, .flex-direction-nav .flex-next:before {
+.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before, .flex-direction-nav .next:before {
   content: "\f0a9";
 }
 
@@ -3601,8 +3601,8 @@ p, .page-image, .lead {
 }
 
 /* line 320, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-prev,
-.flex-direction-nav .flex-next {
+.flex-direction-nav .prev,
+.flex-direction-nav .next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   bottom: 26px;
@@ -3614,8 +3614,8 @@ p, .page-image, .lead {
   width: 46px;
 }
 /* line 331, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-prev:before,
-.flex-direction-nav .flex-next:before {
+.flex-direction-nav .prev:before,
+.flex-direction-nav .next:before {
   font-size: 56px;
   font-size: 3.5rem;
   line-height: 56px;
@@ -3623,26 +3623,26 @@ p, .page-image, .lead {
   font-family: FontAwesome;
 }
 /* line 338, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-prev:hover,
-.flex-direction-nav .flex-next:hover {
+.flex-direction-nav .prev:hover,
+.flex-direction-nav .next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   text-decoration: none;
 }
 /* line 345, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-prev {
+.flex-direction-nav .prev {
   left: 20px;
 }
 /* line 348, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-prev:before {
+.flex-direction-nav .prev:before {
   padding-left: 2px;
 }
 /* line 355, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-next {
+.flex-direction-nav .next {
   right: 20px;
 }
 /* line 358, ../sass/_byib.base.scss */
-.flex-direction-nav .flex-next:before {
+.flex-direction-nav .next:before {
   padding-left: 2px;
 }
 

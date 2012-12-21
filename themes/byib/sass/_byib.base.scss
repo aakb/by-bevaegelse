@@ -316,8 +316,8 @@ p {
 
 .flex-direction-nav {
 
-  .flex-prev,
-  .flex-next {
+  .prev,
+  .next {
     @include opacity(.5);
 
     bottom: $default-spacing * 1.3;
@@ -342,7 +342,7 @@ p {
     }
   }
 
-  .flex-prev {
+  .prev {
     @extend .icon-circle-arrow-left;
 
     &:before {
@@ -352,7 +352,7 @@ p {
     left: $default-spacing;
   }
 
-  .flex-next {
+  .next {
     @extend .icon-circle-arrow-right;
 
     &:before {
