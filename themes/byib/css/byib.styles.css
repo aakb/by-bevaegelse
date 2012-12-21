@@ -20,12 +20,12 @@
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -2308,11 +2308,32 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 131, ../sass/_byib.mediaqueries.scss */
+  /* line 129, ../sass/_byib.mediaqueries.scss */
+  .front header {
+    margin-bottom: 0;
+  }
+  /* line 132, ../sass/_byib.mediaqueries.scss */
+  .front header .header-inner {
+    min-height: 200px;
+  }
+  /* line 138, ../sass/_byib.mediaqueries.scss */
+  .front .main-menu li {
+    float: left;
+    width: 50%;
+  }
+  /* line 142, ../sass/_byib.mediaqueries.scss */
+  .front .main-menu li a {
+    background-color: #9adae9;
+  }
+  /* line 146, ../sass/_byib.mediaqueries.scss */
+  .front .main-menu li a.active, .front .main-menu li a:hover {
+    background-color: #31b4d3;
+  }
+  /* line 156, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides > li {
     padding-bottom: 66px;
   }
-  /* line 135, ../sass/_byib.mediaqueries.scss */
+  /* line 160, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer {
     font-size: 14.4px;
     font-size: 0.9rem;
@@ -2320,21 +2341,21 @@ ul.icons li .icon-large:before {
     opacity: 1;
     padding: 10px 60px;
   }
-  /* line 141, ../sass/_byib.mediaqueries.scss */
+  /* line 166, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer .block-title, .front .flexslider-wrapper .slides .coverlayer .block-title-alt, .front .flexslider-wrapper .slides .coverlayer .spotbox-title {
     font-size: 17.6px;
     font-size: 1.1rem;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  /* line 153, ../sass/_byib.mediaqueries.scss */
+  /* line 178, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-prev,
   .front .flex-direction-nav .flex-next {
     bottom: 20px;
     height: 33px;
     width: 33px;
   }
-  /* line 159, ../sass/_byib.mediaqueries.scss */
+  /* line 184, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-prev:before,
   .front .flex-direction-nav .flex-next:before {
     font-size: 40px;
@@ -2342,11 +2363,11 @@ ul.icons li .icon-large:before {
     line-height: 40px;
     line-height: 2.5rem;
   }
-  /* line 165, ../sass/_byib.mediaqueries.scss */
+  /* line 190, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-prev {
     left: 10px;
   }
-  /* line 169, ../sass/_byib.mediaqueries.scss */
+  /* line 194, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-next {
     right: 10px;
   }
@@ -2407,17 +2428,17 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 181, ../sass/_byib.mediaqueries.scss */
+  /* line 206, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides > li {
     padding-bottom: 93px;
   }
-  /* line 185, ../sass/_byib.mediaqueries.scss */
+  /* line 210, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     padding: 20px 80px;
   }
-  /* line 190, ../sass/_byib.mediaqueries.scss */
+  /* line 215, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer .block-title, .front .flexslider-wrapper .slides .coverlayer .block-title-alt, .front .flexslider-wrapper .slides .coverlayer .spotbox-title {
     font-size: 20px;
     font-size: 1.25rem;
@@ -2928,7 +2949,7 @@ ul.icons li .icon-large:before {
   }
 }
 
-/* line 249, ../sass/_byib.mediaqueries.scss */
+/* line 274, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
@@ -3397,12 +3418,12 @@ p, .page-image, .lead {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:before, .main-content:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 .main-content:after {
   clear: both;
 }
