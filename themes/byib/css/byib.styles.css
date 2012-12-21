@@ -2941,26 +2941,33 @@ ul.icons li .icon-large:before {
   body header .header-inner {
     min-height: 200px;
   }
-  /* line 247, ../sass/_byib.mediaqueries.scss */
+  /* line 245, ../sass/_byib.mediaqueries.scss */
+  body header .logo {
+    min-width: 75px;
+    margin-top: 20px;
+    margin-right: 20px;
+    max-width: 125px;
+  }
+  /* line 254, ../sass/_byib.mediaqueries.scss */
   body .main-menu li {
     float: left;
     width: 50%;
   }
-  /* line 251, ../sass/_byib.mediaqueries.scss */
+  /* line 258, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a {
     background-color: #9adae9;
   }
-  /* line 255, ../sass/_byib.mediaqueries.scss */
+  /* line 262, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a.active, body .main-menu li a:hover {
     background-color: #31b4d3;
   }
-  /* line 262, ../sass/_byib.mediaqueries.scss */
+  /* line 269, ../sass/_byib.mediaqueries.scss */
   body .flexslider-wrapper {
     display: none;
   }
 }
 
-/* line 284, ../sass/_byib.mediaqueries.scss */
+/* line 291, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;

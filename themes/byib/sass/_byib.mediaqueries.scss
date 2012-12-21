@@ -241,6 +241,13 @@ body {
       .header-inner {
         min-height: 200px;
       }
+
+      .logo {
+        min-width: 75px;
+        margin-top: $default-spacing;
+        margin-right: $default-spacing;
+        max-width: 125px;
+      }
     }
 
     .main-menu {
