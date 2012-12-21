@@ -1,0 +1,6 @@
+[submodule "themes/latto"]
+	path = themes/latto
+	url = git@github.com:ding2tal/latto
+[submodule "modules/itkore_features"]
+	path = modules/itkore_features
+	url = git@github.com:aakb/itkore_features.git
