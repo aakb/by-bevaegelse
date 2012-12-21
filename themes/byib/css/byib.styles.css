@@ -2308,32 +2308,15 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 129, ../sass/_byib.mediaqueries.scss */
-  .front header {
-    margin-bottom: 0;
+  /* line 128, ../sass/_byib.mediaqueries.scss */
+  .front .flexslider-wrapper {
+    display: none;
   }
-  /* line 132, ../sass/_byib.mediaqueries.scss */
-  .front header .header-inner {
-    min-height: 200px;
-  }
-  /* line 138, ../sass/_byib.mediaqueries.scss */
-  .front .main-menu li {
-    float: left;
-    width: 50%;
-  }
-  /* line 142, ../sass/_byib.mediaqueries.scss */
-  .front .main-menu li a {
-    background-color: #9adae9;
-  }
-  /* line 146, ../sass/_byib.mediaqueries.scss */
-  .front .main-menu li a.active, .front .main-menu li a:hover {
-    background-color: #31b4d3;
-  }
-  /* line 156, ../sass/_byib.mediaqueries.scss */
+  /* line 133, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides > li {
     padding-bottom: 66px;
   }
-  /* line 160, ../sass/_byib.mediaqueries.scss */
+  /* line 137, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer {
     font-size: 14.4px;
     font-size: 0.9rem;
@@ -2341,21 +2324,21 @@ ul.icons li .icon-large:before {
     opacity: 1;
     padding: 10px 60px;
   }
-  /* line 166, ../sass/_byib.mediaqueries.scss */
+  /* line 143, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer .block-title, .front .flexslider-wrapper .slides .coverlayer .block-title-alt, .front .flexslider-wrapper .slides .coverlayer .spotbox-title {
     font-size: 17.6px;
     font-size: 1.1rem;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  /* line 178, ../sass/_byib.mediaqueries.scss */
+  /* line 155, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-prev,
   .front .flex-direction-nav .flex-next {
     bottom: 20px;
     height: 33px;
     width: 33px;
   }
-  /* line 184, ../sass/_byib.mediaqueries.scss */
+  /* line 161, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-prev:before,
   .front .flex-direction-nav .flex-next:before {
     font-size: 40px;
@@ -2363,11 +2346,11 @@ ul.icons li .icon-large:before {
     line-height: 40px;
     line-height: 2.5rem;
   }
-  /* line 190, ../sass/_byib.mediaqueries.scss */
+  /* line 167, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-prev {
     left: 10px;
   }
-  /* line 194, ../sass/_byib.mediaqueries.scss */
+  /* line 171, ../sass/_byib.mediaqueries.scss */
   .front .flex-direction-nav .flex-next {
     right: 10px;
   }
@@ -2428,17 +2411,17 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 206, ../sass/_byib.mediaqueries.scss */
+  /* line 183, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides > li {
     padding-bottom: 93px;
   }
-  /* line 210, ../sass/_byib.mediaqueries.scss */
+  /* line 187, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     padding: 20px 80px;
   }
-  /* line 215, ../sass/_byib.mediaqueries.scss */
+  /* line 192, ../sass/_byib.mediaqueries.scss */
   .front .flexslider-wrapper .slides .coverlayer .block-title, .front .flexslider-wrapper .slides .coverlayer .block-title-alt, .front .flexslider-wrapper .slides .coverlayer .spotbox-title {
     font-size: 20px;
     font-size: 1.25rem;
@@ -2949,7 +2932,35 @@ ul.icons li .icon-large:before {
   }
 }
 
-/* line 274, ../sass/_byib.mediaqueries.scss */
+@media only screen and (max-width: 480px) {
+  /* line 238, ../sass/_byib.mediaqueries.scss */
+  body header {
+    margin-bottom: 0;
+  }
+  /* line 241, ../sass/_byib.mediaqueries.scss */
+  body header .header-inner {
+    min-height: 200px;
+  }
+  /* line 247, ../sass/_byib.mediaqueries.scss */
+  body .main-menu li {
+    float: left;
+    width: 50%;
+  }
+  /* line 251, ../sass/_byib.mediaqueries.scss */
+  body .main-menu li a {
+    background-color: #9adae9;
+  }
+  /* line 255, ../sass/_byib.mediaqueries.scss */
+  body .main-menu li a.active, body .main-menu li a:hover {
+    background-color: #31b4d3;
+  }
+  /* line 262, ../sass/_byib.mediaqueries.scss */
+  body .flexslider-wrapper {
+    display: none;
+  }
+}
+
+/* line 284, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;

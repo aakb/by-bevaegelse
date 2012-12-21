@@ -125,32 +125,9 @@
 //
 %byib-display-one {
   @include small() {
-
-    header {
-      margin-bottom: 0;
-      
-      .header-inner {
-        min-height: 200px;
-      }
-    }
-
-    .main-menu {
-      li {
-        float: left;
-        width: 50%;
-
-        a {
-          background-color: lighten($navbar-bg-active-color, 25%);
-
-          &.active,
-          &:hover {
-            background-color: $navbar-bg-active-color;
-          }
-        }
-      }
-    }
-
     .flexslider-wrapper {
+
+      display: none;
 
       .slides {
         > li {
@@ -255,6 +232,39 @@
 // Layouts
 // -----------------------------------------------------------------------------
 //
+
+body {
+  @include small() {
+    header {
+      margin-bottom: 0;
+
+      .header-inner {
+        min-height: 200px;
+      }
+    }
+
+    .main-menu {
+      li {
+        float: left;
+        width: 50%;
+
+        a {
+          background-color: lighten($navbar-bg-active-color, 25%);
+
+          &.active,
+          &:hover {
+            background-color: $navbar-bg-active-color;
+          }
+        }
+      }
+    }
+
+    .flexslider-wrapper {
+      display: none;
+    }
+  }
+}
+
 .front {
   @extend %byib-display-one;
   @extend %attachments-display-two;
