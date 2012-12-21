@@ -1,0 +1,3 @@
+[submodule "themes/latto"]
+	path = themes/latto
+	url = git@github.com:ding2tal/latto
