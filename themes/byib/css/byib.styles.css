@@ -3017,7 +3017,8 @@ ul.icons li .icon-large:before {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  width: 100%;
+  width: 100%!important;
+  /* IE8 won't work without this */
   padding-left: 0;
 }
 
