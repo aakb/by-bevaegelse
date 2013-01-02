@@ -104,10 +104,16 @@
     }
   }
 
-  .secondary-content {
+  #block-menu-block-2 {
     display: none;
   }
 
+  .mobile-menu {
+    @include zen-clear;
+    
+    display: block;
+  }  
+  
   .tertiary-content {
     @include zen-clear(both);
     @include zen-grid-item($grid-column-count, 1);

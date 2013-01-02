@@ -132,6 +132,18 @@ table {
 }
 
 
+.mobile-menu {
+  background-color: $gray-lighter;
+  display: none;
+  margin-bottom: $default-spacing * 2;
+  padding: $default-spacing;
+
+  select {
+    width: 100%;
+  }
+}
+
+
 // -----------------------------------------------------------------------------
 // Breadcrumb
 // -----------------------------------------------------------------------------
@@ -177,7 +189,7 @@ table {
   .content-inner,
   .attachments-wrapper {
     padding-right: $default-spacing;
-    padding-left: $default-spacing;  
+    padding-left: $default-spacing;
   }
 }
 
@@ -264,7 +276,7 @@ table {
   a {
     margin-left: -$default-spacing;
     padding-left: $default-spacing * 1.25;
-    
+
     &:hover {
       text-decoration: none;
     }
@@ -334,19 +346,19 @@ table {
     height: 46px;
     overflow: hidden;
     position: absolute;
-    width: 46px;          
+    width: 46px;
 
     &:before {
       @include rem('font-size', $theme-font-size * 3.5);
       @include rem('line-height', $theme-font-size * 3.5);
-      
+
       font-family: FontAwesome;
     }
-    
+
     &:hover {
       @include opacity(1);
-      
-      text-decoration: none;      
+
+      text-decoration: none;
     }
   }
 
