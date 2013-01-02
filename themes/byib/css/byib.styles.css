@@ -2939,28 +2939,51 @@ ul.icons li .icon-large:before {
   }
   /* line 241, ../sass/_byib.mediaqueries.scss */
   body header .header-inner {
-    min-height: 200px;
+    min-height: 175px;
   }
-  /* line 247, ../sass/_byib.mediaqueries.scss */
+  /* line 245, ../sass/_byib.mediaqueries.scss */
+  body header .logo {
+    min-width: 75px;
+    margin-right: 20px;
+    max-width: 125px;
+  }
+  /* line 253, ../sass/_byib.mediaqueries.scss */
   body .main-menu li {
     float: left;
     width: 50%;
   }
-  /* line 251, ../sass/_byib.mediaqueries.scss */
+  /* line 257, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a {
     background-color: #9adae9;
   }
-  /* line 255, ../sass/_byib.mediaqueries.scss */
+  /* line 261, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a.active, body .main-menu li a:hover {
     background-color: #31b4d3;
   }
-  /* line 262, ../sass/_byib.mediaqueries.scss */
+  /* line 268, ../sass/_byib.mediaqueries.scss */
   body .flexslider-wrapper {
     display: none;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 274, ../sass/_byib.mediaqueries.scss */
+  body header {
+    margin-bottom: 0;
+  }
+  /* line 277, ../sass/_byib.mediaqueries.scss */
+  body header .header-inner {
+    min-height: 150px;
+  }
+  /* line 281, ../sass/_byib.mediaqueries.scss */
+  body header .logo {
+    min-width: 125px;
+    margin-top: 20px;
+    margin-right: 20px;
+    max-width: 150px;
+  }
+}
 
-/* line 284, ../sass/_byib.mediaqueries.scss */
+/* line 307, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
@@ -3675,7 +3698,7 @@ p, .page-image, .lead {
   width: 20px;
 }
 /* line 390, ../sass/_byib.base.scss */
-.flex-control-nav > li a:hover, .flex-control-nav > li a.flex-active {
+.flex-control-nav > li a:hover, .flex-control-nav > li a.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }

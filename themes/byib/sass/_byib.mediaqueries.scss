@@ -239,7 +239,13 @@ body {
       margin-bottom: 0;
 
       .header-inner {
-        min-height: 200px;
+        min-height: 175px;
+      }
+
+      .logo {
+        min-width: 75px;
+        margin-right: $default-spacing;
+        max-width: 125px;
       }
     }
 
@@ -261,6 +267,23 @@ body {
 
     .flexslider-wrapper {
       display: none;
+    }
+  }
+
+  @include medium() {
+    header {
+      margin-bottom: 0;
+
+      .header-inner {
+        min-height: 150px;
+      }
+
+      .logo {
+        min-width: 125px;
+        margin-top: $default-spacing;
+        margin-right: $default-spacing;
+        max-width: 150px;
+      }
     }
   }
 }
