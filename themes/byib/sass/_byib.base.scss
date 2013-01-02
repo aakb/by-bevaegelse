@@ -303,6 +303,25 @@ table {
     margin: 0;
     list-style-type: none;
   }
+  
+  
+  a {
+    &:link {
+      color: $white;
+      text-decoration: none;
+    }
+    &:visited {
+      color: $white;
+    }
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    &:focus {
+      color: $white;
+    }
+  }
+
 
   .flexslider {
     @extend .grid-inner;
