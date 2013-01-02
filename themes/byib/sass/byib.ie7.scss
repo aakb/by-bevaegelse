@@ -1,0 +1,20 @@
+// =============================================================================
+// IE 7 specific styles
+// =============================================================================
+//
+.main-content * {
+  box-sizing: border-box; *behavior: url(/scripts/boxsizing.htc);
+}
+
+.logo {
+  img {
+    width: auto;
+  }
+}
+
+.nav-wrapper li {
+  display: inline;
+  a {
+    display: inline-block;
+  }
+}
