@@ -3017,6 +3017,7 @@ ul.icons li .icon-large:before {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  width: 100%;
   padding-left: 0;
 }
 

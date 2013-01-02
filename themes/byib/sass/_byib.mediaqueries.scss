@@ -312,7 +312,7 @@ body {
   @extend %byib-display-no-secondary;
   .page-content {
     @include zen-grid-item($grid-column-count, 1);
-
+    width: 100%;
     padding-left: 0;
   }
 }
