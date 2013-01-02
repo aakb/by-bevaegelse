@@ -59,6 +59,11 @@ img {
   height: auto;
   max-width: 100%;
   vertical-align: baseline;
+
+  &.media-image {
+    width: auto;
+    height: auto;
+  }
 }
 
 p {
