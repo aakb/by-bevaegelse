@@ -13,7 +13,7 @@
   stylesheets[all][] = css/flexslider.css
 
   ; Import javascripts.
-  ; scripts[] = scripts/script.js
+  scripts[] = scripts/byib.common.js
   
   ; Media Query support in older browser, this script require css aggregation to be enabled.
   ; https://github.com/scottjehl/Respond
