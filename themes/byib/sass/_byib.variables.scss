@@ -28,6 +28,8 @@ $grid-column-count:               12;
 $default-spacing:                 20px;
 $half-spacing:                    $default-spacing / 2;
 
+$box-sizing-polyfill-path: "/sites/www.by-bevaegelse.dk/themes/byib/scripts/boxsizing.htc" !default;
+
 // -----------------------------------------------------------------------------
 // Standard color definitions
 // -----------------------------------------------------------------------------

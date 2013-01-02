@@ -1,19 +1,13 @@
-/* line 5, ../sass/byib.ie7.scss */
-.main-content * {
-  box-sizing: border-box;
-  *behavior: url(/scripts/boxsizing.htc);
-}
-
-/* line 10, ../sass/byib.ie7.scss */
+/* line 6, ../sass/byib.ie7.scss */
 .logo img {
   width: auto;
 }
 
-/* line 15, ../sass/byib.ie7.scss */
+/* line 11, ../sass/byib.ie7.scss */
 .nav-wrapper li {
   display: inline;
 }
-/* line 17, ../sass/byib.ie7.scss */
+/* line 13, ../sass/byib.ie7.scss */
 .nav-wrapper li a {
   display: inline-block;
 }
