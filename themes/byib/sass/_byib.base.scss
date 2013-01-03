@@ -133,6 +133,14 @@ table {
         color: $link-color-hover;
       }
     }
+
+    .sub-menu {
+      margin-left: $default-spacing * 1.25;
+
+      .last {
+        border-bottom: 0;
+      }
+    }
   }
 }
 
@@ -303,8 +311,8 @@ table {
     margin: 0;
     list-style-type: none;
   }
-  
-  
+
+
   a {
     &:link {
       color: $white;
