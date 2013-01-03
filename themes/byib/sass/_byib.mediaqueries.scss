@@ -287,6 +287,7 @@ body {
       .logo {
         min-width: 125px;
         margin-top: $default-spacing;
+        margin-top: $half-spacing;
         margin-right: $default-spacing;
         max-width: 150px;
       }
@@ -310,9 +311,11 @@ body {
 
 .no-secondary-content.no-tertiary-content {
   @extend %byib-display-no-secondary;
+  
   .page-content {
     @include zen-grid-item($grid-column-count, 1);
-    width: 100%!important; /* IE8 won't work without this */
+    
     padding-left: 0;
+    width: 100% !important; /* IE8 won't work without this */
   }
 }

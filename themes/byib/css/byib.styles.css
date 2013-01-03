@@ -2995,12 +2995,13 @@ ul.icons li .icon-large:before {
   body header .logo {
     min-width: 125px;
     margin-top: 20px;
+    margin-top: 10px;
     margin-right: 20px;
     max-width: 150px;
   }
 }
 
-/* line 313, ../sass/_byib.mediaqueries.scss */
+/* line 315, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
@@ -3017,9 +3018,9 @@ ul.icons li .icon-large:before {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  width: 100%!important;
-  /* IE8 won't work without this */
   padding-left: 0;
+  width: 100% !important;
+  /* IE8 won't work without this */
 }
 
 /* line 5, ../sass/_byib.typography.scss */
