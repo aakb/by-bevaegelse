@@ -3248,6 +3248,11 @@ dl > dt,
   font-weight: bold;
 }
 
+/* line 142, ../sass/_byib.typography.scss */
+em {
+  font-style: italic;
+}
+
 /* line 146, ../sass/_byib.typography.scss */
 blockquote {
   border-left: 5px solid #e2e2e2;
