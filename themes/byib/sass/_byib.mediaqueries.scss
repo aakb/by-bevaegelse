@@ -309,6 +309,14 @@ body {
   @extend %byib-display-no-secondary;
 }
 
+.no-tertiary-content {
+  .page-content {
+    @include zen-grid-item($grid-column-count, 1);
+    
+    width: 100% !important; /* IE8 won't work without this */
+  }
+}
+
 .no-secondary-content.no-tertiary-content {
   @extend %byib-display-no-secondary;
   

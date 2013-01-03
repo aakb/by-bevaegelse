@@ -3001,7 +3001,28 @@ ul.icons li .icon-large:before {
   }
 }
 
-/* line 315, ../sass/_byib.mediaqueries.scss */
+/* line 313, ../sass/_byib.mediaqueries.scss */
+.no-tertiary-content .page-content {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  width: 100% !important;
+  /* IE8 won't work without this */
+}
+
+/* line 323, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
