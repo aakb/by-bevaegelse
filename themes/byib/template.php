@@ -11,7 +11,15 @@
  */
 function byib_preprocess_html(&$vars) {
   // Add conditional CSS for IE7 and below.
-  drupal_add_css(path_to_theme() . '/css/byib.ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/byib.ie7.css', array(
+    'group' => CSS_THEME,
+    'browsers' => array(
+      'IE' => 'lte IE 7',
+      '!IE' => FALSE
+    ),
+    'weight' => 999, 
+    'preprocess' => FALSE,
+  ));
 
   // If tertiary content is not present add a class to body tag.
   if (empty($vars['page']['tertiary_content'])) {
@@ -47,10 +55,6 @@ function byib_preprocess_field(&$vars) {
 
     case 'field_content':
       $vars['classes_array'][] = 'page-content';
-      break;
-    
-    default:
-      
       break;
   }
 }

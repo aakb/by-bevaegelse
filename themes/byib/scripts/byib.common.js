@@ -34,8 +34,7 @@
       $(source).each(function() {
 
         var el = $(this);
-
-        children = el.find("li");
+        var children = el.find("li");
 
         $("<option />", {
           "value" : el.find(".block-title > a").attr("href"),
