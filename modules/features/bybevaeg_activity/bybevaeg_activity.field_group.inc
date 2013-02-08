@@ -25,6 +25,7 @@ function bybevaeg_activity_field_group_info() {
     'children' => array(
       0 => 'field_spotbox_title',
       1 => 'field_spotbox_text',
+      2 => 'field_spotbox_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

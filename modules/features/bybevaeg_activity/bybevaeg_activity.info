@@ -17,6 +17,7 @@ features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[field][] = node-activity-field_content
 features[field][] = node-activity-field_manchet
+features[field][] = node-activity-field_spotbox_image
 features[field][] = node-activity-field_spotbox_text
 features[field][] = node-activity-field_spotbox_title
 features[field][] = node-activity-field_title_image
