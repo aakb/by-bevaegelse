@@ -36,5 +36,3 @@
 regions_locked[] = header
 regions_locked[] = navigation
 regions_locked[] = content_top
-regions_locked[] = content
-regions_locked[] = secondary_content
