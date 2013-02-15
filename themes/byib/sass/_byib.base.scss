@@ -372,8 +372,8 @@ table {
 
 .flex-direction-nav {
 
-  .prev,
-  .next {
+  .flex-prev,
+  .flex-next {
     @include opacity(.5);
 
     bottom: $default-spacing * 1.3;
@@ -398,7 +398,7 @@ table {
     }
   }
 
-  .prev {
+  .flex-prev {
     @extend .icon-circle-arrow-left;
 
     &:before {
@@ -408,7 +408,7 @@ table {
     left: $default-spacing;
   }
 
-  .next {
+  .flex-next {
     @extend .icon-circle-arrow-right;
 
     &:before {
