@@ -81,6 +81,29 @@
 
 
 // -------------------------------
+// |           Primary           |
+// -------------------------------
+// -------------------------------
+// |  Secondary   |   Tertiary   |
+// -------------------------------
+//
+@mixin display-100-50-50 {
+  .primary-content {
+    @include zen-grid-item($grid-column-count, 1);
+  }
+
+  .secondary-content {
+    @include zen-clear(both);
+    @include zen-grid-item($grid-50, 1);
+  }
+
+  .tertiary-content {
+    @include zen-grid-item($grid-50, 1, right);
+  }
+}
+
+
+// -------------------------------
 // |       Primary        | Sec. |
 // -------------------------------
 // -------------------------------
@@ -122,6 +145,36 @@
     padding-left: 0;
   }
 
+}
+
+
+// -----------------------------------------------------------------------------
+// Attachments display 1
+// -----------------------------------------------------------------------------
+//
+%attachments-display-one {
+  @include medium() {
+    @include attachment-50-50-50-50;
+  }
+
+  @include large() {
+    @include attachment-25-25-25-25;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Attachments display 2
+// -----------------------------------------------------------------------------
+//
+%attachments-display-two {
+  @include medium() {
+    @include attachment-50-50-100-100;
+  }
+
+  @include large() {
+    @include attachment-33-33-33-100;
+  }
 }
 
 
@@ -295,12 +348,12 @@ body {
 
 .front {
   @extend %byib-display-one;
-  @extend %attachments-display-two;
+  @extend %attachments-display-one;
 }
 
 .not-front {
   @extend %byib-display-two;
-  @extend %attachments-display-three;
+  @extend %attachments-display-two;
 }
 
 .no-secondary-content {
