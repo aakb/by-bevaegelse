@@ -110,10 +110,10 @@
 
   .mobile-menu {
     @include zen-clear;
-    
+
     display: block;
-  }  
-  
+  }
+
   .tertiary-content {
     @include zen-clear(both);
     @include zen-grid-item($grid-column-count, 1);
@@ -183,6 +183,14 @@
   @include medium() {
     @include display-100-50-50;
 
+    .main-menu {
+      li {
+        a {
+          min-width: 75px;
+        }
+      }
+    }
+
     .flexslider-wrapper {
 
       .slides {
@@ -244,10 +252,6 @@ body {
     header {
       margin-bottom: 0;
 
-      .header-inner {
-        min-height: 175px;
-      }
-
       .logo {
         min-width: 75px;
         margin-right: $default-spacing;
@@ -280,10 +284,6 @@ body {
     header {
       margin-bottom: 0;
 
-      .header-inner {
-        min-height: 150px;
-      }
-
       .logo {
         min-width: 125px;
         margin-top: $default-spacing;
@@ -312,17 +312,17 @@ body {
 .no-tertiary-content {
   .page-content {
     @include zen-grid-item($grid-column-count, 1);
-    
+
     width: 100% !important; /* IE8 won't work without this */
   }
 }
 
 .no-secondary-content.no-tertiary-content {
   @extend %byib-display-no-secondary;
-  
+
   .page-content {
     @include zen-grid-item($grid-column-count, 1);
-    
+
     padding-left: 0;
     width: 100% !important; /* IE8 won't work without this */
   }

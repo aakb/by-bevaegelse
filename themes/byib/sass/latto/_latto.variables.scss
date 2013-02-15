@@ -1,0 +1,92 @@
+// =============================================================================
+// This file holds all the variables for the theme
+// =============================================================================
+
+
+@import "compass/css3";
+
+
+// -----------------------------------------------------------------------------
+// Basic settings: Grid, spacing etc.
+// -----------------------------------------------------------------------------
+//
+$grid-max-width:    1200px !default;
+$grid-column-count: 12 !default;
+
+$default-spacing: 20px !default;
+
+
+// -----------------------------------------------------------------------------
+// Standard color definitions
+// -----------------------------------------------------------------------------
+//
+$white:                 #fff    !default;
+$black:                 #000    !default;
+$gray:                  #d5d5d5 !default;
+$gray-light:            lighten($gray, 10%) !default;
+$gray-lighter:          lighten($gray, 25%) !default;
+$gray-dark:             darken($gray, 10%) !default;
+$gray-darker:           darken($gray, 25%) !default;
+
+
+// -----------------------------------------------------------------------------
+// Theme color definitions
+// -----------------------------------------------------------------------------
+//
+$theme-primary-color:           #fff !default;
+$theme-secondary-color:         #00b7e7 !default;
+$theme-content-background:      #fff !default;
+
+
+// -----------------------------------------------------------------------------
+// Font variables
+// -----------------------------------------------------------------------------
+//
+$theme-font-size:     13px !default;
+$theme-line-height:   18px !default;
+$theme-font-family:   "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+
+// -----------------------------------------------------------------------------
+// Base font size for rem() mixin, measured in pixels
+// -----------------------------------------------------------------------------
+//
+$base-font-size:  16px !default;
+
+
+// -----------------------------------------------------------------------------
+// Text colors
+// -----------------------------------------------------------------------------
+//
+$text-primary-color:         #1b1b1b !default;
+$text-selection-color:       $text-primary-color !default;
+$text-selection-background:  $gray-light !default;
+
+
+// -----------------------------------------------------------------------------
+// Links
+// -----------------------------------------------------------------------------
+//
+$link-color:              #00b7e7 !default;
+$link-color-hover:        darken($link-color, 20%) !default;
+
+
+// -----------------------------------------------------------------------------
+// Blocks
+// -----------------------------------------------------------------------------
+//
+$theme-block-color:               lighten($text-primary-color, 25%) !default;
+$theme-block-background:          $theme-primary-color !default;
+$theme-block-inverse-color:       $theme-primary-color !default;
+$theme-block-inverse-background:  $theme-secondary-color !default;
+
+
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+//
+$navbar-bg-color:           $gray-light !default;
+$navbar-bg-active-color:    $gray !default;
+$navbar-text-color:         lighten($gray-light, 25%) !default;
+$navbar-text-color-active:  lighten($gray-light, 25%) !default;
+$navbar-item-spacing:       $default-spacing / 2 !default;

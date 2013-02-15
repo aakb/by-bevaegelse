@@ -1,0 +1,138 @@
+// =============================================================================
+// Mixins used in the other stylesheets
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+//
+$prefixes: ("-webkit-","-moz-", "-o-", "");
+
+
+// -----------------------------------------------------------------------------
+// Adds trailing margin
+// -----------------------------------------------------------------------------
+//
+// $amount - The amount of margin appended to the bottom.
+//
+@mixin append-bottom($amount: $default-spacing) {
+  margin-bottom: $amount;
+}
+
+
+// -----------------------------------------------------------------------------
+// Adds leading margin
+// -----------------------------------------------------------------------------
+//
+// $amount - The amount of margin appended to the top.
+//
+@mixin prepend-top($amount: $default-spacing) {
+  margin-top: $amount;
+}
+
+
+// -----------------------------------------------------------------------------
+// Add default styling to <hr>
+// -----------------------------------------------------------------------------
+//
+// $border-color - The color of the HTML ruler.
+//
+@mixin colruler($border-color: $gray) {
+  background: $border-color;
+  color: $border-color;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  border: none;
+  @include prepend-top($default-spacing / 2);
+  @include append-bottom($default-spacing / 2);
+ }
+
+ 
+// -----------------------------------------------------------------------------
+// Mixin for transparent backgrounds, maing it cross browser compatible
+// ----------------------------------------------------------------------------- 
+// 
+// including IE8+. (https://gist.github.com/1949202)
+//
+// $color - The color of the background.
+// $alpha - The alpha value for transparency.
+//
+@mixin rgba-background($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: $rgba;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
+
+// -----------------------------------------------------------------------------
+// Mixin for ::selection, which allows specify selected text background color
+// ----------------------------------------------------------------------------- 
+//
+// $color - The color for the selected text.
+// $background - The background color for the selected text.
+//
+@mixin selection($color, $background) {
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+      color: $color;
+      background: $background;
+    }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Add a backup background color for IE
+// ----------------------------------------------------------------------------- 
+//
+@mixin ie-gradient-fix($background, $svg: true) {
+  background: $background;
+
+  @if $svg == true {
+    $experimental-support-for-svg: $svg;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Mixin that converts pixel values to rem values
+// ----------------------------------------------------------------------------- 
+//
+// https://github.com/ry5n/rem
+//
+// Returns two lines of code — one of the regular pixel values (for older 
+// browsers), and another with the converted rem values (for everything else).
+//
+// Basic usage: @include rem('padding',10px 0 2px 5px);
+//              @include rem('font-size',10px);
+//
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $base-font-size / 1rem;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  }
+  @else {
+    // Create an empty list that we can dump values into
+    $rem-values: unquote("");
+    @each $value in $px-values {
+      // If the value is zero, return 0
+      @if $value == 0 {
+        $rem-values: append($rem-values, $value);
+      }
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}

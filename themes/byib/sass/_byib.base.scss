@@ -87,9 +87,6 @@ table {
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
-
-  bottom: 0;
-  position: absolute;
 }
 
 
@@ -99,6 +96,7 @@ table {
   li {
     a {
       margin-right: 0;
+      padding: $half-spacing;      
     }
   }
 }

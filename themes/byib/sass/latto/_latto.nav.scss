@@ -1,0 +1,202 @@
+// =============================================================================
+// Navigation
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// Easy-to-read class names extending more generic classes
+// -----------------------------------------------------------------------------
+//
+.main-menu {
+  @extend .horizontal-menu;
+}
+
+.sub-menu {
+  @extend .vertical-menu;
+}
+
+
+// -----------------------------------------------------------------------------
+// The navigation bar used for the main-menu
+// -----------------------------------------------------------------------------
+//
+.horizontal-menu {
+  @include rem('font-size', $theme-font-size * 1.25);
+
+  display: table;
+  margin: 0;
+  width: 100%;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: auto;
+  }
+
+  > li {
+    display: table-cell;
+    text-align: center;
+
+    a {
+      color: $navbar-text-color;          
+      display: block;
+      height: 100%;
+      margin-right: $navbar-item-spacing;
+      min-width: 100px;
+      padding: $navbar-item-spacing;
+
+      background-color: $navbar-bg-color;
+      text-decoration: none;
+
+      &:hover {
+        background-color: lighten($navbar-bg-active-color, 25%);
+      }
+
+      &.active,
+      &.active-trail {
+        color: $navbar-text-color-active;
+        background-color: $navbar-bg-active-color;
+      }
+
+      &.last {
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Vertical menu
+// -----------------------------------------------------------------------------
+//
+.vertical-menu {
+  margin: 0;
+
+  > li {
+
+    display: block;
+
+    a {
+      color: $navbar-text-color;          
+      display: block;
+      
+      padding-top: $navbar-item-spacing;
+      padding-bottom: $navbar-item-spacing;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Tabs
+// -----------------------------------------------------------------------------
+//
+.tabs {
+  margin: 0;
+  padding: 0;
+
+  ul.primary {
+    margin: 0;
+    border: none;
+    padding-left: $default-spacing;
+
+    li {
+      display: inline-block;
+      background-color: $gray-light;
+      &:hover {
+        background-color: $gray-dark;
+        a {
+          color: $black;
+        }
+      }
+      a {
+        background-color: transparent;
+        margin: 0;
+        line-height: $theme-line-height;
+        border: none;
+      }
+    }
+
+    li.active {
+      background-color: $theme-content-background;
+      &:hover {
+        background-color: $gray-lighter;
+        a {
+          color: $gray-darker;
+          text-decoration: none;
+        }
+      }
+      a {
+        background-color: transparent;
+        color: $gray-darker;
+      }
+    }
+  }
+
+  ul.secondary {
+    @extend ul.primary;
+
+    background-color: $theme-content-background;
+    padding: $default-spacing / 2 $default-spacing;
+    li {
+      display: table-cell;
+      background-color: $theme-content-background;
+      border-color: $gray-lighter;
+      padding: 0 $navbar-item-spacing 0 $navbar-item-spacing;
+      &:hover {
+        background-color: transparent;
+      }
+      a {
+        padding: $default-spacing / 6 $default-spacing / 4 $default-spacing / 6 $default-spacing / 4;
+
+        &:hover {
+          color: $gray-darker;
+          background-color: $gray-light
+        }
+      }
+    }
+    li.active {
+      &:hover {
+        background-color: transparent;
+      }
+      a {
+        color: $gray-darker;
+        background-color: $gray-light;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Action Links
+// -----------------------------------------------------------------------------
+//
+.action-links {
+  background-color: $theme-content-background;
+  padding: $default-spacing / 2 $default-spacing;
+  li {
+    @extend .icon-plus;
+
+    color: $link-color;
+    display: inline-block;
+    padding: 0 $navbar-item-spacing 0 $navbar-item-spacing;
+
+    &:before {
+      @include rem('font-size', $theme-font-size * 1.2);
+
+      color: $link-color;
+      float: left;
+      font-family: FontAwesome;
+      margin-top: 2px;
+      margin-left: 1px;
+    }
+
+    a {
+      font-family: $theme-font-family;
+      margin-left: -$default-spacing;
+      padding-left: $default-spacing * 1.25;
+    }
+  }
+}

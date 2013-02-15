@@ -1,0 +1,104 @@
+// =============================================================================
+// Handles media queries for all devices
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+//
+$breakpoint-small:    480px;
+$breakpoint-medium:   768px;
+
+
+// -----------------------------------------------------------------------------
+// The respond-to mixin
+// -----------------------------------------------------------------------------
+//
+@mixin respond-to($media) {
+
+	// Sizes
+	@if $media == small {
+		@media only screen and (max-width: $breakpoint-small) { @content; }
+	}
+
+	@else if $media == medium {
+		@media only screen and (min-width: $breakpoint-small + 1) and (max-width: $breakpoint-medium) { @content; }
+	}
+
+	@else if $media == large {
+		@media only screen and (min-width: $breakpoint-medium + 1) { @content; }
+	}
+
+}
+
+
+// -----------------------------------------------------------------------------
+// Size mixins
+// -----------------------------------------------------------------------------
+//
+@mixin small {
+  @include respond-to(small) { @content; }
+}
+
+@mixin medium {
+  @include respond-to(medium) { @content; }
+}
+
+@mixin large {
+  @include respond-to(large) { @content; }
+}
+
+
+// -----------------------------------------------------------------------------
+// Default grid styling
+// -----------------------------------------------------------------------------
+//
+.primary-content,
+.secondary-content,
+.tertiary-content,
+.attachment-first,
+.attachment-second,
+.attachment-third,
+.attachment-fourth {
+  display: block;
+  padding-left: $default-spacing / 2;
+  padding-right: $default-spacing / 2;
+}
+
+
+@import '_latto.mq.displays.scss';
+@import '_latto.mq.attachments.scss';
+
+
+// Layout templates
+// The templates extends displays and attachments
+//
+.layout-template-one {
+  @extend %content-display-one;
+  @extend %attachments-display-one;
+}
+
+.layout-template-two {
+  @extend %content-display-two;
+  @extend %attachments-display-two;
+}
+
+.layout-template-three {
+  @extend %content-display-three;
+  @extend %attachments-display-three;
+}
+
+
+// This is an example layout demonstrating how you can mix displays and
+// attachments.
+//
+.latto-example-template-one {
+  @extend %content-display-one;
+  @extend %attachments-display-three;
+}
+
+.latto-example-template-two {
+  @extend %content-display-three;
+  @extend %attachments-display-two;
+}
