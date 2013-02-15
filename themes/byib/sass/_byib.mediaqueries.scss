@@ -282,8 +282,6 @@ body {
 
   @include medium() {
     header {
-      margin-bottom: 0;
-
       .logo {
         min-width: 125px;
         margin-top: $default-spacing;

@@ -11,6 +11,38 @@ $path_to_byib_core = drupal_get_path('theme', 'byib');
 //Includes frequently used theme functions that gets theme info, css files etc.
 include_once($path_to_byib_core . '/inc/functions.inc');
 
+
+/**
+ * Preprocess variables for html.tpl.php
+ */
+function byib_preprocess_html(&$vars) {
+  global $theme_key, $language;
+  $theme_name = $theme_key;
+
+  // Set variable for the base path
+  $vars['base_path'] = base_path();
+
+  // Clean up the lang attributes.
+  $vars['html_attributes'] = 'lang="' . $language->language . '" dir="' . $language->dir . '"';
+
+  // Build an array of polyfilling scripts
+  $vars['polyfills_array'] = '';
+  $vars['polyfills_array'] = byib_load_polyfills($theme_name, $vars);
+  
+  // If tertiary content is not present add a class to body tag.
+  if (empty($vars['page']['tertiary_content'])) {
+    $vars['classes_array'][] = 'no-tertiary-content';
+  }
+  // If secondary content is not present add a class to body tag.
+  if (empty($vars['page']['secondary_content'])) {
+    $vars['classes_array'][] = 'no-secondary-content';
+  }  
+  
+  // Load byib plugins
+  byib_load_plugins();
+}
+
+
 /**
  * Implements hook_process_html().
  *
@@ -263,11 +295,12 @@ function byib_load_plugins() {
 
   }
 
+
   // If equalize is enabled in the theme load it.
   if (theme_get_setting('load_equalize')) {
 
     // Add the script
-    drupal_add_js($path_to_byib_core . '/scripts/equalize.min.js');
+    drupal_add_js($path_to_byib_core . '/scripts/equalize.js');
 
     // Add variable to js so we can check if it is set
     drupal_add_js(array('byib' => array('load_equalize' => theme_get_setting('load_equalize'),)), 'setting');
@@ -511,22 +544,6 @@ function byib_item_list($variables) {
     $output .= "</$type>";
   }
   return $output;
-}
-
-/**
- * Implements hook_process_html().
- *
- * Process variables for html.tpl.php
- */
-function byib_preprocess_html(&$vars) {
-  // If tertiary content is not present add a class to body tag.
-  if (empty($vars['page']['tertiary_content'])) {
-    $vars['classes_array'][] = 'no-tertiary-content';
-  }
-  // If secondary content is not present add a class to body tag.
-  if (empty($vars['page']['secondary_content'])) {
-    $vars['classes_array'][] = 'no-secondary-content';
-  }
 }
 
 /**
