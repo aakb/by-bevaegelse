@@ -49,7 +49,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <?php print $polyfills; ?>
 </head>
 <body <?php print $attributes;?> class="<?php print $classes; ?>">
   <?php print $page_top; ?>
