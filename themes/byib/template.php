@@ -28,7 +28,7 @@ function byib_preprocess_html(&$vars) {
   // Build an array of polyfilling scripts
   $vars['polyfills_array'] = '';
   $vars['polyfills_array'] = byib_load_polyfills($theme_name, $vars);
-  
+
   // If tertiary content is not present add a class to body tag.
   if (empty($vars['page']['tertiary_content'])) {
     $vars['classes_array'][] = 'no-tertiary-content';
@@ -36,8 +36,17 @@ function byib_preprocess_html(&$vars) {
   // If secondary content is not present add a class to body tag.
   if (empty($vars['page']['secondary_content'])) {
     $vars['classes_array'][] = 'no-secondary-content';
-  }  
-  
+  }
+
+  // Add conditional CSS for IE7
+  drupal_add_css(path_to_theme() . '/css/byib.ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
+  // Add conditional CSS for IE8
+  drupal_add_css(path_to_theme() . '/css/byib.ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
+  // Add conditional CSS for IE9
+  drupal_add_css(path_to_theme() . '/css/byib.ie9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
   // Load byib plugins
   byib_load_plugins();
 }
