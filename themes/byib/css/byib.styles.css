@@ -1373,12 +1373,12 @@ ul.icons li .icon-large:before {
 }
 
 /* line 273, ../sass/latto/_latto.font-awesome.scss */
-.icon-circle-arrow-left:before {
+.icon-circle-arrow-left:before, .flex-direction-nav .prev:before {
   content: "\f0a8";
 }
 
 /* line 274, ../sass/latto/_latto.font-awesome.scss */
-.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before {
+.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before, .flex-direction-nav .next:before {
   content: "\f0a9";
 }
 
@@ -3388,15 +3388,9 @@ h2, h3, h4 {
   margin-bottom: 0;
 }
 
-/* line 373, ../sass/_byib.base.scss */
-.flex-direction-nav {
-  position: relative;
-}
-/* line 380, ../sass/_byib.base.scss */
+/* line 376, ../sass/_byib.base.scss */
 .flex-direction-nav .prev,
-.flex-direction-nav .flex-prev,
-.flex-direction-nav .next,
-.flex-direction-nav .flex-next {
+.flex-direction-nav .next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   bottom: 26px;
@@ -3407,39 +3401,37 @@ h2, h3, h4 {
   position: absolute;
   width: 46px;
 }
-/* line 391, ../sass/_byib.base.scss */
+/* line 387, ../sass/_byib.base.scss */
 .flex-direction-nav .prev:before,
-.flex-direction-nav .flex-prev:before,
-.flex-direction-nav .next:before,
-.flex-direction-nav .flex-next:before {
+.flex-direction-nav .next:before {
   font-size: 56px;
   font-size: 3.5rem;
   line-height: 56px;
   line-height: 3.5rem;
   font-family: FontAwesome;
 }
-/* line 398, ../sass/_byib.base.scss */
+/* line 394, ../sass/_byib.base.scss */
 .flex-direction-nav .prev:hover,
-.flex-direction-nav .flex-prev:hover,
-.flex-direction-nav .next:hover,
-.flex-direction-nav .flex-next:hover {
+.flex-direction-nav .next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   text-decoration: none;
 }
-/* line 406, ../sass/_byib.base.scss */
-.flex-direction-nav .prev,
-.flex-direction-nav .flex-prev {
-  background: url("../images/arrow-left.png") no-repeat 0 5px;
-  text-indent: -200px;
+/* line 401, ../sass/_byib.base.scss */
+.flex-direction-nav .prev {
   left: 20px;
 }
-/* line 414, ../sass/_byib.base.scss */
-.flex-direction-nav .next,
-.flex-direction-nav .flex-next {
-  background: url("../images/arrow-right.png") no-repeat 0 5px;
-  text-indent: -200px;
+/* line 404, ../sass/_byib.base.scss */
+.flex-direction-nav .prev:before {
+  padding-left: 2px;
+}
+/* line 411, ../sass/_byib.base.scss */
+.flex-direction-nav .next {
   right: 20px;
+}
+/* line 414, ../sass/_byib.base.scss */
+.flex-direction-nav .next:before {
+  padding-left: 2px;
 }
 
 /* line 423, ../sass/_byib.base.scss */

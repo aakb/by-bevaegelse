@@ -96,7 +96,7 @@ table {
   li {
     a {
       margin-right: 0;
-      padding: $half-spacing;
+      padding: $half-spacing;      
     }
   }
 }
@@ -371,13 +371,9 @@ table {
 }
 
 .flex-direction-nav {
-  position: relative;
-  
 
   .prev,
-  .flex-prev,
-  .next,
-  .flex-next {
+  .next {
     @include opacity(.5);
 
     bottom: $default-spacing * 1.3;
@@ -402,18 +398,22 @@ table {
     }
   }
 
-  .prev,
-  .flex-prev {
-    background: url('../images/arrow-left.png') no-repeat 0 5px;
-    text-indent: -200px;
+  .prev {
+    @extend .icon-circle-arrow-left;
+
+    &:before {
+      padding-left: 2px;
+    }
 
     left: $default-spacing;
   }
 
-  .next,
-  .flex-next {
-    background: url('../images/arrow-right.png') no-repeat 0 5px;
-    text-indent: -200px;
+  .next {
+    @extend .icon-circle-arrow-right;
+
+    &:before {
+      padding-left: 2px;
+    }
 
     right: $default-spacing;
   }
