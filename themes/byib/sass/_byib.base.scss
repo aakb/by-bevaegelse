@@ -374,7 +374,9 @@ table {
   position: relative;
   
 
+  .prev,
   .flex-prev,
+  .next,
   .flex-next {
     @include opacity(.5);
 
@@ -400,6 +402,7 @@ table {
     }
   }
 
+  .prev,
   .flex-prev {
     background: url('../images/arrow-left.png') no-repeat 0 5px;
     text-indent: -200px;
@@ -407,6 +410,7 @@ table {
     left: $default-spacing;
   }
 
+  .next,
   .flex-next {
     background: url('../images/arrow-right.png') no-repeat 0 5px;
     text-indent: -200px;
