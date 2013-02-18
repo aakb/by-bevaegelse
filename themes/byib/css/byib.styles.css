@@ -3396,7 +3396,7 @@ h2, h3, h4 {
   border: 1px dashed white !important;
   bottom: 26px;
   color: white;
-  display: block;
+  display: block !important;
   height: 46px;
   overflow: hidden;
   position: absolute;
