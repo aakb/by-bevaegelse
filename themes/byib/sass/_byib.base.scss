@@ -96,7 +96,7 @@ table {
   li {
     a {
       margin-right: 0;
-      padding: $half-spacing;      
+      padding: $half-spacing;
     }
   }
 }
@@ -384,13 +384,6 @@ table {
     position: absolute;
     width: 46px;
 
-    &:before {
-      @include rem('font-size', $theme-font-size * 3.5);
-      @include rem('line-height', $theme-font-size * 3.5);
-
-      font-family: FontAwesome;
-    }
-
     &:hover {
       @include opacity(1);
 
@@ -399,21 +392,15 @@ table {
   }
 
   .prev {
-    @extend .icon-circle-arrow-left;
-
-    &:before {
-      padding-left: 2px;
-    }
+    background: url('../images/arrow-left.png') no-repeat 0 5px;
+    text-indent: -200px;
 
     left: $default-spacing;
   }
 
   .next {
-    @extend .icon-circle-arrow-right;
-
-    &:before {
-      padding-left: 2px;
-    }
+    background: url('../images/arrow-right.png') no-repeat 0 5px;
+    text-indent: -200px;
 
     right: $default-spacing;
   }
