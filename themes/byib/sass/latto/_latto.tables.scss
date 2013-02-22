@@ -120,6 +120,21 @@ table {
   }
 }
 
+// -----------------------------------------------------------------------------
+// Cell background colors
+// -----------------------------------------------------------------------------
+//
+
+td.booked {
+  background-color: $table-cell-bg-booked-color;
+}
+td.warning {
+  background-color: $table-cell-bg-warning-color;
+}
+td.open {
+  background-color: $table-cell-bg-open-color;
+}
+
 
 // -----------------------------------------------------------------------------
 // Zebra-striping

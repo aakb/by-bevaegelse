@@ -97,6 +97,14 @@ $theme-block-background:          $theme-primary-color;
 $theme-block-inverse-color:       $theme-primary-color;
 $theme-block-inverse-background:  $theme-secondary-color;
 
+// -----------------------------------------------------------------------------
+// Tables
+// -----------------------------------------------------------------------------
+//
+$table-cell-bg-booked-color: lighten(#bf3600, 50%);
+$table-cell-bg-warning-color: lighten(#f6d346, 20%);
+$table-cell-bg-open-color: lighten(#60a500, 50%);
+
 
 // -----------------------------------------------------------------------------
 // Navigation

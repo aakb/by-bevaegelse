@@ -1,0 +1,19 @@
+/* MAIL stylesheet */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.form-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-item label {
+  font-weight: bold;
+}
