@@ -586,10 +586,10 @@ function byib_preprocess_field(&$vars) {
 /**
  * Modify headers for webform email.
  */
-function byib_webform_mail_headers($variables) {
+/*function byib_webform_mail_headers($variables) {
   $headers = array(
     'Content-Type'  => 'text/html; charset=UTF-8; format=flowed; delsp=yes',
     'X-Mailer'      => 'Drupal Webform (PHP/'. phpversion() .')',
   );
   return $headers;
-}
+}*/
