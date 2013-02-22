@@ -456,6 +456,10 @@ table {
     padding-bottom: $default-spacing;
   }
 
+  .block-title {
+    margin-bottom: $half-spacing / 2;
+  }
+
   .news-image {
     float: left;
     margin-top: $half-spacing / 2;
@@ -474,16 +478,6 @@ table {
 
   .field-name-field-news-title-image {
     margin-bottom: $default-spacing;
-  }
-}
-
-.view-news-taxonomy-blocks {
-  .menu {
-    @extend .sub-menu;
-
-    li {
-      margin-left: 0;
-    }
   }
 }
 
