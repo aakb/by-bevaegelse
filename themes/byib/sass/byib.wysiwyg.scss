@@ -9,8 +9,8 @@
 // First we need to import latto variables and mixins
 // -----------------------------------------------------------------------------
 //
-@import "../../latto/sass/_latto.variables.scss";
-@import '../../latto/sass/_latto.mixins.scss';
+@import "latto/_latto.variables.scss";
+@import 'latto/_latto.mixins.scss';
 
 
 // -----------------------------------------------------------------------------
@@ -24,10 +24,10 @@
 // Overwrite latto styles with theme variables
 // -----------------------------------------------------------------------------
 //
-@import "../../latto/sass/_latto.grid.scss";
-@import '../../latto/sass/_latto.tables.scss';
-@import '../../latto/sass/_latto.lists.scss';
-@import '../../latto/sass/_latto.font-awesome.scss';
+@import "latto/_latto.grid.scss";
+@import 'latto/_latto.tables.scss';
+@import 'latto/_latto.lists.scss';
+@import 'latto/_latto.font-awesome.scss';
 
 
 // -----------------------------------------------------------------------------

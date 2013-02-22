@@ -2819,21 +2819,22 @@ a:link {
   color: #ab4c00;
   text-decoration: none;
 }
-/* line 119, ../sass/_byib.typography.scss */
+/* line 120, ../sass/_byib.typography.scss */
 a:visited {
   color: #5e2a00;
+  text-decoration: none;
 }
-/* line 122, ../sass/_byib.typography.scss */
+/* line 125, ../sass/_byib.typography.scss */
 a:hover {
   color: #2b1300;
   text-decoration: underline;
 }
-/* line 126, ../sass/_byib.typography.scss */
+/* line 130, ../sass/_byib.typography.scss */
 a:focus {
   color: #2b1300;
 }
 
-/* line 138, ../sass/_byib.typography.scss */
+/* line 142, ../sass/_byib.typography.scss */
 b,
 strong,
 dl > dt,
@@ -2844,51 +2845,51 @@ dl > dt,
   font-weight: bold;
 }
 
-/* line 142, ../sass/_byib.typography.scss */
+/* line 146, ../sass/_byib.typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 146, ../sass/_byib.typography.scss */
+/* line 150, ../sass/_byib.typography.scss */
 blockquote {
   border-left: 5px solid #e2e2e2;
   margin: 0;
   margin-bottom: 20px;
   padding-left: 13.33333px;
 }
-/* line 152, ../sass/_byib.typography.scss */
+/* line 156, ../sass/_byib.typography.scss */
 blockquote.pull-right {
   border-left: 0;
   border-right: 5px solid #e2e2e2;
   padding-right: 13.33333px;
 }
-/* line 157, ../sass/_byib.typography.scss */
+/* line 161, ../sass/_byib.typography.scss */
 blockquote.pull-right .blockquote-source {
   display: block;
   text-align: right;
 }
-/* line 166, ../sass/_byib.typography.scss */
+/* line 170, ../sass/_byib.typography.scss */
 blockquote .blockquote-source:before {
   content: '\2014 \00A0';
 }
 
-/* line 177, ../sass/_byib.typography.scss */
+/* line 181, ../sass/_byib.typography.scss */
 ul, ol {
   padding: 0;
   margin: 0 0 12px 25px;
 }
 
-/* line 181, ../sass/_byib.typography.scss */
+/* line 186, ../sass/_byib.typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 184, ../sass/_byib.typography.scss */
+/* line 190, ../sass/_byib.typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 190, ../sass/_byib.typography.scss */
+/* line 197, ../sass/_byib.typography.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -2896,25 +2897,25 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 193, ../sass/_byib.typography.scss */
+/* line 201, ../sass/_byib.typography.scss */
 li {
   line-height: 24px;
 }
 
-/* line 199, ../sass/_byib.typography.scss */
+/* line 207, ../sass/_byib.typography.scss */
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
 
-/* line 206, ../sass/_byib.typography.scss */
+/* line 214, ../sass/_byib.typography.scss */
 ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
 }
-/* line 209, ../sass/_byib.typography.scss */
+/* line 217, ../sass/_byib.typography.scss */
 ul.inline > li,
 ol.inline > li {
   display: inline-block;
@@ -2922,52 +2923,52 @@ ol.inline > li {
   padding-right: 5px;
 }
 
-/* line 217, ../sass/_byib.typography.scss */
+/* line 225, ../sass/_byib.typography.scss */
 dl {
   margin-bottom: 24px;
 }
 
-/* line 221, ../sass/_byib.typography.scss */
+/* line 230, ../sass/_byib.typography.scss */
 dt,
 dd {
   line-height: 24px;
 }
 
-/* line 224, ../sass/_byib.typography.scss */
+/* line 234, ../sass/_byib.typography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 227, ../sass/_byib.typography.scss */
+/* line 238, ../sass/_byib.typography.scss */
 dd {
   margin-left: 12px;
 }
 
-/* line 235, ../sass/_byib.typography.scss */
+/* line 246, ../sass/_byib.typography.scss */
 .text-largest {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 239, ../sass/_byib.typography.scss */
+/* line 250, ../sass/_byib.typography.scss */
 .text-larger {
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 243, ../sass/_byib.typography.scss */
+/* line 254, ../sass/_byib.typography.scss */
 .text-large {
   font-size: 17.6px;
   font-size: 1.1rem;
 }
 
-/* line 247, ../sass/_byib.typography.scss */
+/* line 258, ../sass/_byib.typography.scss */
 .text-small, blockquote .blockquote-source {
   font-size: 14.4px;
   font-size: 0.9rem;
 }
 
-/* line 251, ../sass/_byib.typography.scss */
+/* line 262, ../sass/_byib.typography.scss */
 .text-smallest {
   font-size: 12.8px;
   font-size: 0.8rem;
