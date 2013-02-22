@@ -155,17 +155,27 @@ table {
 }
 
 /* line 128, ../sass/latto/_latto.tables.scss */
-td.orange {
-  background-color: #ffd0ab;
+td.booked {
+  background-color: #ffd1bf;
 }
 
-/* line 140, ../sass/latto/_latto.tables.scss */
+/* line 131, ../sass/latto/_latto.tables.scss */
+td.warning {
+  background-color: #fbeaa7;
+}
+
+/* line 134, ../sass/latto/_latto.tables.scss */
+td.open {
+  background-color: #d9ffa5;
+}
+
+/* line 146, ../sass/latto/_latto.tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #efefef;
 }
 
-/* line 155, ../sass/latto/_latto.tables.scss */
+/* line 161, ../sass/latto/_latto.tables.scss */
 .table tbody tr:hover td,
 .table tbody tr:hover th {
   background-color: #e2e2e2;

@@ -121,12 +121,18 @@ table {
 }
 
 // -----------------------------------------------------------------------------
-// Orange cell background
+// Cell background colors
 // -----------------------------------------------------------------------------
 //
 
-td.orange {
-  background-color: $table-cell-bg-alert-color;
+td.booked {
+  background-color: $table-cell-bg-booked-color;
+}
+td.warning {
+  background-color: $table-cell-bg-warning-color;
+}
+td.open {
+  background-color: $table-cell-bg-open-color;
 }
 
 
