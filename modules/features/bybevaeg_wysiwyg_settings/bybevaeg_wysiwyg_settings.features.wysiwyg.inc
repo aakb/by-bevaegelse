@@ -68,7 +68,7 @@ function bybevaeg_wysiwyg_settings_wysiwyg_default_profiles() {
       'css_classes' => 'Bordered=table.table-bordered
 Åben=td.open
 Få pladser=td.warning
-Booket=td.booked
+Optaget=td.booked
 Fremhævet=span.orange-text',
     ),
     'rdf_mapping' => array(),
@@ -189,9 +189,10 @@ Fremhævet=span.orange-text',
       'css_setting' => 'self',
       'css_path' => '/sites/www.by-bevaegelse.dk/themes/byib/css/byib.wysiwyg.css',
       'css_classes' => 'Bordered=table.table-bordered
-Open=td.open
-Warning=td.warning
-Booked=td.booked',
+Åben=td.open
+Få pladser=td.warning
+Optaget=td.booked
+Fremhævet=span.orange-text',
     ),
     'rdf_mapping' => array(),
   );
