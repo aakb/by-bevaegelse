@@ -14,6 +14,11 @@ body {
   font-family: $theme-font-family;
 }
 
+span.orange-text {
+  background-color: lighten($link-color, 10%);
+  color: $white;
+}
+
 
 // -----------------------------------------------------------------------------
 // The default colors for ::selection
