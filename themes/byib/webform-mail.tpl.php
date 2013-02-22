@@ -22,7 +22,7 @@
 // Hardcoded that this is an HTML email.
 $email['html'] = 1;
 ?>
-
+FOOOOO BAR
 <?php if $email['html'] : ?>
 <html>
   <head>
