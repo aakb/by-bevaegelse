@@ -22,8 +22,7 @@
 // Hardcoded that this is an HTML email.
 $email['html'] = 1;
 ?>
-FOOOOO BAR
-<?php if $email['html'] : ?>
+<?php if ($email['html']) : ?>
 <html>
   <head>
     <title></title>
@@ -55,7 +54,7 @@ FOOOOO BAR
     <?php print ($email['html'] ? '<p>' : '') . t('The results of this submission may be viewed at:') . ($email['html'] ? '</p>' : '') ?>
 
     <?php print ($email['html'] ? '<p>' : ''); ?>%submission_url<?php print ($email['html'] ? '</p>' : ''); ?>
-<?php if $email['html'] : ?>
+<?php if ($email['html']) : ?>
   </body>
 </html>
 <?php endif ?>
