@@ -450,6 +450,7 @@ table {
   margin-left: 0;
 
   li {
+    clear: left;
     border-top: 1px solid $gray-light;
     list-style: none;
     padding-top: $default-spacing;
@@ -464,6 +465,7 @@ table {
     float: left;
     margin-top: $half-spacing / 2;
     margin-right: $default-spacing;
+    margin-bottom: $default-spacing;
   }
 
   .featured-news-image {
@@ -479,6 +481,11 @@ table {
   .field-name-field-news-title-image {
     margin-bottom: $default-spacing;
   }
+}
+
+// menu block
+.secondary-content .block-views {
+  margin-bottom: $default-spacing;
 }
 
 
