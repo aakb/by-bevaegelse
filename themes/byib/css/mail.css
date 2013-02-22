@@ -3,3 +3,8 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.form-item,
+p {
+  margin-bottom: 15px;
+}
