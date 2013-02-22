@@ -62,7 +62,7 @@
    * Run functions on document ready.
    */
   $(document).ready(function() {
-    menuToSelect(".secondary-content", ".secondary-content");
+    menuToSelect(".secondary-content", "header");
   });
 
 })(jQuery);
