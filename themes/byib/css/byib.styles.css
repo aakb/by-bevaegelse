@@ -311,15 +311,15 @@ table tbody tr:hover th {
 }
 
 /* line 75, ../sass/latto/_latto.nav.scss */
-.vertical-menu, .sub-menu {
+.vertical-menu, .sub-menu, .view-news-taxonomy-blocks .menu {
   margin: 0;
 }
 /* line 78, ../sass/latto/_latto.nav.scss */
-.vertical-menu > li, .sub-menu > li {
+.vertical-menu > li, .sub-menu > li, .view-news-taxonomy-blocks .menu > li {
   display: block;
 }
 /* line 82, ../sass/latto/_latto.nav.scss */
-.vertical-menu > li a, .sub-menu > li a {
+.vertical-menu > li a, .sub-menu > li a, .view-news-taxonomy-blocks .menu > li a {
   color: #2a373b;
   display: block;
   padding-top: 10px 20px;
@@ -1378,7 +1378,7 @@ ul.icons li .icon-large:before {
 }
 
 /* line 274, ../sass/latto/_latto.font-awesome.scss */
-.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before {
+.icon-circle-arrow-right:before, .sub-menu > li span:before, .view-news-taxonomy-blocks .menu > li span:before, .spotbox-link:before {
   content: "\f0a9";
 }
 
@@ -3123,11 +3123,11 @@ h2, h3, h4 {
 }
 
 /* line 105, ../sass/_byib.base.scss */
-.sub-menu > li {
+.sub-menu > li, .view-news-taxonomy-blocks .menu > li {
   border-bottom: 1px solid #e2e2e2;
 }
 /* line 111, ../sass/_byib.base.scss */
-.sub-menu > li span:before {
+.sub-menu > li span:before, .view-news-taxonomy-blocks .menu > li span:before {
   font-size: 20px;
   font-size: 1.25rem;
   color: #ab4c00;
@@ -3137,7 +3137,7 @@ h2, h3, h4 {
   margin-left: 1px;
 }
 /* line 122, ../sass/_byib.base.scss */
-.sub-menu > li a {
+.sub-menu > li a, .view-news-taxonomy-blocks .menu > li a {
   color: #ab4c00;
   margin-left: -20px;
   padding-top: 10px;
@@ -3145,16 +3145,16 @@ h2, h3, h4 {
   padding-left: 45px;
 }
 /* line 129, ../sass/_byib.base.scss */
-.sub-menu > li a:hover {
+.sub-menu > li a:hover, .view-news-taxonomy-blocks .menu > li a:hover {
   text-decoration: none;
   color: #2b1300;
 }
 /* line 135, ../sass/_byib.base.scss */
-.sub-menu > li .sub-menu {
+.sub-menu > li .sub-menu, .view-news-taxonomy-blocks .menu > li .sub-menu, .sub-menu > li .view-news-taxonomy-blocks .menu, .view-news-taxonomy-blocks .sub-menu > li .menu, .view-news-taxonomy-blocks .menu > li .menu {
   margin-left: 25px;
 }
 /* line 138, ../sass/_byib.base.scss */
-.sub-menu > li .sub-menu .last {
+.sub-menu > li .sub-menu .last, .view-news-taxonomy-blocks .menu > li .sub-menu .last, .sub-menu > li .view-news-taxonomy-blocks .menu .last, .view-news-taxonomy-blocks .sub-menu > li .menu .last, .view-news-taxonomy-blocks .menu > li .menu .last {
   border-bottom: 0;
 }
 
@@ -3456,12 +3456,50 @@ h2, h3, h4 {
   opacity: 1;
 }
 
-/* line 448, ../sass/_byib.base.scss */
+/* line 447, ../sass/_byib.base.scss */
+.news-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+/* line 452, ../sass/_byib.base.scss */
+.news-list li {
+  border-top: 1px solid #e2e2e2;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 459, ../sass/_byib.base.scss */
+.news-list .news-image {
+  float: left;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+/* line 465, ../sass/_byib.base.scss */
+.news-list .featured-news-image {
+  margin-bottom: 20px;
+}
+
+/* line 471, ../sass/_byib.base.scss */
+.node-type-news .submitted {
+  margin-bottom: 10px;
+}
+/* line 475, ../sass/_byib.base.scss */
+.node-type-news .field-name-field-news-title-image {
+  margin-bottom: 20px;
+}
+
+/* line 484, ../sass/_byib.base.scss */
+.view-news-taxonomy-blocks .menu li {
+  margin-left: 0;
+}
+
+/* line 496, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 460, ../sass/_byib.base.scss */
+/* line 508, ../sass/_byib.base.scss */
 .button, .button-right,
 input[type="submit"],
 button {
@@ -3475,19 +3513,19 @@ button {
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 473, ../sass/_byib.base.scss */
+/* line 521, ../sass/_byib.base.scss */
 .button:link, .button-right:link,
 input[type="submit"]:link,
 button:link {
   color: white;
 }
-/* line 477, ../sass/_byib.base.scss */
+/* line 525, ../sass/_byib.base.scss */
 .button:visited, .button-right:visited,
 input[type="submit"]:visited,
 button:visited {
   color: white;
 }
-/* line 481, ../sass/_byib.base.scss */
+/* line 529, ../sass/_byib.base.scss */
 .button:hover, .button-right:hover,
 input[type="submit"]:hover,
 button:hover {
@@ -3495,14 +3533,14 @@ button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 487, ../sass/_byib.base.scss */
+/* line 535, ../sass/_byib.base.scss */
 .button:focus, .button-right:focus,
 input[type="submit"]:focus,
 button:focus {
   text-decoration: underline;
 }
 
-/* line 494, ../sass/_byib.base.scss */
+/* line 542, ../sass/_byib.base.scss */
 input[type="submit"],
 button {
   border: 0;
@@ -3511,61 +3549,61 @@ button {
   padding-left: 20px;
 }
 
-/* line 502, ../sass/_byib.base.scss */
+/* line 550, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 515, ../sass/_byib.base.scss */
+/* line 563, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 528, ../sass/_byib.base.scss */
+/* line 576, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 535, ../sass/_byib.base.scss */
+/* line 583, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
-/* line 541, ../sass/_byib.base.scss */
+/* line 589, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content p, .footer-wrapper .footer-content .page-image, .footer-wrapper .footer-content .lead {
   margin: 0;
 }
 
-/* line 553, ../sass/_byib.base.scss */
+/* line 601, ../sass/_byib.base.scss */
 .front .tabs {
   margin-top: 20px;
 }
 
-/* line 559, ../sass/_byib.base.scss */
+/* line 607, ../sass/_byib.base.scss */
 .tabs,
 .action-links-wrapper,
 .messages-wrapper {
   clear: right;
 }
 
-/* line 571, ../sass/_byib.base.scss */
+/* line 619, ../sass/_byib.base.scss */
 .front div.messages {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-/* line 577, ../sass/_byib.base.scss */
+/* line 625, ../sass/_byib.base.scss */
 .not-front div.messages {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 583, ../sass/_byib.base.scss */
+/* line 631, ../sass/_byib.base.scss */
 .krumo-root img {
   width: auto;
   height: auto;

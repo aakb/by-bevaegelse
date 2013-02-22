@@ -179,11 +179,17 @@ function byib_panels_default_style_render_region($vars) {
 /**
  * Implements theme_menu_tree().
  *
- * Addes wrapper clases for the default menu.
+ * Addes wrapper clases for menus.
  */
 function byib_menu_tree__menu_block__1($vars) {
   return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
 }
+
+function byib_menu_tree__menu_block__2($vars) {
+  // Add correct class to sub menu
+  return '<ul class="sub-menu">'. $vars['tree'] .'</ul>';
+}
+
 
 /**
  * Implements theme_menu_link().
@@ -553,14 +559,6 @@ function byib_item_list($variables) {
     $output .= "</$type>";
   }
   return $output;
-}
-
-/**
- * Implements hook_menu_tree_menu_block().
- */
-function byib_menu_tree__menu_block__2($vars) {
-  // Add correct class to sub menu
-  return '<ul class="sub-menu">'. $vars['tree'] .'</ul>';
 }
 
 /**

@@ -441,6 +441,54 @@ table {
 
 
 // -----------------------------------------------------------------------------
+// News
+// -----------------------------------------------------------------------------
+//
+.news-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  li {
+    border-top: 1px solid $gray-light;
+    list-style: none;
+    padding-top: $default-spacing;
+    padding-bottom: $default-spacing;
+  }
+
+  .news-image {
+    float: left;
+    margin-top: $half-spacing / 2;
+    margin-right: $default-spacing;
+  }
+
+  .featured-news-image {
+    margin-bottom: $default-spacing;
+  }
+}
+
+.node-type-news {
+  .submitted {
+    margin-bottom: $half-spacing;
+  }
+
+  .field-name-field-news-title-image {
+    margin-bottom: $default-spacing;
+  }
+}
+
+.view-news-taxonomy-blocks {
+  .menu {
+    @extend .sub-menu;
+
+    li {
+      margin-left: 0;
+    }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
 // Styling of read more links
 // -----------------------------------------------------------------------------
 //
