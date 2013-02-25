@@ -463,9 +463,12 @@ table {
 
   .news-image {
     float: left;
-    margin-top: $half-spacing / 2;
-    margin-right: $default-spacing;
-    margin-bottom: $default-spacing;
+
+    img {
+      margin-top: $half-spacing / 2;
+      margin-right: $default-spacing;
+      margin-bottom: $default-spacing;
+    }
   }
 
   .featured-news-image {
@@ -516,6 +519,55 @@ table {
 .secondary-content .block-views {
   margin-bottom: $default-spacing;
 }
+
+
+// -----------------------------------------------------------------------------
+// Pager
+// -----------------------------------------------------------------------------
+//
+.pager {
+  border-top: 1px solid $gray-light;
+  clear: both;
+  margin-left: 0;
+  padding-top: $default-spacing;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 4px;
+
+    &.pager-current,
+    a {
+      background-color: $gray-light;
+      display: inline-block;
+      padding: $half-spacing / 2 $default-spacing * 0.75;
+
+      &:hover {
+        background-color: $gray-dark;
+        text-decoration: none;
+      }
+    }
+
+    &.pager-first {
+      &.first {
+        a {
+          padding-left: $default-spacing;
+        }
+      }
+    }
+
+    &.pager-current {
+      background-color: $gray-dark;
+      text-decoration: none;
+
+      &.first {
+        padding-left: $default-spacing;
+      }
+    }
+  }
+}
+
 
 
 // -----------------------------------------------------------------------------
