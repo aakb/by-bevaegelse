@@ -483,6 +483,35 @@ table {
   }
 }
 
+
+.news-list-block {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  li {
+    clear: left;
+    border-top: 1px solid $gray-light;
+    list-style: none;
+    padding-top: $half-spacing;
+    padding-bottom: $half-spacing;
+  }
+
+  .views-row-last {
+    border-bottom: 1px solid $gray-light;
+  }
+
+  .date {
+    color: $gray-darker;
+    margin-right: $half-spacing / 2;
+  }
+
+  .more-link {
+    @extend .spotbox-link;
+  }
+}
+
+
 // menu block
 .secondary-content .block-views {
   margin-bottom: $default-spacing;

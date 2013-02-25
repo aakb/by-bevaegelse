@@ -1393,7 +1393,7 @@ ul.icons li .icon-large:before {
 }
 
 /* line 274, ../sass/latto/_latto.font-awesome.scss */
-.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before {
+.icon-circle-arrow-right:before, .sub-menu > li span:before, .spotbox-link:before, .news-list-block .more-link:before {
   content: "\f0a9";
 }
 
@@ -3323,12 +3323,12 @@ h2, h3, h4 {
 }
 
 /* line 273, ../sass/_byib.base.scss */
-.spotbox-link {
+.spotbox-link, .news-list-block .more-link {
   margin-top: 10px;
   margin-top: 0.625rem;
 }
 /* line 277, ../sass/_byib.base.scss */
-.spotbox-link:before {
+.spotbox-link:before, .news-list-block .more-link:before {
   font-size: 19.2px;
   font-size: 1.2rem;
   color: #ab4c00;
@@ -3338,12 +3338,12 @@ h2, h3, h4 {
   margin-left: 1px;
 }
 /* line 287, ../sass/_byib.base.scss */
-.spotbox-link a {
+.spotbox-link a, .news-list-block .more-link a {
   margin-left: -20px;
   padding-left: 25px;
 }
 /* line 291, ../sass/_byib.base.scss */
-.spotbox-link a:hover {
+.spotbox-link a:hover, .news-list-block .more-link a:hover {
   text-decoration: none;
 }
 
@@ -3517,16 +3517,40 @@ h2, h3, h4 {
 }
 
 /* line 487, ../sass/_byib.base.scss */
+.news-list-block {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+/* line 492, ../sass/_byib.base.scss */
+.news-list-block li {
+  clear: left;
+  border-top: 1px solid #e2e2e2;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 500, ../sass/_byib.base.scss */
+.news-list-block .views-row-last {
+  border-bottom: 1px solid #e2e2e2;
+}
+/* line 504, ../sass/_byib.base.scss */
+.news-list-block .date {
+  color: #959595;
+  margin-right: 5px;
+}
+
+/* line 516, ../sass/_byib.base.scss */
 .secondary-content .block-views {
   margin-bottom: 20px;
 }
 
-/* line 497, ../sass/_byib.base.scss */
+/* line 526, ../sass/_byib.base.scss */
 .read-more:hover {
   text-decoration: none;
 }
 
-/* line 509, ../sass/_byib.base.scss */
+/* line 538, ../sass/_byib.base.scss */
 .button, .button-right,
 input[type="submit"],
 button {
@@ -3540,19 +3564,19 @@ button {
   padding-left: 13.33333px;
   text-align: center;
 }
-/* line 522, ../sass/_byib.base.scss */
+/* line 551, ../sass/_byib.base.scss */
 .button:link, .button-right:link,
 input[type="submit"]:link,
 button:link {
   color: white;
 }
-/* line 526, ../sass/_byib.base.scss */
+/* line 555, ../sass/_byib.base.scss */
 .button:visited, .button-right:visited,
 input[type="submit"]:visited,
 button:visited {
   color: white;
 }
-/* line 530, ../sass/_byib.base.scss */
+/* line 559, ../sass/_byib.base.scss */
 .button:hover, .button-right:hover,
 input[type="submit"]:hover,
 button:hover {
@@ -3560,14 +3584,14 @@ button:hover {
   color: white;
   text-decoration: none;
 }
-/* line 536, ../sass/_byib.base.scss */
+/* line 565, ../sass/_byib.base.scss */
 .button:focus, .button-right:focus,
 input[type="submit"]:focus,
 button:focus {
   text-decoration: underline;
 }
 
-/* line 543, ../sass/_byib.base.scss */
+/* line 572, ../sass/_byib.base.scss */
 input[type="submit"],
 button {
   border: 0;
@@ -3576,61 +3600,61 @@ button {
   padding-left: 20px;
 }
 
-/* line 551, ../sass/_byib.base.scss */
+/* line 580, ../sass/_byib.base.scss */
 .button-right {
   float: right;
   margin-left: 5px;
 }
 
-/* line 564, ../sass/_byib.base.scss */
+/* line 593, ../sass/_byib.base.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   margin-right: 3px;
 }
 
-/* line 577, ../sass/_byib.base.scss */
+/* line 606, ../sass/_byib.base.scss */
 .footer-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: white;
 }
-/* line 584, ../sass/_byib.base.scss */
+/* line 613, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content {
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
   text-align: center;
 }
-/* line 590, ../sass/_byib.base.scss */
+/* line 619, ../sass/_byib.base.scss */
 .footer-wrapper .footer-content p, .footer-wrapper .footer-content .page-image, .footer-wrapper .footer-content .lead {
   margin: 0;
 }
 
-/* line 602, ../sass/_byib.base.scss */
+/* line 631, ../sass/_byib.base.scss */
 .front .tabs {
   margin-top: 20px;
 }
 
-/* line 608, ../sass/_byib.base.scss */
+/* line 637, ../sass/_byib.base.scss */
 .tabs,
 .action-links-wrapper,
 .messages-wrapper {
   clear: right;
 }
 
-/* line 620, ../sass/_byib.base.scss */
+/* line 649, ../sass/_byib.base.scss */
 .front div.messages {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-/* line 626, ../sass/_byib.base.scss */
+/* line 655, ../sass/_byib.base.scss */
 .not-front div.messages {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 632, ../sass/_byib.base.scss */
+/* line 661, ../sass/_byib.base.scss */
 .krumo-root img {
   width: auto;
   height: auto;
