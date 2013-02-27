@@ -318,6 +318,8 @@ body {
         width: 50%;
 
         a {
+          @include rem('font-size', $theme-font-size * .95);
+
           background-color: lighten($navbar-bg-active-color, 25%);
 
           &.active,
@@ -343,13 +345,15 @@ body {
         max-width: 150px;
       }
     }
-    
+
     .main-menu {
       li {
         float: left;
         width: 33.3333333333%;
 
         a {
+          @include rem('font-size', $theme-font-size * .95);
+
           background-color: lighten($navbar-bg-active-color, 25%);
 
           &.active,
@@ -358,7 +362,7 @@ body {
           }
         }
       }
-    }    
+    }
   }
 }
 
