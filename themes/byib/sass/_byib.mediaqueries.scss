@@ -127,7 +127,7 @@
     }
   }
 
-  #block-menu-block-2 {
+  .secondary-content {
     display: none;
   }
 
@@ -210,8 +210,8 @@
     }
 
     .flex-direction-nav {
-      .flex-prev,
-      .flex-next {
+      .prev,
+      .next {
 
         bottom: $default-spacing;
         height: 33px;
@@ -223,11 +223,11 @@
         }
       }
 
-      .flex-prev {
+      .prev {
         left: $half-spacing;
       }
 
-      .flex-next {
+      .next {
         right: $half-spacing;
       }
     }

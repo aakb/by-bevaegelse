@@ -1958,26 +1958,26 @@ ul.icons li .icon-large:before {
     margin-bottom: 5px;
   }
   /* line 214, ../sass/_byib.mediaqueries.scss */
-  .front .flex-direction-nav .flex-prev,
-  .front .flex-direction-nav .flex-next {
+  .front .flex-direction-nav .prev,
+  .front .flex-direction-nav .next {
     bottom: 20px;
     height: 33px;
     width: 33px;
   }
   /* line 220, ../sass/_byib.mediaqueries.scss */
-  .front .flex-direction-nav .flex-prev:before,
-  .front .flex-direction-nav .flex-next:before {
+  .front .flex-direction-nav .prev:before,
+  .front .flex-direction-nav .next:before {
     font-size: 40px;
     font-size: 2.5rem;
     line-height: 40px;
     line-height: 2.5rem;
   }
   /* line 226, ../sass/_byib.mediaqueries.scss */
-  .front .flex-direction-nav .flex-prev {
+  .front .flex-direction-nav .prev {
     left: 10px;
   }
   /* line 230, ../sass/_byib.mediaqueries.scss */
-  .front .flex-direction-nav .flex-next {
+  .front .flex-direction-nav .next {
     right: 10px;
   }
 }
@@ -2172,7 +2172,7 @@ ul.icons li .icon-large:before {
     padding-left: 0;
   }
   /* line 130, ../sass/_byib.mediaqueries.scss */
-  .not-front #block-menu-block-2 {
+  .not-front .secondary-content {
     display: none;
   }
   /* line 134, ../sass/_byib.mediaqueries.scss */
@@ -2260,7 +2260,7 @@ ul.icons li .icon-large:before {
     padding-left: 0;
   }
   /* line 130, ../sass/_byib.mediaqueries.scss */
-  .not-front #block-menu-block-2 {
+  .not-front .secondary-content {
     display: none;
   }
   /* line 134, ../sass/_byib.mediaqueries.scss */
