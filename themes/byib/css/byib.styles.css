@@ -2610,9 +2610,22 @@ ul.icons li .icon-large:before {
     margin-right: 20px;
     max-width: 150px;
   }
+  /* line 348, ../sass/_byib.mediaqueries.scss */
+  body .main-menu li {
+    float: left;
+    width: 33.3333333333%;
+  }
+  /* line 352, ../sass/_byib.mediaqueries.scss */
+  body .main-menu li a {
+    background-color: #9adae9;
+  }
+  /* line 356, ../sass/_byib.mediaqueries.scss */
+  body .main-menu li a.active, body .main-menu li a:hover {
+    background-color: #31b4d3;
+  }
 }
 
-/* line 364, ../sass/_byib.mediaqueries.scss */
+/* line 380, ../sass/_byib.mediaqueries.scss */
 .no-tertiary-content .page-content {
   float: left;
   width: 100%;
@@ -2633,7 +2646,7 @@ ul.icons li .icon-large:before {
   /* IE8 won't work without this */
 }
 
-/* line 374, ../sass/_byib.mediaqueries.scss */
+/* line 390, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
