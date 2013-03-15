@@ -147,7 +147,10 @@ table {
   color: $white;
   cursor: pointer;
   display: none;
-  padding: 12px 13.3333px 10px;
+  padding-top: $half-spacing + 1;
+  padding-right: $default-spacing / 1.5;
+  padding-bottom: $half-spacing - 1;
+  padding-left: $default-spacing / 1.5;
   position: absolute;
   text-align: center;
   top: 45px;

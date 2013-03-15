@@ -16,9 +16,12 @@
       "text"  : Drupal.t('Menu')
     }).appendTo($(element));
 
-    // Attach click event
+    // Toggle on click
     $(element).click(function () {
-      $(".main-menu").toggle();
+      $(".main-menu").animate({
+        top: '+=50',
+        height: 'toggle'
+      });
     });
   }
 

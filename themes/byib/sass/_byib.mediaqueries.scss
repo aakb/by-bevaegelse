@@ -307,11 +307,14 @@ body {
 
     .main-menu {
       display: none;
+      margin-top: -90px;
       margin-bottom: $default-spacing * 2;
+      margin-left: 108px;
 
       li {
         display: block;
-        width: 100%;
+        margin-bottom: 1px;
+        width: 50%;
 
         a {
           @include rem('font-size', $theme-font-size * .95);
@@ -350,11 +353,14 @@ body {
 
     .main-menu {
       display: none;
+      margin-top: -90px;
       margin-bottom: $default-spacing * 2;
+      margin-left: 108px;
 
       li {
         display: block;
-        width: 100%;
+        margin-bottom: 1px;
+        width: 50%;
 
         a {
           @include rem('font-size', $theme-font-size * .95);
@@ -374,9 +380,10 @@ body {
     }
   }
 
-  @include medium() {
+  @include large() {
     .main-menu {
-      display: table;
+      // Make sure that the menu is displayed (js adds inline styling)
+      display: table !important;
     }
   }
 }
