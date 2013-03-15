@@ -19,7 +19,7 @@
     // Toggle on click
     $(element).click(function () {
       $(".main-menu").animate({
-        top: '+=50',
+        top: '=-90px',
         height: 'toggle'
       });
     });
