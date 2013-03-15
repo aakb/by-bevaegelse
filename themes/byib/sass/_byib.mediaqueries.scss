@@ -236,14 +236,6 @@
   @include medium() {
     @include display-100-50-50;
 
-    .main-menu {
-      li {
-        a {
-          min-width: 75px;
-        }
-      }
-    }
-
     .flexslider-wrapper {
 
       .slides {
@@ -303,6 +295,7 @@
 body {
   @include small() {
     header {
+      border-bottom: 1px solid $gray-light;
       margin-bottom: 0;
 
       .logo {
@@ -313,9 +306,12 @@ body {
     }
 
     .main-menu {
+      display: none;
+      margin-bottom: $default-spacing * 2;
+
       li {
-        float: left;
-        width: 50%;
+        display: block;
+        width: 100%;
 
         a {
           @include rem('font-size', $theme-font-size * .95);
@@ -328,6 +324,10 @@ body {
           }
         }
       }
+    }
+
+    .js-toggle-main-menu {
+      display: block;
     }
 
     .flexslider-wrapper {
@@ -337,9 +337,11 @@ body {
 
   @include medium() {
     header {
+      border-bottom: 1px solid $gray-light;
+      margin-bottom: 0;
+
       .logo {
         min-width: 125px;
-        margin-top: $default-spacing;
         margin-top: $half-spacing;
         margin-right: $default-spacing;
         max-width: 150px;
@@ -347,9 +349,12 @@ body {
     }
 
     .main-menu {
+      display: none;
+      margin-bottom: $default-spacing * 2;
+
       li {
-        float: left;
-        width: 33.3333333333%;
+        display: block;
+        width: 100%;
 
         a {
           @include rem('font-size', $theme-font-size * .95);
@@ -362,6 +367,16 @@ body {
           }
         }
       }
+    }
+
+    .js-toggle-main-menu {
+      display: block;
+    }
+  }
+
+  @include medium() {
+    .main-menu {
+      display: table;
     }
   }
 }

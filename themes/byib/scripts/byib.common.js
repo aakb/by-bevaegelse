@@ -1,6 +1,28 @@
 (function ($) {
 
   /**
+   * Add markup for main menu toggle.
+   */
+  function addToggleMainMenu(element, destination) {
+
+    // Create wrapper for mobile menu.
+    $("<div />", {
+      "class" : "js-toggle-main-menu"
+    }).appendTo($(destination));
+
+    // Add span with text
+    $("<span />", {
+      "class" : "block-title",
+      "text"  : Drupal.t('Menu')
+    }).appendTo($(element));
+
+    // Attach click event
+    $(element).click(function () {
+      $(".main-menu").toggle();
+    });
+  }
+
+  /**
    * Defines function().
    * Creates <select /> from menu block.
    */
@@ -57,13 +79,17 @@
       $("select", destination).change(function() {
         window.location = $(this).find("option:selected").val();
       });
-
     }
   }
 
   /**
    * Run functions on document ready.
    */
+
+  $(document).ready(function() {
+    addToggleMainMenu(".js-toggle-main-menu", "header");
+  });
+
   $(document).ready(function() {
     menuToSelect(".secondary-content", "header");
   });

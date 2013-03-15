@@ -142,6 +142,38 @@ table {
   }
 }
 
+.js-toggle-main-menu {
+  background-color: $theme-secondary-color;
+  color: $white;
+  cursor: pointer;
+  display: none;
+  padding: 12px 13.3333px 10px;
+  position: absolute;
+  text-align: center;
+  top: 45px;
+
+  span {
+    @include rem('line-height', $theme-font-size * 1.25);
+    @extend .icon-align-justify;
+
+    padding-left: 30px;
+    position: relative;
+
+    &:active {
+      background: transparent;
+    }
+
+    &:before {
+      @include rem('font-size', $theme-font-size * 1.5);
+
+      font-family: "FontAwesome";
+      left: 0;
+      margin-right: $half-spacing / 2;
+      position: absolute;
+      top: 6px;
+    }
+  }
+}
 
 .mobile-menu {
   background-color: $gray-lighter;
