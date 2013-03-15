@@ -37,3 +37,16 @@ textarea {
     border: 1px solid $gray-light;
   }
 }
+
+select {
+  font-family: "Source Sans Regular";
+  @include rem('font-size', $theme-font-size);
+}
+
+.webform-component {
+  margin-bottom: $default-spacing;
+
+  select {
+    margin-left: $half-spacing;
+  }
+}
