@@ -2577,10 +2577,11 @@ ul.icons li .icon-large:before {
   /* line 301, ../sass/_byib.mediaqueries.scss */
   body header .logo {
     min-width: 75px;
+    margin-top: 10px;
     margin-right: 20px;
     max-width: 125px;
   }
-  /* line 308, ../sass/_byib.mediaqueries.scss */
+  /* line 309, ../sass/_byib.mediaqueries.scss */
   body .main-menu {
     display: none;
     margin-top: -90px;
@@ -2588,45 +2589,45 @@ ul.icons li .icon-large:before {
     margin-left: 108px;
     position: relative;
   }
-  /* line 315, ../sass/_byib.mediaqueries.scss */
+  /* line 316, ../sass/_byib.mediaqueries.scss */
   body .main-menu li {
     display: block;
     margin-bottom: 1px;
     width: 50%;
   }
-  /* line 320, ../sass/_byib.mediaqueries.scss */
+  /* line 321, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a {
     font-size: 15.2px;
     font-size: 0.95rem;
     background-color: #9adae9;
   }
-  /* line 326, ../sass/_byib.mediaqueries.scss */
+  /* line 327, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a.active, body .main-menu li a:hover {
     background-color: #31b4d3;
   }
-  /* line 333, ../sass/_byib.mediaqueries.scss */
+  /* line 334, ../sass/_byib.mediaqueries.scss */
   body .js-toggle-main-menu {
     display: block;
   }
-  /* line 337, ../sass/_byib.mediaqueries.scss */
+  /* line 338, ../sass/_byib.mediaqueries.scss */
   body .flexslider-wrapper {
     display: none;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 343, ../sass/_byib.mediaqueries.scss */
+  /* line 344, ../sass/_byib.mediaqueries.scss */
   body header {
     border-bottom: 1px solid #e2e2e2;
     margin-bottom: 0;
   }
-  /* line 347, ../sass/_byib.mediaqueries.scss */
+  /* line 348, ../sass/_byib.mediaqueries.scss */
   body header .logo {
     min-width: 125px;
     margin-top: 10px;
     margin-right: 20px;
     max-width: 150px;
   }
-  /* line 355, ../sass/_byib.mediaqueries.scss */
+  /* line 356, ../sass/_byib.mediaqueries.scss */
   body .main-menu {
     display: none;
     margin-top: -90px;
@@ -2634,35 +2635,35 @@ ul.icons li .icon-large:before {
     margin-left: 108px;
     position: relative;
   }
-  /* line 362, ../sass/_byib.mediaqueries.scss */
+  /* line 363, ../sass/_byib.mediaqueries.scss */
   body .main-menu li {
     display: block;
     margin-bottom: 1px;
     width: 50%;
   }
-  /* line 367, ../sass/_byib.mediaqueries.scss */
+  /* line 368, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a {
     font-size: 15.2px;
     font-size: 0.95rem;
     background-color: #9adae9;
   }
-  /* line 373, ../sass/_byib.mediaqueries.scss */
+  /* line 374, ../sass/_byib.mediaqueries.scss */
   body .main-menu li a.active, body .main-menu li a:hover {
     background-color: #31b4d3;
   }
-  /* line 380, ../sass/_byib.mediaqueries.scss */
+  /* line 381, ../sass/_byib.mediaqueries.scss */
   body .js-toggle-main-menu {
     display: block;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 386, ../sass/_byib.mediaqueries.scss */
+  /* line 387, ../sass/_byib.mediaqueries.scss */
   body .main-menu {
     display: table !important;
   }
 }
 
-/* line 408, ../sass/_byib.mediaqueries.scss */
+/* line 409, ../sass/_byib.mediaqueries.scss */
 .no-tertiary-content .page-content {
   float: left;
   width: 100%;
@@ -2683,7 +2684,7 @@ ul.icons li .icon-large:before {
   /* IE8 won't work without this */
 }
 
-/* line 418, ../sass/_byib.mediaqueries.scss */
+/* line 419, ../sass/_byib.mediaqueries.scss */
 .no-secondary-content.no-tertiary-content .page-content {
   float: left;
   width: 100%;
