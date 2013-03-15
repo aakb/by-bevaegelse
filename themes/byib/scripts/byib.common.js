@@ -35,11 +35,14 @@
 
         var el = $(this);
         var children = el.find("li");
+        var blockTitle = el.find(".block-title > a");
 
-        $("<option />", {
-          "value" : el.find(".block-title > a").attr("href"),
-          "text"  : el.find(".block-title > a").text()
-        }).appendTo("select:last");
+        if (blockTitle.length != 0) {
+          $("<option />", {
+            "value" : blockTitle.attr("href"),
+            "text"  : blockTitle.text()
+          }).appendTo("select:last");
+        }
 
         children.find("a").each(function() {
           $("<option />", {
