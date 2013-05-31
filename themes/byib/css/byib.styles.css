@@ -135,16 +135,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 16, ../sass/latto/_latto.tables.scss */
 table {
-  max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  max-width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 16, ../sass/latto/_latto.tables.scss */
+  table {
+    -webkit-overflow-scrolling: touch;
+    display: inline-block;
+    overflow: scroll;
+  }
 }
 
-/* line 27, ../sass/latto/_latto.tables.scss */
+/* line 33, ../sass/latto/_latto.tables.scss */
 .table, table {
   width: 100%;
 }
-/* line 31, ../sass/latto/_latto.tables.scss */
+/* line 37, ../sass/latto/_latto.tables.scss */
 .table th, table th,
 .table td,
 table td {
@@ -153,15 +161,15 @@ table td {
   text-align: left;
   vertical-align: top;
 }
-/* line 39, ../sass/latto/_latto.tables.scss */
+/* line 45, ../sass/latto/_latto.tables.scss */
 .table th, table th {
   font-weight: bold;
 }
-/* line 43, ../sass/latto/_latto.tables.scss */
+/* line 49, ../sass/latto/_latto.tables.scss */
 .table thead th, table thead th {
   vertical-align: bottom;
 }
-/* line 52, ../sass/latto/_latto.tables.scss */
+/* line 58, ../sass/latto/_latto.tables.scss */
 .table caption + thead tr:first-child th, table caption + thead tr:first-child th,
 .table caption + thead tr:first-child td,
 table caption + thead tr:first-child td,
@@ -175,18 +183,18 @@ table thead:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 56, ../sass/latto/_latto.tables.scss */
+/* line 62, ../sass/latto/_latto.tables.scss */
 .table tbody + tbody, table tbody + tbody {
   border-top: 2px solid #d5d5d5;
 }
 
-/* line 68, ../sass/latto/_latto.tables.scss */
+/* line 74, ../sass/latto/_latto.tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px;
 }
 
-/* line 78, ../sass/latto/_latto.tables.scss */
+/* line 84, ../sass/latto/_latto.tables.scss */
 .table-bordered {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -198,12 +206,12 @@ table thead:first-child tr:first-child td {
   *border-collapse: collapsed;
   border-left: 0;
 }
-/* line 87, ../sass/latto/_latto.tables.scss */
+/* line 93, ../sass/latto/_latto.tables.scss */
 .table-bordered th,
 .table-bordered td {
   border-left: 1px solid #d5d5d5;
 }
-/* line 99, ../sass/latto/_latto.tables.scss */
+/* line 105, ../sass/latto/_latto.tables.scss */
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
 .table-bordered caption + tbody tr:first-child td,
@@ -215,7 +223,7 @@ table thead:first-child tr:first-child td {
 .table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 104, ../sass/latto/_latto.tables.scss */
+/* line 110, ../sass/latto/_latto.tables.scss */
 .table-bordered thead:first-child tr:first-child th:first-child,
 .table-bordered tbody:first-child tr:first-child td:first-child {
   -webkit-border-radius: 4px 0 0;
@@ -224,7 +232,7 @@ table thead:first-child tr:first-child td {
   -o-border-radius: 4px 0 0;
   border-radius: 4px 0 0;
 }
-/* line 109, ../sass/latto/_latto.tables.scss */
+/* line 115, ../sass/latto/_latto.tables.scss */
 .table-bordered thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child td:last-child {
   -webkit-border-radius: 0 4px 0 0;
@@ -233,7 +241,7 @@ table thead:first-child tr:first-child td {
   -o-border-radius: 0 4px 0 0;
   border-radius: 0 4px 0 0;
 }
-/* line 114, ../sass/latto/_latto.tables.scss */
+/* line 120, ../sass/latto/_latto.tables.scss */
 .table-bordered thead:last-child tr:last-child th:first-child,
 .table-bordered tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0 0 0 4px;
@@ -242,7 +250,7 @@ table thead:first-child tr:first-child td {
   -o-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
 }
-/* line 118, ../sass/latto/_latto.tables.scss */
+/* line 124, ../sass/latto/_latto.tables.scss */
 .table-bordered thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child {
   -webkit-border-radius: 0 4px 0 0;
@@ -252,28 +260,28 @@ table thead:first-child tr:first-child td {
   border-radius: 0 4px 0 0;
 }
 
-/* line 128, ../sass/latto/_latto.tables.scss */
+/* line 134, ../sass/latto/_latto.tables.scss */
 td.booked {
   background-color: #ffd1bf;
 }
 
-/* line 131, ../sass/latto/_latto.tables.scss */
+/* line 137, ../sass/latto/_latto.tables.scss */
 td.warning {
   background-color: #fbeaa7;
 }
 
-/* line 134, ../sass/latto/_latto.tables.scss */
+/* line 140, ../sass/latto/_latto.tables.scss */
 td.open {
   background-color: #d9ffa5;
 }
 
-/* line 146, ../sass/latto/_latto.tables.scss */
+/* line 152, ../sass/latto/_latto.tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #efefef;
 }
 
-/* line 161, ../sass/latto/_latto.tables.scss */
+/* line 167, ../sass/latto/_latto.tables.scss */
 .table tbody tr:hover td, table tbody tr:hover td,
 .table tbody tr:hover th,
 table tbody tr:hover th {
