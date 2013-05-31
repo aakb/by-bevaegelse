@@ -127,7 +127,7 @@
     }
   }
 
-  #block-menu-block-2 {
+  .secondary-content {
     display: none;
   }
 
@@ -210,8 +210,8 @@
     }
 
     .flex-direction-nav {
-      .flex-prev,
-      .flex-next {
+      .prev,
+      .next {
 
         bottom: $default-spacing;
         height: 33px;
@@ -223,11 +223,11 @@
         }
       }
 
-      .flex-prev {
+      .prev {
         left: $half-spacing;
       }
 
-      .flex-next {
+      .next {
         right: $half-spacing;
       }
     }
@@ -235,14 +235,6 @@
 
   @include medium() {
     @include display-100-50-50;
-
-    .main-menu {
-      li {
-        a {
-          min-width: 75px;
-        }
-      }
-    }
 
     .flexslider-wrapper {
 
@@ -303,21 +295,32 @@
 body {
   @include small() {
     header {
+      border-bottom: 1px solid $gray-light;
       margin-bottom: 0;
 
       .logo {
         min-width: 75px;
+        margin-top: $half-spacing;
         margin-right: $default-spacing;
         max-width: 125px;
       }
     }
 
     .main-menu {
+      display: none;
+      margin-top: -90px;
+      margin-bottom: $default-spacing * 2.5;
+      margin-left: 108px;
+      position: relative;
+
       li {
-        float: left;
+        display: block;
+        margin-bottom: 1px;
         width: 50%;
 
         a {
+          @include rem('font-size', $theme-font-size * .95);
+
           background-color: lighten($navbar-bg-active-color, 25%);
 
           &.active,
@@ -328,6 +331,10 @@ body {
       }
     }
 
+    .js-toggle-main-menu {
+      display: block;
+    }
+
     .flexslider-wrapper {
       display: none;
     }
@@ -335,13 +342,51 @@ body {
 
   @include medium() {
     header {
+      border-bottom: 1px solid $gray-light;
+      margin-bottom: 0;
+
       .logo {
         min-width: 125px;
-        margin-top: $default-spacing;
         margin-top: $half-spacing;
         margin-right: $default-spacing;
         max-width: 150px;
       }
+    }
+
+    .main-menu {
+      display: none;
+      margin-top: -90px;
+      margin-bottom: $default-spacing * 2.5;
+      margin-left: 108px;
+      position: relative;
+
+      li {
+        display: block;
+        margin-bottom: 1px;
+        width: 50%;
+
+        a {
+          @include rem('font-size', $theme-font-size * .95);
+
+          background-color: lighten($navbar-bg-active-color, 25%);
+
+          &.active,
+          &:hover {
+            background-color: $navbar-bg-active-color;
+          }
+        }
+      }
+    }
+
+    .js-toggle-main-menu {
+      display: block;
+    }
+  }
+
+  @include large() {
+    .main-menu {
+      // Make sure that the menu is displayed (js adds inline styling)
+      display: table !important;
     }
   }
 }

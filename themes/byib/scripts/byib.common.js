@@ -1,6 +1,32 @@
 (function ($) {
 
   /**
+   * Add markup for main menu toggle.
+   */
+  function addToggleMainMenu(element, destination) {
+
+    // Create wrapper for mobile menu.
+    $("<div />", {
+      "class" : "js-toggle-main-menu"
+    }).appendTo($(destination));
+
+    // Add span with text
+    $("<span />", {
+      "class" : "block-title",
+      "text"  : Drupal.t('Menu')
+    }).appendTo($(element));
+
+    // Toggle on click
+    $(element).click(function () {
+      $(".main-menu").animate({
+          height: 'toggle'
+        }, {
+          duration: 250
+        });
+    });
+  }
+
+  /**
    * Defines function().
    * Creates <select /> from menu block.
    */
@@ -35,11 +61,14 @@
 
         var el = $(this);
         var children = el.find("li");
+        var blockTitle = el.find(".block-title > a");
 
-        $("<option />", {
-          "value" : el.find(".block-title > a").attr("href"),
-          "text"  : el.find(".block-title > a").text()
-        }).appendTo("select:last");
+        if (blockTitle.length != 0) {
+          $("<option />", {
+            "value" : blockTitle.attr("href"),
+            "text"  : blockTitle.text()
+          }).appendTo("select:last");
+        }
 
         children.find("a").each(function() {
           $("<option />", {
@@ -54,15 +83,19 @@
       $("select", destination).change(function() {
         window.location = $(this).find("option:selected").val();
       });
-
     }
   }
 
   /**
    * Run functions on document ready.
    */
+
   $(document).ready(function() {
-    menuToSelect(".secondary-content", ".secondary-content");
+    addToggleMainMenu(".js-toggle-main-menu", "header");
+  });
+
+  $(document).ready(function() {
+    menuToSelect(".secondary-content", "header");
   });
 
 })(jQuery);

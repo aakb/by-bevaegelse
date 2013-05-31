@@ -42,6 +42,7 @@ function bybevaeg_wysiwyg_settings_wysiwyg_default_profiles() {
           'ShowBlocks' => 1,
           'RemoveFormat' => 1,
           'Format' => 1,
+          'Styles' => 1,
           'Table' => 1,
         ),
         'drupal_path' => array(
@@ -62,9 +63,13 @@ function bybevaeg_wysiwyg_settings_wysiwyg_default_profiles() {
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p,h2,h3,h4,h5,h6',
-      'css_setting' => 'theme',
-      'css_path' => '',
-      'css_classes' => '',
+      'css_setting' => 'self',
+      'css_path' => '/sites/www.by-bevaegelse.dk/themes/byib/css/byib.wysiwyg.css',
+      'css_classes' => 'Bordered=table.table-bordered
+Åben=td.open
+Få pladser=td.warning
+Optaget=td.booked
+Fremhævet=span.orange-text',
     ),
     'rdf_mapping' => array(),
   );
@@ -111,8 +116,8 @@ function bybevaeg_wysiwyg_settings_wysiwyg_default_profiles() {
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
-      'css_setting' => 'theme',
-      'css_path' => '',
+      'css_setting' => 'self',
+      'css_path' => '/sites/www.by-bevaegelse.dk/themes/byib/css/byib.wysiwyg.css',
       'css_classes' => '',
     ),
     'rdf_mapping' => array(),
@@ -181,9 +186,13 @@ function bybevaeg_wysiwyg_settings_wysiwyg_default_profiles() {
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p,h2,h3,h4,h5,h6,div',
-      'css_setting' => 'theme',
-      'css_path' => '',
-      'css_classes' => '',
+      'css_setting' => 'self',
+      'css_path' => '/sites/www.by-bevaegelse.dk/themes/byib/css/byib.wysiwyg.css',
+      'css_classes' => 'Bordered=table.table-bordered
+Åben=td.open
+Få pladser=td.warning
+Optaget=td.booked
+Fremhævet=span.orange-text',
     ),
     'rdf_mapping' => array(),
   );
