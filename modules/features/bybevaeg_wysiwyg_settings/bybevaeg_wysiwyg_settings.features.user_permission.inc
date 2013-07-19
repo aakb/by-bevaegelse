@@ -14,8 +14,8 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   $permissions['access ckeditor link'] = array(
     'name' => 'access ckeditor link',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'ckeditor_link',
   );
@@ -24,7 +24,7 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   $permissions['administer ckeditor link'] = array(
     'name' => 'administer ckeditor link',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'ckeditor_link',
   );
@@ -33,7 +33,7 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   $permissions['use text format editor_html'] = array(
     'name' => 'use text format editor_html',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );
@@ -42,9 +42,9 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
   );
@@ -53,7 +53,7 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'filter',
   );
@@ -62,7 +62,7 @@ function bybevaeg_wysiwyg_settings_user_default_permissions() {
   $permissions['use text format video'] = array(
     'name' => 'use text format video',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );
