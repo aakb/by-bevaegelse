@@ -39,4 +39,5 @@
  * signs to enable.
  */
 $sites = array (
+  'by-bevaegelse.vm' => 'www.by-bevaegelse.dk',
 );
