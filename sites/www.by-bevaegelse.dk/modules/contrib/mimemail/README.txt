@@ -2,7 +2,7 @@
 -- SUMMARY --
 
   This is a Mime Mail component module (for use by other modules).
-    * It permits users to recieve HTML email and can be used by other modules. The mail
+    * It permits users to receieve HTML email and can be used by other modules. The mail
       functionality accepts an HTML message body, mime-endcodes it and sends it.
     * If the HTML has embedded graphics, these graphics are MIME-encoded and included
       as a message attachment.
@@ -57,13 +57,13 @@
 
   You can use the following optional parameters to build the e-mail:
     'plain':
-      Boolean, whether to send messages in plaintext-only (optional, default is FALSE). 
+      Boolean, whether to send messages in plaintext-only (optional, default is FALSE).
     'plaintext':
       Plaintext portion of a multipart e-mail (optional).
     'attachments':
       Array of arrays with the path or content, name and MIME type of the file (optional).
     'headers':
-      A keyed array with headers (optional). 
+      A keyed array with headers (optional).
 
   You can set these in $params either before calling drupal_mail() or in hook_mail()
   and of course hook_mail_alter().
@@ -84,11 +84,19 @@
     the mail.css file found anywhere in your theme folder or
     the combined CSS style sheets of your theme if enabled.
 
+  Since some email clients (namely Outlook 2007 and GMail) is tend to only regard
+  inline CSS, you can use the Compressor to convert CSS styles into inline style
+  attributes. It transmogrifies the HTML source by parsing the CSS and inserting the
+  CSS definitions into tags within the HTML based on the CSS selectors. To use the
+  Compressor, just enable it.
+
   To create a custom mail template copy the mimemail-message.tpl.php file from
   the mimemail/theme directory into your default theme's folder. Both general and
   by-mailkey theming can be performed:
+    mimemail-message--[module]--[key].tpl.php (for messages with a specific module and key)
+    mimemail-message--[module].tpl.php (for messages with a specific module)
+    mimemail-message--[key].tpl.php (for messages with a specific key)
     mimemail-message.tpl.php (for all messages)
-    mimemail-message--[mailkey].tpl.php (for messages with a specific mailkey)
 
   Messages can be rendered using different themes. You can choose the following
   settings to render the e-mail:
@@ -98,17 +106,19 @@
   or any other active theme.
 
   Images with absolute URL will be available as remote content. To embed images
-  into emails you have to use a relative URL or an internal path.
+  into emails you have to use a relative URL or an internal path. Due to security
+  concerns, only files residing in the public file system (e.g sites/default/files)
+  can be used by default.
+
   For example:
     instead of http://www.mysite.com/sites/default/files/mypicture.jpg
     use /home/www/public_html/drupal/sites/default/files/mypicture.jpg
     or /sites/default/files/mypicture.jpg
+    or public://mypicture.jpg
 
-  Since some email clients (namely Outlook 2007 and GMail) is tend to only regard
-  inline CSS, you can use the Compressor to convert CSS styles into inline style
-  attributes. It transmogrifies the HTML source by parsing the CSS and inserting the
-  CSS definitions into tags within the HTML based on the CSS selectors. To use the
-  Compressor, just enable it.
+  The 'send arbitrary files' permission allows you to attach or embed files located
+  outside Drupal's public files directory. Note that this has security implications:
+  arbitrary means even your settings.php! Give to trusted roles only!
 
 
 -- CREDITS --

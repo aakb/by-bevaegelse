@@ -7,8 +7,7 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function itkore_news_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function itkore_news_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -22,16 +21,8 @@ function itkore_news_image_default_styles() {
 
   // Exported image style: news_title_image.
   $styles['news_title_image'] = array(
-    'name' => 'news_title_image',
     'effects' => array(
       4 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1000,
@@ -40,6 +31,7 @@ function itkore_news_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'news_title_image',
   );
 
   return $styles;
@@ -59,5 +51,6 @@ function itkore_news_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

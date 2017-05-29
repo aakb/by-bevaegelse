@@ -87,5 +87,12 @@ function itkore_featured_content_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_featured_content'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_featured_content_pattern';
+  $strongarm->value = 'featured/[node:title]';
+  $export['pathauto_node_featured_content_pattern'] = $strongarm;
+
   return $export;
 }

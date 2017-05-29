@@ -10,7 +10,7 @@
 function itkore_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-news-field_content'
+  // Exported field_instance: 'node-news-field_content'.
   $field_instances['node-news-field_content'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -52,7 +52,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_download'
+  // Exported field_instance: 'node-news-field_download'.
   $field_instances['node-news-field_download'] = array(
     'bundle' => 'news',
     'deleted' => 0,
@@ -93,7 +93,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_external_url'
+  // Exported field_instance: 'node-news-field_external_url'.
   $field_instances['node-news-field_external_url'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -119,6 +119,7 @@ function itkore_news_field_default_field_instances() {
     'label' => 'External URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'rel' => 'external',
@@ -129,6 +130,7 @@ function itkore_news_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -144,7 +146,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_links'
+  // Exported field_instance: 'node-news-field_links'.
   $field_instances['node-news-field_links'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -170,6 +172,7 @@ function itkore_news_field_default_field_instances() {
     'label' => 'Links',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'rel' => '',
@@ -180,6 +183,7 @@ function itkore_news_field_default_field_instances() {
       ),
       'enable_tokens' => 0,
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -195,7 +199,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_manchet'
+  // Exported field_instance: 'node-news-field_manchet'.
   $field_instances['node-news-field_manchet'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -235,7 +239,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_title_image'
+  // Exported field_instance: 'node-news-field_news_title_image'.
   $field_instances['node-news-field_news_title_image'] = array(
     'bundle' => 'news',
     'deleted' => 0,
@@ -293,7 +297,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_source'
+  // Exported field_instance: 'node-news-field_source'.
   $field_instances['node-news-field_source'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -329,7 +333,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_subject'
+  // Exported field_instance: 'node-news-field_subject'.
   $field_instances['node-news-field_subject'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -365,7 +369,7 @@ function itkore_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_tags'
+  // Exported field_instance: 'node-news-field_tags'.
   $field_instances['node-news-field_tags'] = array(
     'bundle' => 'news',
     'default_value' => NULL,

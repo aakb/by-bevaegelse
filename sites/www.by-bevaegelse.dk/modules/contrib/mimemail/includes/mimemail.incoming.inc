@@ -15,15 +15,23 @@
  *   The POSTed message.
  */
 function mimemail_post() {
-  $message = $_POST['message'];
-  $token   = $_POST['token'];
-  $hash    = md5(variable_get('mimemail_key', '**') . $message);
-
-  if ($hash != $token) {
-    watchdog('access denied', 'Authentication error for POST e-mail', WATCHDOG_WARNING);
+  if (!isset($_POST['token']) || empty($_POST['token'])) {
     return drupal_access_denied();
   }
-  return mimemail_incoming($message);
+
+  if (isset($_POST['message']) && !empty($_POST['message'])) {
+    $key = variable_get('mimemail_key', drupal_random_key());
+    $hash = hash_hmac('sha1', $_POST['message'], $key);
+    if ($hash != $_POST['token']) {
+      watchdog('access denied', 'Authentication error for POST e-mail', WATCHDOG_WARNING);
+      return drupal_access_denied();
+    }
+    else {
+      return mimemail_incoming($_POST['message']);
+    }
+  }
+
+  return drupal_access_denied();
 }
 
 /**
@@ -67,13 +75,13 @@ function mimemail_parse($message) {
   // We're dealing with a multi-part message.
   $mail['parts'] = mimemail_parse_boundary($mail);
 
-  foreach ($mail['parts'] as $i => $part_body) {
+  foreach ($mail['parts'] as $part_body) {
     $part = mimemail_parse_headers($part_body);
     $sub_parts = mimemail_parse_boundary($part);
 
     // Content is encoded in a multipart/alternative section.
     if (count($sub_parts) > 1) {
-      foreach ($sub_parts as $j => $sub_part_body) {
+      foreach ($sub_parts as $sub_part_body) {
         $sub_part = mimemail_parse_headers($sub_part_body);
         if ($sub_part['content-type'] == 'text/plain') {
           $mail['text'] = mimemail_parse_content($sub_part);

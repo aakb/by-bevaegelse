@@ -38,7 +38,6 @@ function itkore_featured_content_flexslider_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'slideshow';
-  $handler->display->display_options['style_options']['wrapper_class'] = 'slidehow';
   $handler->display->display_options['style_options']['slideshow_type'] = 'views_slideshow_cycle';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
@@ -164,7 +163,6 @@ function itkore_featured_content_flexslider_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'slideshow';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['style_options']['flexslider_views_slideshow']['caption_field'] = 'none';
   $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
@@ -312,7 +310,6 @@ function itkore_featured_content_flexslider_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'slideshow';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['style_options']['flexslider_views_slideshow']['caption_field'] = 'none';
   $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
@@ -436,6 +433,38 @@ function itkore_featured_content_flexslider_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'coverlayer';
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  $translatables['featured_content_flexslider'] = array(
+    t('Master'),
+    t('Featured Content'),
+    t('mere'),
+    t('Apply'),
+    t('Gendan'),
+    t('Sortér efter'),
+    t('Stigende'),
+    t('Faldende'),
+    t('queue'),
+    t('Featured Content Flexslider Panorama'),
+    t('Forside FlexSlider'),
+    t('more'),
+    t('<a class="content" href="[field_featured_link-url]">
+<h2>[title]</h2>
+<div class="teaser">[field_featured_text]</div>
+<p class="link">[field_featured_link-title]</p>
+</a>'),
+    t('<h2 class="block-title">[title]</h2>
+[field_featured_text]
+'),
+    t('FC: FlexSlider'),
+    t('Featured Content Flexslider Panorama - clone'),
+    t('<a class="content" href="[field_featured_link-url]">
+  <h2>[title]</h2>
+  <div class="teaser">[field_featured_text]</div>
+  <p class="link">[field_featured_link-title]</p>
+  </a>'),
+    t('<h2 class="block-title">[title]</h2>
+  [field_featured_text]
+  '),
+  );
   $export['featured_content_flexslider'] = $view;
 
   return $export;

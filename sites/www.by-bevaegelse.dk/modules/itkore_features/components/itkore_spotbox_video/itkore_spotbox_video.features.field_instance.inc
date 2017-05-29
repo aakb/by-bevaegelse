@@ -10,7 +10,7 @@
 function itkore_spotbox_video_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-spotbox_video-field_spotbox_text'
+  // Exported field_instance: 'node-spotbox_video-field_spotbox_text'.
   $field_instances['node-spotbox_video-field_spotbox_text'] = array(
     'bundle' => 'spotbox_video',
     'default_value' => NULL,
@@ -50,7 +50,7 @@ function itkore_spotbox_video_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-spotbox_video-field_spotbox_video'
+  // Exported field_instance: 'node-spotbox_video-field_spotbox_video'.
   $field_instances['node-spotbox_video-field_spotbox_video'] = array(
     'bundle' => 'spotbox_video',
     'default_value' => NULL,

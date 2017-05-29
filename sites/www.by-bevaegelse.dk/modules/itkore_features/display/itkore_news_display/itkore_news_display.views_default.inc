@@ -39,7 +39,6 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Antal elementer';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
   $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
@@ -52,7 +51,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['style_options']['wrapper_class'] = 'list-wrapper';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Forbindelse: Indhold: Taksonomitermer på node */
+  /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -61,7 +60,7 @@ function itkore_news_display_views_default_views() {
     'source' => 0,
     'tags' => 0,
   );
-  /* Felt: Indhold: Oprettelsesdato */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -74,7 +73,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'day_month_year';
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -83,7 +82,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
-  /* Felt: Date + Source */
+  /* Field: Date + Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -98,7 +97,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_source']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_source']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Indhold: Subject */
+  /* Field: Content: Subject */
   $handler->display->display_options['fields']['field_subject']['id'] = 'field_subject';
   $handler->display->display_options['fields']['field_subject']['table'] = 'field_data_field_subject';
   $handler->display->display_options['fields']['field_subject']['field'] = 'field_subject';
@@ -110,7 +109,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_subject']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Keyword + Title */
+  /* Field: Keyword + Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -125,7 +124,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Title image */
+  /* Field: Content: Title image */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -141,7 +140,7 @@ function itkore_news_display_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Manchet */
+  /* Field: Content: Manchet */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
@@ -154,7 +153,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_manchet']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_manchet']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -162,12 +161,12 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Kontekstuelt filter: Indhold: Source (field_source) */
+  /* Contextual filter: Content: Source (field_source) */
   $handler->display->display_options['arguments']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['arguments']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['arguments']['field_source_tid']['field'] = 'field_source_tid';
@@ -186,21 +185,21 @@ function itkore_news_display_views_default_views() {
     'subject' => 0,
     'tags' => 0,
   );
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'news' => 'news',
   );
-  /* Filterkriterie: Indhold: Forfremmet til forside */
+  /* Filter criterion: Content: Promoted to front page */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
@@ -219,7 +218,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Oprettelsesdato */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -232,7 +231,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'day_month_year';
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -241,7 +240,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -251,7 +250,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Subject */
+  /* Field: Content: Subject */
   $handler->display->display_options['fields']['field_subject']['id'] = 'field_subject';
   $handler->display->display_options['fields']['field_subject']['table'] = 'field_data_field_subject';
   $handler->display->display_options['fields']['field_subject']['field'] = 'field_subject';
@@ -264,7 +263,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_subject']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Indhold: Title image */
+  /* Field: Content: Title image */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -280,7 +279,7 @@ function itkore_news_display_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Manchet */
+  /* Field: Content: Manchet */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
@@ -293,7 +292,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_manchet']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_manchet']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -343,7 +342,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Oprettelsesdato */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -356,7 +355,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'day_month_year';
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -365,7 +364,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -375,7 +374,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Subject */
+  /* Field: Content: Subject */
   $handler->display->display_options['fields']['field_subject']['id'] = 'field_subject';
   $handler->display->display_options['fields']['field_subject']['table'] = 'field_data_field_subject';
   $handler->display->display_options['fields']['field_subject']['field'] = 'field_subject';
@@ -388,7 +387,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_subject']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Indhold: Title image */
+  /* Field: Content: Title image */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -404,7 +403,7 @@ function itkore_news_display_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Manchet */
+  /* Field: Content: Manchet */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
@@ -417,7 +416,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_manchet']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_manchet']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -429,7 +428,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Subject (field_subject) */
+  /* Contextual filter: Content: Subject (field_subject) */
   $handler->display->display_options['arguments']['field_subject_tid']['id'] = 'field_subject_tid';
   $handler->display->display_options['arguments']['field_subject_tid']['table'] = 'field_data_field_subject';
   $handler->display->display_options['arguments']['field_subject_tid']['field'] = 'field_subject_tid';
@@ -441,14 +440,14 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['arguments']['field_subject_tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -493,7 +492,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Oprettelsesdato */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -506,7 +505,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'day_month_year';
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -515,7 +514,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
-  /* Felt: Date + Source */
+  /* Field: Date + Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -530,7 +529,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_source']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_source']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Indhold: Subject */
+  /* Field: Content: Subject */
   $handler->display->display_options['fields']['field_subject']['id'] = 'field_subject';
   $handler->display->display_options['fields']['field_subject']['table'] = 'field_data_field_subject';
   $handler->display->display_options['fields']['field_subject']['field'] = 'field_subject';
@@ -542,7 +541,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_subject']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Keyword + Title */
+  /* Field: Keyword + Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -557,7 +556,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Title image */
+  /* Field: Content: Title image */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -573,7 +572,7 @@ function itkore_news_display_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Manchet */
+  /* Field: Content: Manchet */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
@@ -586,7 +585,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_manchet']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_manchet']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -598,7 +597,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Source (field_source) */
+  /* Contextual filter: Content: Source (field_source) */
   $handler->display->display_options['arguments']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['arguments']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['arguments']['field_source_tid']['field'] = 'field_source_tid';
@@ -617,14 +616,14 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['arguments']['field_source_tid']['validate']['fail'] = 'ignore';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -659,7 +658,7 @@ function itkore_news_display_views_default_views() {
   $handler = $view->new_display('panel_pane', 'News overview (import)', 'panel_pane_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Handler mangler eller er i stykker */
+  /* Field: Content: External URL */
   $handler->display->display_options['fields']['field_external_url']['id'] = 'field_external_url';
   $handler->display->display_options['fields']['field_external_url']['table'] = 'field_data_field_external_url';
   $handler->display->display_options['fields']['field_external_url']['field'] = 'field_external_url';
@@ -667,7 +666,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_external_url']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_external_url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_external_url']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Oprettelsesdato */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -675,14 +674,14 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'day_month_year';
-  /* Felt: Indhold: Source */
+  /* Field: Content: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['label'] = '';
   $handler->display->display_options['fields']['field_source']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_source']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Subject */
+  /* Field: Content: Subject */
   $handler->display->display_options['fields']['field_subject']['id'] = 'field_subject';
   $handler->display->display_options['fields']['field_subject']['table'] = 'field_data_field_subject';
   $handler->display->display_options['fields']['field_subject']['field'] = 'field_subject';
@@ -690,7 +689,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_subject']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -704,7 +703,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Felt: Indhold: Title image */
+  /* Field: Content: Title image */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -716,14 +715,14 @@ function itkore_news_display_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Manchet */
+  /* Field: Content: Manchet */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['label'] = '';
   $handler->display->display_options['fields']['field_manchet']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -739,14 +738,14 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -788,7 +787,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -798,7 +797,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Felt: Post date (excluded) */
+  /* Field: Post date (excluded) */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -812,7 +811,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'long';
-  /* Felt: Indhold: Subject */
+  /* Field: Content: Subject */
   $handler->display->display_options['fields']['field_subject']['id'] = 'field_subject';
   $handler->display->display_options['fields']['field_subject']['table'] = 'field_data_field_subject';
   $handler->display->display_options['fields']['field_subject']['field'] = 'field_subject';
@@ -826,7 +825,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_subject']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_subject']['type'] = 'taxonomy_term_reference_plain';
-  /* Felt: Indhold: Title image */
+  /* Field: Content: Title image */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -842,7 +841,7 @@ function itkore_news_display_views_default_views() {
     'image_style' => 'news_large',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Manchet */
+  /* Field: Content: Manchet */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
@@ -855,7 +854,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['field_manchet']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_manchet']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -869,14 +868,14 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -884,7 +883,7 @@ function itkore_news_display_views_default_views() {
     'news' => 'news',
   );
   $handler->display->display_options['filters']['type']['group'] = 0;
-  /* Filterkriterie: Indhold: Forfremmet til forside */
+  /* Filter criterion: Content: Promoted to front page */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
@@ -938,7 +937,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Subject (field_subject) */
+  /* Contextual filter: Content: Subject (field_subject) */
   $handler->display->display_options['arguments']['field_subject_tid']['id'] = 'field_subject_tid';
   $handler->display->display_options['arguments']['field_subject_tid']['table'] = 'field_data_field_subject';
   $handler->display->display_options['arguments']['field_subject_tid']['field'] = 'field_subject_tid';
@@ -990,7 +989,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Oprettelsesdato */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -1001,7 +1000,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Felt: Title */
+  /* Field: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1017,14 +1016,14 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1056,6 +1055,7 @@ function itkore_news_display_views_default_views() {
     t('Alle'),
     t('%1'),
     t('News overview'),
+    t('more'),
     t('<p class="meta text-secondary"><a href="/nyheder/emne/[field_subject-tid]">[field_subject]</a> | <span class="date">[created]</span></p>'),
     t('News'),
     t('News overview (subject)'),
@@ -1118,7 +1118,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -1128,7 +1128,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['tid']['separator'] = '';
-  /* Felt: Ord i ordforråd: Navn */
+  /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -1147,7 +1147,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['display_description'] = 'Taxonomy links to news displayed in panels (/nyheder/kilde/<tag>)';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -1155,7 +1155,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
-  /* Felt: Ord i ordforråd: Navn */
+  /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -1170,7 +1170,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['name']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Ordforråd: Internt navn */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
@@ -1182,7 +1182,7 @@ function itkore_news_display_views_default_views() {
   $handler = $view->new_display('block', 'News source links', 'block_2');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Ord i ordforråd: Term ID */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -1191,7 +1191,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['tid']['separator'] = '';
-  /* Felt: Ord i ordforråd: Navn */
+  /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -1205,7 +1205,7 @@ function itkore_news_display_views_default_views() {
   $handler->display->display_options['fields']['name']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Ordforråd: Internt navn */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
@@ -1232,6 +1232,7 @@ function itkore_news_display_views_default_views() {
     t('News subject links'),
     t('Emne'),
     t('Taxonomy links to news displayed in panels (/nyheder/kilde/<tag>)'),
+    t('more'),
     t(','),
     t('News source links'),
   );

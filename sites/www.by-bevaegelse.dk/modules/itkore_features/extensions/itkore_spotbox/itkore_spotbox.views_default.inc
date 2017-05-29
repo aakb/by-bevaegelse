@@ -41,7 +41,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Felt: Indhold: Spotbox title */
+  /* Field: Content: Spotbox title */
   $handler->display->display_options['fields']['field_spotbox_title']['id'] = 'field_spotbox_title';
   $handler->display->display_options['fields']['field_spotbox_title']['table'] = 'field_data_field_spotbox_title';
   $handler->display->display_options['fields']['field_spotbox_title']['field'] = 'field_spotbox_title';
@@ -52,7 +52,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['fields']['field_spotbox_title']['element_class'] = 'spotbox-title';
   $handler->display->display_options['fields']['field_spotbox_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotbox_title']['element_default_classes'] = FALSE;
-  /* Felt: Indhold: Spotbox image */
+  /* Field: Content: Spotbox image */
   $handler->display->display_options['fields']['field_spotbox_image']['id'] = 'field_spotbox_image';
   $handler->display->display_options['fields']['field_spotbox_image']['table'] = 'field_data_field_spotbox_image';
   $handler->display->display_options['fields']['field_spotbox_image']['field'] = 'field_spotbox_image';
@@ -67,7 +67,7 @@ function itkore_spotbox_views_default_views() {
     'image_style' => 'spotbox_image',
     'image_link' => 'content',
   );
-  /* Felt: Image (News title image) */
+  /* Field: Image (News title image) */
   $handler->display->display_options['fields']['field_news_title_image']['id'] = 'field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['table'] = 'field_data_field_news_title_image';
   $handler->display->display_options['fields']['field_news_title_image']['field'] = 'field_news_title_image';
@@ -83,7 +83,7 @@ function itkore_spotbox_views_default_views() {
     'image_style' => 'spotbox_image',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Text */
+  /* Field: Content: Text */
   $handler->display->display_options['fields']['field_spotbox_text']['id'] = 'field_spotbox_text';
   $handler->display->display_options['fields']['field_spotbox_text']['table'] = 'field_data_field_spotbox_text';
   $handler->display->display_options['fields']['field_spotbox_text']['field'] = 'field_spotbox_text';
@@ -92,7 +92,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['fields']['field_spotbox_text']['element_class'] = 'spotbox-content';
   $handler->display->display_options['fields']['field_spotbox_text']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotbox_text']['element_default_classes'] = FALSE;
-  /* Felt: Link */
+  /* Field: Link */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -104,12 +104,12 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['title_1']['hide_alter_empty'] = FALSE;
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -119,14 +119,14 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -168,7 +168,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Image (excluded) */
+  /* Field: Image (excluded) */
   $handler->display->display_options['fields']['field_title_image']['id'] = 'field_title_image';
   $handler->display->display_options['fields']['field_title_image']['table'] = 'field_data_field_title_image';
   $handler->display->display_options['fields']['field_title_image']['field'] = 'field_title_image';
@@ -187,7 +187,7 @@ function itkore_spotbox_views_default_views() {
     'image_style' => 'spotbox_image',
     'image_link' => '',
   );
-  /* Felt: Title */
+  /* Field: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -204,7 +204,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Felt: Content: Manchet (Excluded) */
+  /* Field: Content: Manchet (Excluded) */
   $handler->display->display_options['fields']['field_manchet']['id'] = 'field_manchet';
   $handler->display->display_options['fields']['field_manchet']['table'] = 'field_data_field_manchet';
   $handler->display->display_options['fields']['field_manchet']['field'] = 'field_manchet';
@@ -219,7 +219,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['fields']['field_manchet']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_manchet']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_manchet']['hide_alter_empty'] = FALSE;
-  /* Felt: Indhold: Content */
+  /* Field: Content: Content */
   $handler->display->display_options['fields']['field_content']['id'] = 'field_content';
   $handler->display->display_options['fields']['field_content']['table'] = 'field_data_field_content';
   $handler->display->display_options['fields']['field_content']['field'] = 'field_content';
@@ -236,7 +236,7 @@ function itkore_spotbox_views_default_views() {
   $handler->display->display_options['fields']['field_content']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Felt: Link */
+  /* Field: Link */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -273,6 +273,7 @@ function itkore_spotbox_views_default_views() {
     t('Faldende'),
     t('Alle'),
     t('Spotbox: Default'),
+    t('more'),
     t('Spotbox: Standard'),
     t('Spotbox: Alternative Style'),
     t('Spotbox: Image'),
